@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;project/servlets/servlet/src/main/webapp/index.jsp&apos; to &apos;appvigil-report-parser.jsp&apos;" description="Rename resource &apos;index.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="servlets/servlet/src/main/webapp/index.jsp" name="appvigil-report-parser.jsp" stamp="1418205853726" updateReferences="true"/>
+</session>
