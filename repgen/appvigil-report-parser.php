@@ -60,6 +60,9 @@ require_once '../../classes/Audit.php';
 require_once '../../classes/ClassUtils.php';
 require_once "../../includes/init_logger.php";
 
+//function calls need to be done through objects
+//I don't have all the functions
+
 $audit = getAuditById($audit_id);
 $user = getUserByAuditId($audit_id);
 $timestamp = $audit->getField('audit_date_time');
