@@ -1,5 +1,5 @@
 <?php
-	class ClassUtils {
+	//class ClassUtils {
 		
 	function emailExists($email)
 	{
@@ -168,5 +168,5 @@
 		
 		
 	}	
-}
+//}
 ?>

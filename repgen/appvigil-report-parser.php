@@ -49,19 +49,24 @@ $is_limited = $argv[3];
 $user_email = $argv[4];
 $limited_percentage = .25;
 
-require_once "../../config/db.php";
-require_once '../../classes/UserDateTimeFormatter.php';
-require_once '../../classes/InputChecker.php';
-require_once '../../classes/ISystemDateTimeFinder.php';
-require_once '../../classes/Randomizer.php';
-require_once '../../classes/DateTimeConverter.php';
-require_once '../../classes/User.php';
-require_once '../../classes/Audit.php';
-require_once '../../classes/ClassUtils.php';
-require_once "../../includes/init_logger.php";
+//$rootpath = realpath($_SERVER["DOCUMENT_ROOT"]);
+
+echo "hello";
+include "config/db.php";
+echo "hi";
+require_once "functions.php";
+//to be included once the entire file is parsed
+//require_once "$rootpath/classes/UserDateTimeFormatter.php";
+//require_once "$rootpath/classes/InputChecker.php";
+//require_once "$rootpath/classes/ISystemDateTimeFinder.php";
+//require_once "$rootpath/classes/Randomizer.php";
+//require_once "$rootpath/classes/DateTimeConverter.php";
+require_once "/classes/User.php";
+require_once "/classes/Audit.php";
+require_once "/classes/ClassUtils.php";
+require_once "/includes/init_logger.php";
 
 //function calls need to be done through objects
-//I don't have all the functions
 
 $audit = getAuditById($audit_id);
 $user = getUserByAuditId($audit_id);
@@ -76,7 +81,7 @@ $user_id = $user->user_id;
 $timestamp_in_userformat = convertSystemToUser($timestamp,$user_date_time_format,$user_timezone_offset);
 
 $report_generator_log = $log;
-$report_generator_log->LogDebug("$user_email Audit $audit_id - Report parser called with vairable xml_report=$xml_report; audit_id=$audit_id; is_limited=$is_limited",__FILE__,__LINE__);
+$report_generator_log->LogDebug("$user_email Audit $audit_id - Report parser called with variable xml_report=$xml_report; audit_id=$audit_id; is_limited=$is_limited",__FILE__,__LINE__);
 $xml=simplexml_load_file($xml_report);
 $report_generator_log->LogDebug("$user_email Audit $audit_id - XML $xml_report loaded",__FILE__,__LINE__);
 $report_generator_log->LogDebug("$user_email Audit $audit_id - User's timestamp calculated as $timestamp_in_userformat",__FILE__,__LINE__);
