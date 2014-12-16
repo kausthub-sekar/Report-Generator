@@ -54,12 +54,12 @@ class Audit{
 			//$log->LogDebug("In addBug(), executed INSERT INTO `audit_bug_info`(`audit_id`, `bug_abbrev`, bug_type`, `bug_priority`, `bug_rank`, `bug_class`, `bug_method`, `bug_field`,`bug_short_message`, `bug_long_message`, `bug_object`) VALUES ('$this->audit_id','$bug_abbrev','$bug_type', '$bug_priority', '$bug_rank','$bug_class','$bug_method',' $bug_field','$bug_short_message', '$bug_long_message', '$json_encoded_bug_object')",__FILE__,__LINE__);
 			if($insert_bug_info) 
 			 {
-			 $log->LogDebug("In addBug(), Bug $inserted_bug_id inserted successfully for audit {$audit->$audit_id}",__FILE__,__LINE__);
+			 $log->LogDebug("In addBug(), Bug $inserted_bug_id inserted successfully for audit {$this->audit_id}",__FILE__,__LINE__);
 			  return mysql_insert_id();
 			 }
 			 else
 			 {
-			 $log->LogFatal("In addBug(), MYSQL Error ".mysql_error()." Couldnt insert bug for audit {$audit->$audit_id}",__FILE__,__LINE__);
+			 $log->LogFatal("In addBug(), MYSQL Error ".mysql_error()." Couldnt insert bug for audit {$this->audit_id}",__FILE__,__LINE__);
 			 
 			 return false;
 			 }
@@ -270,5 +270,5 @@ class Audit{
 		
 
 	}
-	
+
 ?>

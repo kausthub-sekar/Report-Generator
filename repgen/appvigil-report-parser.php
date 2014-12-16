@@ -51,9 +51,9 @@ $limited_percentage = .25;
 
 //$rootpath = realpath($_SERVER["DOCUMENT_ROOT"]);
 
-echo "hello";
+//echo "hello";
 include "config/db.php";
-echo "hi";
+//echo "hi";
 require_once "functions.php";
 //to be included once the entire file is parsed
 //require_once "$rootpath/classes/UserDateTimeFormatter.php";
@@ -121,7 +121,7 @@ $report_generator_log->LogDebug("$user_email Audit $audit_id - User's timestamp 
 <!-- end welcome -->
 <!--Audit Table-->
 <section id='AuditTable'>
-<h2>Audit Table</h2>
+<h2>Audit Details</h2>
 <br>
 <table class = "table table-bordered">
 <?php
@@ -147,7 +147,7 @@ $report_generator_log->LogInfo("$user_email Audit $audit_id - Audit Table printe
 </section>
 <!-- Malicious Code -->
 <section id='AuditSummary'>
-<h2>Audit Summary</h2>
+<h2>Executive Summary</h2>
 <br>
 <?php
 $package_summary = array_unique($xml->xpath('//PackageStats[@total_bugs!=0]'));
@@ -171,7 +171,7 @@ else
 			<td> Bugs P2</td>
 			<td> Bugs P3</td>
 		</tr>
-
+	
 	<?php
 	foreach ($package_summary as $package_info)
 	{
@@ -223,7 +223,9 @@ else
 		</tr>";
 		$audit->addKeyInfo($package_info->attributes()->package, $package_info->attributes()->total_size, $p1_count, $p2_count, $p3_count);
 	}
+	
 	echo "</table>";
+	
 $report_generator_log->LogInfo("$user_email Audit $audit_id - Package Bug Table Printed",__FILE__,__LINE__);
 
 ?>

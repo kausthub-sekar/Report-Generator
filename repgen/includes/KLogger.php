@@ -56,14 +56,17 @@
 					return;
 				}
 			}
-			
-			if ( $this->file_handle = fopen( $this->log_file , "a" ) )
+			//echo "trying to open log";
+			$this->file_handle = fopen( $this->log_file , "a" );
+			if (  $this->file_handle )
 			{
+				//echo "opened log";
 				$this->Log_Status = KLogger::LOG_OPEN;
 				$this->MessageQueue[] = "The log file was opened successfully.";
 			}
 			else
 			{
+				//echo "problem";
 				$this->Log_Status = KLogger::OPEN_FAILED;
 				$this->MessageQueue[] = "The file could not be opened. Check permissions.";
 			}
@@ -74,7 +77,7 @@
 		
 		public function __destruct()
 		{
-			if ( $this->file_handle )
+			if ( isset($this->file_handle) )
 				fclose( $this->file_handle );
 		}
 		

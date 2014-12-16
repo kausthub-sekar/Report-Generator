@@ -1,0 +1,76 @@
+<BugCollection>
+
+	<BugInstances>
+		<BugInstance bug_code="WME" Bug_Abbrev="WME_Bug1"
+			Bug_Impact="User" BugType="Privacy" ConfidenceLevel="90%" Severity="High"
+			Rank="1" status="Safe/Unsafe">
+
+			<shortDescription>
+				Missing encryption while storing data.
+			</shortDescription>
+			<longDescription>
+				this is a sample long bug description.
+			</longDescription>
+
+			<References>
+				<reference>
+					http://www.google.com
+				</reference>
+
+			</References>
+
+			<app-activities>
+				<app-activity activityName="com.freecharge.ui.SplashActivity"
+					isExported="false">
+
+					<screenshot>/home/chhagan/git/com.wegilant.apkrunner/logs/0168com.freecharge.android.apk/screens/com.freecharge.ui.SplashActivity.png
+					</screenshot>
+				</app-activity>
+				<app-activity activityName="com.facebook.LoginActivity"
+					isExported="false">
+					<screenshot>/home/chhagan/git/com.wegilant.apkrunner/logs/0168com.freecharge.android.apk/screens/com.freecharge.ui.SplashActivity.png
+					</screenshot>
+
+				</app-activity>
+			</app-activities>
+
+		</BugInstance>
+
+
+		<BugInstance bug_code="WXI" Bug_Abbrev="WXI_Bug1"
+			Bug_Impact="Organization" BugType="Data" ConfidenceLevel="80%"
+			Severity="High" Rank="2" status="Safe/Unsafe">
+			<Description>
+
+				<shortDescription>
+					XML Injection.
+				</shortDescription>
+				<longDescription>
+					this is a sample long bug description.
+				</longDescription>
+			</Description>
+			<References>
+				http://www.google.com
+			</References>
+
+			<app-activities>
+				<app-activity activityName="com.freecharge.ui.SplashActivity"
+					isExported="false">
+
+					<screenshot>/home/chhagan/git/com.wegilant.apkrunner/logs/0168com.freecharge.android.apk/screens/com.freecharge.ui.SplashActivity.png
+					</screenshot>
+				</app-activity>
+				<app-activity activityName="com.facebook.LoginActivity"
+					isExported="false">
+					<screenshot>/home/chhagan/git/com.wegilant.apkrunner/logs/0168com.freecharge.android.apk/screens/com.freecharge.ui.SplashActivity.png
+					</screenshot>
+
+				</app-activity>
+			</app-activities>
+
+		</BugInstance>
+
+
+	</BugInstances>
+
+</BugCollection>
