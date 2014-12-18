@@ -23,6 +23,7 @@
 	<script src="js/tinynav.min.js" type="text/javascript"></script>
 	<script src="js/custom.js" type="text/javascript"></script>
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="js/switchReport.js"></script>
 	<!-- end JS -->
 	<style>
 		.up{
@@ -66,8 +67,6 @@ require_once "/classes/Audit.php";
 require_once "/classes/ClassUtils.php";
 require_once "/includes/init_logger.php";
 
-//function calls need to be done through objects
-
 $audit = getAuditById($audit_id);
 $user = getUserByAuditId($audit_id);
 $timestamp = $audit->getField('audit_date_time');
@@ -104,15 +103,17 @@ $report_generator_log->LogDebug("$user_email Audit $audit_id - User's timestamp 
 <nav id="nav-wrap">
 	<ul class="nav nav-list bs-docs-sidenav">
 		<li class="active"><a href="#welcome"><i class="icon-chevron-right"></i> Welcome</a></li>
-		<li><a href="#AuditTable"><i class="icon-chevron-right"></i> Audit Table</a></li>
-		<li><a href="#AuditSummary"><i class="icon-chevron-right"></i> Audit Summary</a></li>
-		<li><a href="#MCode"><i class="icon-chevron-right"></i> Malicious Code</a></li>
+		<li><a href="#AuditDetails"><i class="icon-chevron-right"></i> Audit Details</a></li>
+		<li id="hideSummary"><a href="#AuditSummary"><i class="icon-chevron-right"></i> Audit Summary</a></li>
+		<li id="hideMCode"><a href="#MCode"><i class="icon-chevron-right"></i> Malicious Code</a></li>
 		<li><a href="#about-us"><i class="icon-chevron-right"></i> About Us</a></li>
 	</ul>
 </nav>
 <!-- end navigation -->
 <!-- begin content -->
 <section id="content">
+<!-- default report view is assumed to be developer view -->
+<button id="#switchButton">Switch Report View</button> 
 <!-- begin welcome -->
 <section id="welcome">
 	<h2>Welcome</h2>
@@ -120,7 +121,7 @@ $report_generator_log->LogDebug("$user_email Audit $audit_id - User's timestamp 
 </section>
 <!-- end welcome -->
 <!--Audit Table-->
-<section id='AuditTable'>
+<section id='AuditDetails'>
 <h2>Audit Details</h2>
 <br>
 <table class = "table table-bordered">
@@ -161,8 +162,99 @@ if($vulnerable_package_count == 0)
 else
 {
 	?>
-
+	<h2>Priority wise result of bugs:</h2>
+		<table class="table table-bordered">
+		<tr>
+			<td>Overall threat level assessment: </td>
+			<td>
+			<?php 
+				if($audit->getTotalBugsCount()<2)
+				{
+					echo "<img src='../images/p3_bug.png' width='50px' style='height:20px'>";
+					echo " Low Risk";
+				}
+				else if($audit->getTotalBugsCount()<5)
+				{
+					echo "<img src='../images/p2_bug.png' width='50px' style='height:20px'>";
+					echo " Medium Risk";
+				}
+				else 
+				{
+					echo "<img src='../images/p1_bug.png' width='50px' style='height:20px'>";
+					echo " High Risk";
+				}
+			?>
+			</td>
+		</tr>
+		<tr>
+			<th colspan="2" align="center">Threat distribution percentage: </th>
+		</tr>
+		 <tr>
+			<td>High:</td>
+			<td>
+				<img src="../images/p1_bug.png" 
+				width='<?php echo(100*round($audit->getP1Count()/($audit->getTotalBugsCount()),2))*4; ?>' 
+				style="height:20px">
+			<?php echo(100*round($audit->getP1Count()/($audit->getTotalBugsCount()),3)); ?> %
+			</td>
+		 </tr>
+		 <tr>
+			<td>Medium:</td>
+			<td>
+				<img src="../images/p2_bug.png" 
+				width='<?php echo(100*round($audit->getP2Count()/($audit->getTotalBugsCount()),2))*4; ?>' 
+				style="height:20px">
+			<?php echo(100*round($audit->getP2Count()/($audit->getTotalBugsCount()),3)); ?> %
+			</td>
+		 </tr>
+		 <tr>
+			<td>Low:</td>
+			<td>
+				<img src="../images/p3_bug.png" 
+				width='<?php echo(100*round($audit->getP3Count()/($audit->getTotalBugsCount()),2))*4; ?>' 
+				style="height:20px">
+			<?php echo(100*round($audit->getP3Count()/($audit->getTotalBugsCount()),3)); ?> %
+			</td>
+		 </tr>
+		 <tr>
+			<th colspan="2" align="center">Threat distribution count: </th>
+		</tr>
+		<tr>
+			<td>Total threat count: </td>
+			<td><?php echo $vulnerable_package_count; ?></td>
+		</tr>
+		 <tr>
+			<td>High:</td>
+			<td>
+				<img src="../images/p1_bug.png" 
+				width='<?php echo(100*round($audit->getP1Count()/($audit->getTotalBugsCount()),2))*4; ?>' 
+				style="height:20px">
+			<?php echo round($vulnerable_package_count*(round($audit->getP1Count()/($audit->getTotalBugsCount()),2))); ?> 
+			</td>
+		 </tr>
+		 <tr>
+			<td>Medium:</td>
+			<td>
+				<img src="../images/p2_bug.png" 
+				width='<?php echo(100*round($audit->getP2Count()/($audit->getTotalBugsCount()),2))*4; ?>' 
+				style="height:20px">
+			<?php echo round($vulnerable_package_count*(round($audit->getP2Count()/($audit->getTotalBugsCount()),2))); ?> 
+			</td>
+		 </tr>
+		 <tr>
+			<td>Low:</td>
+			<td>
+				<img src="../images/p3_bug.png" 
+				width='<?php echo(100*round($audit->getP3Count()/($audit->getTotalBugsCount()),2))*4; ?>' 
+				style="height:20px">
+			<?php echo round($vulnerable_package_count*(round($audit->getP3Count()/($audit->getTotalBugsCount()),2))); ?> 
+			</td>
+		 </tr>
+		</table>
 	<table class="table table-bordered">
+		<tr>
+			<h2>Audit Summary</h2>
+		</tr>
 		<tr class="up">
 			<td> Package </td>
 			<td> Code Size (Bytes) </td>
@@ -383,6 +475,7 @@ echo "<script type='text/javascript'>
 }
 
 ?>
+
 <!-- begin PSD Files -->
 <section id="about-us">
 

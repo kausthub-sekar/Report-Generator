@@ -1,0 +1,2007 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Ixtendo">
+	<link href="style.css" type="text/css" rel="stylesheet">
+	<link rel="shortcut icon" href="./images/favicon.png">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<title>Appvigil Report</title>
+	
+	<!-- begin JS -->
+	<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+	<script src="js/easing.js" type="text/javascript"></script>
+	<script src="js/modernizr.custom.js" type="text/javascript"></script>
+	<!--[if (gte IE 6)&(lte IE 8)]>
+	<script type="text/javascript" src="js/selectivizr-min.js"></script>
+	<![endif]-->
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="js/jquery.ui.totop.min.js" type="text/javascript"></script>
+	<script src="js/tinynav.min.js" type="text/javascript"></script>
+	<script src="js/custom.js" type="text/javascript"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="js/switchReport.js"></script>
+	<!-- end JS -->
+	<style>
+		.up{
+		}
+		.p1{
+			background-color: #FC0B0B;
+		}
+		.p2{
+			background-color: #FF8A00;
+		}
+		.p3{
+			background-color: #9FC569;
+		}
+		.bugx{
+			
+		}
+	</style>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#nav-wrap" data-offset="10">
+
+<div id="container">
+<!-- begin header -->
+<header id="header">
+	<h1>Android Security Audit Report by Appvigil</h1>
+	<div class="meta">
+		<strong>Created on: </strong>Mon, 21 Jul 2014 5:22:54 PM (UTC+05:30) &bull;
+		<strong>By: </strong>Toshendra Sharmaaa &bull;
+		<strong>Email: </strong><a href="mailto:toshendra@wegilant.com">toshendra@wegilant.com</a>
+	</div>
+</header>
+<!-- end header -->
+
+<!-- begin navigation -->
+<nav id="nav-wrap">
+	<ul class="nav nav-list bs-docs-sidenav">
+		<li class="active"><a href="#welcome"><i class="icon-chevron-right"></i> Welcome</a></li>
+		<li><a href="#AuditDetails"><i class="icon-chevron-right"></i> Audit Details</a></li>
+		<li id="hideSummary"><a href="#AuditSummary"><i class="icon-chevron-right"></i> Audit Summary</a></li>
+		<li id="hideMCode"><a href="#MCode"><i class="icon-chevron-right"></i> Malicious Code</a></li>
+		<li><a href="#about-us"><i class="icon-chevron-right"></i> About Us</a></li>
+	</ul>
+</nav>
+<!-- end navigation -->
+<!-- begin content -->
+<section id="content">
+<!-- default report view is assumed to be developer view -->
+<button id="#switchButton">Switch Report View</button> 
+<!-- begin welcome -->
+<section id="welcome">
+	<h2>Welcome</h2>
+	<p>Thank you for scanning your Android application using the Appvigil Android App Security Auditor. If you have any queries, feedback or suggestions please feel free to contact us.</p>
+</section>
+<!-- end welcome -->
+<!--Audit Table-->
+<section id='AuditDetails'>
+<h2>Audit Details</h2>
+<br>
+<table class = "table table-bordered">
+<tr><td>Audit ID</td><td>1</td></tr>
+<tr><td>App Name</td><td>com.infosys.android.ui.apk</td></tr>
+<tr><td>Audit Time and Date</td><td>Mon, 21 Jul 2014 5:22:54 PM (UTC+05:30)</td></tr>
+<tr><td>App Size</td><td>0.85 MB</td></tr>
+<tr><td>Audited By</td><td>Toshendra Sharmaaa</td></tr>
+<tr><td>Classes Audited</td><td>4229</td></tr>
+<tr><td>Packages Audited</td><td>253</td></tr>
+
+</table>
+</section>
+<!-- Malicious Code -->
+<section id='AuditSummary'>
+<h2>Executive Summary</h2>
+<br>
+	<h2>Priority wise result of bugs:</h2>
+		<table class="table table-bordered">
+		<tr>
+			<td>Overall threat level assessment: </td>
+			<td>
+			<img src='../images/p1_bug.png' width='50px' style='height:20px'> High Risk			</td>
+		</tr>
+		<tr>
+			<th colspan="2" align="center">Threat distribution percentage: </th>
+		</tr>
+		 <tr>
+			<td>High:</td>
+			<td>
+				<img src="../images/p1_bug.png" 
+				width='304' 
+				style="height:20px">
+			75.9 %
+			</td>
+		 </tr>
+		 <tr>
+			<td>Medium:</td>
+			<td>
+				<img src="../images/p2_bug.png" 
+				width='96' 
+				style="height:20px">
+			24.1 %
+			</td>
+		 </tr>
+		 <tr>
+			<td>Low:</td>
+			<td>
+				<img src="../images/p3_bug.png" 
+				width='0' 
+				style="height:20px">
+			0 %
+			</td>
+		 </tr>
+		 <tr>
+			<th colspan="2" align="center">Threat distribution count: </th>
+		</tr>
+		<tr>
+			<td>Total threat count: </td>
+			<td>17</td>
+		</tr>
+		 <tr>
+			<td>High:</td>
+			<td>
+				<img src="../images/p1_bug.png" 
+				width='304' 
+				style="height:20px">
+			13 
+			</td>
+		 </tr>
+		 <tr>
+			<td>Medium:</td>
+			<td>
+				<img src="../images/p2_bug.png" 
+				width='96' 
+				style="height:20px">
+			4 
+			</td>
+		 </tr>
+		 <tr>
+			<td>Low:</td>
+			<td>
+				<img src="../images/p3_bug.png" 
+				width='0' 
+				style="height:20px">
+			0 
+			</td>
+		 </tr>
+		</table>
+	<table class="table table-bordered">
+		<tr>
+			<h2>Audit Summary</h2>
+		</tr>
+		<tr class="up">
+			<td> Package </td>
+			<td> Code Size (Bytes) </td>
+			<td> Bugs </td>
+			<td> Bugs P1 </td>
+			<td> Bugs P2</td>
+			<td> Bugs P3</td>
+		</tr>
+	
+	
+		<tr>
+		<td class='bugx'>com.AdX.tag</td>
+		<td class='bugx'>1220</td>
+		<td class='bugx'>1</td>
+		<td class='p1'>0
+		</td>
+		<td class='p2'>1
+		</td>
+		<td class='p3'>0
+		</td>
+		</tr>
+		<tr>
+		<td class='bugx'>com.actionbarsherlock.internal.view.menu</td>
+		<td class='bugx'>2539</td>
+		<td class='bugx'>2</td>
+		<td class='p1'>2
+		</td>
+		<td class='p2'>0
+		</td>
+		<td class='p3'>0
+		</td>
+		</tr>
+		<tr>
+		<td class='bugx'>com.actionbarsherlock.widget</td>
+		<td class='bugx'>1845</td>
+		<td class='bugx'>7</td>
+		<td class='p1'>7
+		</td>
+		<td class='p2'>0
+		</td>
+		<td class='p3'>0
+		</td>
+		</tr>
+		<tr>
+		<td class='bugx'>com.adobe.adms.measurement</td>
+		<td class='bugx'>1779</td>
+		<td class='bugx'>2</td>
+		<td class='p1'>0
+		</td>
+		<td class='p2'>2
+		</td>
+		<td class='p3'>0
+		</td>
+		</tr>
+		<tr>
+		<td class='bugx'>com.android.volley.toolbox</td>
+		<td class='bugx'>1146</td>
+		<td class='bugx'>2</td>
+		<td class='p1'>0
+		</td>
+		<td class='p2'>2
+		</td>
+		<td class='p3'>0
+		</td>
+		</tr>
+		<tr>
+		<td class='bugx'>com.apsalar.sdk</td>
+		<td class='bugx'>1286</td>
+		<td class='bugx'>4</td>
+		<td class='p1'>2
+		</td>
+		<td class='p2'>2
+		</td>
+		<td class='p3'>0
+		</td>
+		</tr>
+		<tr>
+		<td class='bugx'>com.crittercism.app</td>
+		<td class='bugx'>926</td>
+		<td class='bugx'>5</td>
+		<td class='p1'>1
+		</td>
+		<td class='p2'>4
+		</td>
+		<td class='p3'>0
+		</td>
+		</tr>
+		<tr>
+		<td class='bugx'>com.flipkart.android</td>
+		<td class='bugx'>2189</td>
+		<td class='bugx'>2</td>
+		<td class='p1'>2
+		</td>
+		<td class='p2'>0
+		</td>
+		<td class='p3'>0
+		</td>
+		</tr>
+		<tr>
+		<td class='bugx'>com.flipkart.android.activity</td>
+		<td class='bugx'>1587</td>
+		<td class='bugx'>6</td>
+		<td class='p1'>6
+		</td>
+		<td class='p2'>0
+		</td>
+		<td class='p3'>0
+		</td>
+		</tr>
+		<tr>
+		<td class='bugx'>com.flipkart.android.activity.base</td>
+		<td class='bugx'>54</td>
+		<td class='bugx'>2</td>
+		<td class='p1'>2
+		</td>
+		<td class='p2'>0
+		</td>
+		<td class='p3'>0
+		</td>
+		</tr>
+		<tr>
+		<td class='bugx'>com.flipkart.android.config</td>
+		<td class='bugx'>709</td>
+		<td class='bugx'>1</td>
+		<td class='p1'>1
+		</td>
+		<td class='p2'>0
+		</td>
+		<td class='p3'>0
+		</td>
+		</tr>
+		<tr>
+		<td class='bugx'>com.flipkart.android.fragments</td>
+		<td class='bugx'>5248</td>
+		<td class='bugx'>7</td>
+		<td class='p1'>7
+		</td>
+		<td class='p2'>0
+		</td>
+		<td class='p3'>0
+		</td>
+		</tr>
+		<tr>
+		<td class='bugx'>com.flipkart.android.notification</td>
+		<td class='bugx'>218</td>
+		<td class='bugx'>1</td>
+		<td class='p1'>1
+		</td>
+		<td class='p2'>0
+		</td>
+		<td class='p3'>0
+		</td>
+		</tr>
+		<tr>
+		<td class='bugx'>com.flipkart.android.utils</td>
+		<td class='bugx'>3265</td>
+		<td class='bugx'>2</td>
+		<td class='p1'>0
+		</td>
+		<td class='p2'>2
+		</td>
+		<td class='p3'>0
+		</td>
+		</tr>
+		<tr>
+		<td class='bugx'>com.flipkart.android.widget</td>
+		<td class='bugx'>205</td>
+		<td class='bugx'>1</td>
+		<td class='p1'>1
+		</td>
+		<td class='p2'>0
+		</td>
+		<td class='p3'>0
+		</td>
+		</tr>
+		<tr>
+		<td class='bugx'>com.jakewharton.disklrucache</td>
+		<td class='bugx'>695</td>
+		<td class='bugx'>3</td>
+		<td class='p1'>1
+		</td>
+		<td class='p2'>2
+		</td>
+		<td class='p3'>0
+		</td>
+		</tr>
+		<tr>
+		<td class='bugx'>crittercism.android</td>
+		<td class='bugx'>1406</td>
+		<td class='bugx'>6</td>
+		<td class='p1'>1
+		</td>
+		<td class='p2'>5
+		</td>
+		<td class='p3'>0
+		</td>
+		</tr></table>
+<table><tr><td><div id='piechart1'></div></td>
+<td><div id='piechart2'></div></td></tr></table>
+</section><!-- Malicious Code Section-->
+<section id='MCode'>
+<h2>Malicious Code</h2>
+<br>
+<div class='accordion' id='SECPR-super'><div class='accordion-group'><div class='accordion-heading'>
+		<a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECPR-super' href='#SECPR'><b>Predictable Pseudo Random Generator (PRG)</b> <span class = 'badge' style='background-color: #FC0B0B; color: white;'>3 Vulnerabilities</span></a></div><div id='SECPR' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'><div class='accordion' id='SECPR-list'><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECPR-list' href='#SECPR-1'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.AdX.tag.AdXConnect</b></a></div><div id='SECPR-1' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Predictable Pseudo Random Generator (PRG)
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class com.AdX.tag.AdXConnect<br>In method com.AdX.tag.AdXConnect.b(Context)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Use of java.lang.Math.random() is predictable.
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>The use of a predictable random value can lead to vulnerability in those contexts:</p>
+<ul>
+<li>CSRF token</li>
+<li>password reset token (sent by email)</li>
+<li>or any other secret value</li>
+</ul>
+<p>A quick fix would be to replace the instanciation of <b>java.util.Random</b> by <b>java.security.SecureRandom</b>.
+
+<p>
+<b>References</b><br/>
+<a href="http://jazzy.id.au/default/2010/09/20/cracking_random_number_generators_part_1.html">Cracking Random Number Generators - Part 1 (http://jazzy.id.au)</a><br/>
+<a href="https://www.securecoding.cert.org/confluence/display/java/MSC02-J.+Generate+strong+random+numbers">CERT: MSC02-J. Generate strong random numbers</a><br/>
+<a href="http://cwe.mitre.org/data/definitions/330.html">CWE-330: Use of Insufficiently Random Values</a>
+</p>
+
+
+        </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECPR-list' href='#SECPR-2'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.apsalar.sdk.l</b></a></div><div id='SECPR-2' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Predictable Pseudo Random Generator (PRG)
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class com.apsalar.sdk.l<br>In method com.apsalar.sdk.l.c()<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Use of java.lang.Math.random() is predictable.
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>The use of a predictable random value can lead to vulnerability in those contexts:</p>
+<ul>
+<li>CSRF token</li>
+<li>password reset token (sent by email)</li>
+<li>or any other secret value</li>
+</ul>
+<p>A quick fix would be to replace the instanciation of <b>java.util.Random</b> by <b>java.security.SecureRandom</b>.
+
+<p>
+<b>References</b><br/>
+<a href="http://jazzy.id.au/default/2010/09/20/cracking_random_number_generators_part_1.html">Cracking Random Number Generators - Part 1 (http://jazzy.id.au)</a><br/>
+<a href="https://www.securecoding.cert.org/confluence/display/java/MSC02-J.+Generate+strong+random+numbers">CERT: MSC02-J. Generate strong random numbers</a><br/>
+<a href="http://cwe.mitre.org/data/definitions/330.html">CWE-330: Use of Insufficiently Random Values</a>
+</p>
+
+
+        </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECPR-list' href='#SECPR-3'><b><i class='icon-bug' style='color:#FF8A00;'></i> crittercism.android.c</b></a></div><div id='SECPR-3' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Predictable Pseudo Random Generator (PRG)
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class crittercism.android.c<br>In method crittercism.android.c.a(String, JSONObject, String[], String)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Use of java.util.Random is predictable.
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>The use of a predictable random value can lead to vulnerability in those contexts:</p>
+<ul>
+<li>CSRF token</li>
+<li>password reset token (sent by email)</li>
+<li>or any other secret value</li>
+</ul>
+<p>A quick fix would be to replace the instanciation of <b>java.util.Random</b> by <b>java.security.SecureRandom</b>.
+
+<p>
+<b>References</b><br/>
+<a href="http://jazzy.id.au/default/2010/09/20/cracking_random_number_generators_part_1.html">Cracking Random Number Generators - Part 1 (http://jazzy.id.au)</a><br/>
+<a href="https://www.securecoding.cert.org/confluence/display/java/MSC02-J.+Generate+strong+random+numbers">CERT: MSC02-J. Generate strong random numbers</a><br/>
+<a href="http://cwe.mitre.org/data/definitions/330.html">CWE-330: Use of Insufficiently Random Values</a>
+</p>
+
+
+        </div></div></div></div></div></div></div><div class='accordion' id='WUIR-super'><div class='accordion-group'><div class='accordion-heading'>
+		<a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-super' href='#WUIR'><b>Found Unauthorized Intent Receipt</b> <span class = 'badge' style='background-color: #FC0B0B; color: white;'>31 Vulnerabilities</span></a></div><div id='WUIR' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'><div class='accordion' id='WUIR-list'><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-1'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.actionbarsherlock.internal.view.menu.ActionMenuItem</b></a></div><div id='WUIR-1' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.actionbarsherlock.internal.view.menu.ActionMenuItem<br>In method com.actionbarsherlock.internal.view.menu.ActionMenuItem.invoke()<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.actionbarsherlock.internal.view.menu.ActionMenuItem.invoke()
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-2'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.actionbarsherlock.internal.view.menu.MenuItemImpl</b></a></div><div id='WUIR-2' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.actionbarsherlock.internal.view.menu.MenuItemImpl<br>In method com.actionbarsherlock.internal.view.menu.MenuItemImpl.invoke()<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.actionbarsherlock.internal.view.menu.MenuItemImpl.invoke()
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-3'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.actionbarsherlock.widget.ActivityChooserView$Callbacks</b></a></div><div id='WUIR-3' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.actionbarsherlock.widget.ActivityChooserView$Callbacks<br>In method com.actionbarsherlock.widget.ActivityChooserView$Callbacks.onClick(View)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.actionbarsherlock.widget.ActivityChooserView$Callbacks.onClick(View)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-4'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.actionbarsherlock.widget.ActivityChooserView$Callbacks</b></a></div><div id='WUIR-4' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.actionbarsherlock.widget.ActivityChooserView$Callbacks<br>In method com.actionbarsherlock.widget.ActivityChooserView$Callbacks.onItemClick(AdapterView, View, int, long)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.actionbarsherlock.widget.ActivityChooserView$Callbacks.onItemClick(AdapterView, View, int, long)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-5'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.actionbarsherlock.widget.SearchView</b></a></div><div id='WUIR-5' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.actionbarsherlock.widget.SearchView<br>In method com.actionbarsherlock.widget.SearchView.launchIntent(Intent)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.actionbarsherlock.widget.SearchView.launchIntent(Intent)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-6'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.actionbarsherlock.widget.SearchView</b></a></div><div id='WUIR-6' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.actionbarsherlock.widget.SearchView<br>In method com.actionbarsherlock.widget.SearchView.launchQuerySearch(int, String, String)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.actionbarsherlock.widget.SearchView.launchQuerySearch(int, String, String)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-7'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.actionbarsherlock.widget.SearchView</b></a></div><div id='WUIR-7' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.actionbarsherlock.widget.SearchView<br>In method com.actionbarsherlock.widget.SearchView.onVoiceClicked()<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.actionbarsherlock.widget.SearchView.onVoiceClicked()
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-8'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.actionbarsherlock.widget.SearchView</b></a></div><div id='WUIR-8' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.actionbarsherlock.widget.SearchView<br>In method com.actionbarsherlock.widget.SearchView.onVoiceClicked()<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.actionbarsherlock.widget.SearchView.onVoiceClicked()
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-9'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.actionbarsherlock.widget.ShareActionProvider$ShareMenuItemOnMenuItemClickListener</b></a></div><div id='WUIR-9' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.actionbarsherlock.widget.ShareActionProvider$ShareMenuItemOnMenuItemClickListener<br>In method com.actionbarsherlock.widget.ShareActionProvider$ShareMenuItemOnMenuItemClickListener.onMenuItemClick(MenuItem)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.actionbarsherlock.widget.ShareActionProvider$ShareMenuItemOnMenuItemClickListener.onMenuItemClick(MenuItem)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-10'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.apsalar.sdk.Apsalar</b></a></div><div id='WUIR-10' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.apsalar.sdk.Apsalar<br>In method com.apsalar.sdk.Apsalar.survey(Activity, String)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.apsalar.sdk.Apsalar.survey(Activity, String)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-11'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.apsalar.sdk.p</b></a></div><div id='WUIR-11' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.apsalar.sdk.p<br>In method com.apsalar.sdk.p.onPostExecute(String[])<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.apsalar.sdk.p.onPostExecute(String[])
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-12'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.crittercism.app.f</b></a></div><div id='WUIR-12' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.crittercism.app.f<br>In method com.crittercism.app.f.handleMessage(Message)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.crittercism.app.f.handleMessage(Message)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-13'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.SplashActivity</b></a></div><div id='WUIR-13' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.flipkart.android.SplashActivity<br>In method com.flipkart.android.SplashActivity.a()<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.flipkart.android.SplashActivity.a()
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-14'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.activity.BlockActivity</b></a></div><div id='WUIR-14' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.flipkart.android.activity.BlockActivity<br>In method com.flipkart.android.activity.BlockActivity.onCreate(Bundle)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.flipkart.android.activity.BlockActivity.onCreate(Bundle)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-15'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.activity.a</b></a></div><div id='WUIR-15' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.flipkart.android.activity.a<br>In method com.flipkart.android.activity.a.onClick(View)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.flipkart.android.activity.a.onClick(View)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-16'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.activity.aa</b></a></div><div id='WUIR-16' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.flipkart.android.activity.aa<br>In method com.flipkart.android.activity.aa.onClick(View)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.flipkart.android.activity.aa.onClick(View)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-17'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.activity.ac</b></a></div><div id='WUIR-17' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.flipkart.android.activity.ac<br>In method com.flipkart.android.activity.ac.onClick(View)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.flipkart.android.activity.ac.onClick(View)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-18'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.activity.ad</b></a></div><div id='WUIR-18' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.flipkart.android.activity.ad<br>In method com.flipkart.android.activity.ad.onClick(View)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.flipkart.android.activity.ad.onClick(View)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-19'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.activity.ai</b></a></div><div id='WUIR-19' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.flipkart.android.activity.ai<br>In method com.flipkart.android.activity.ai.onClick(View)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.flipkart.android.activity.ai.onClick(View)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-20'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.config.ConfigHelper</b></a></div><div id='WUIR-20' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.flipkart.android.config.ConfigHelper<br>In method com.flipkart.android.config.ConfigHelper.a(JSONObject, long)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.flipkart.android.config.ConfigHelper.a(JSONObject, long)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-21'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.customwidget.ActionPerformer</b></a></div><div id='WUIR-21' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.flipkart.android.customwidget.ActionPerformer<br>In method com.flipkart.android.customwidget.ActionPerformer.performUrlExternalActions(Map, Activity, PageTypeUtils, String)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.flipkart.android.customwidget.ActionPerformer.performUrlExternalActions(Map, Activity, PageTypeUtils, String)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-22'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.customwidget.CallUsWidget$1</b></a></div><div id='WUIR-22' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.flipkart.android.customwidget.CallUsWidget$1<br>In method com.flipkart.android.customwidget.CallUsWidget$1.onClick(View)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.flipkart.android.customwidget.CallUsWidget$1.onClick(View)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-23'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.fragments.ProductListFragment</b></a></div><div id='WUIR-23' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.flipkart.android.fragments.ProductListFragment<br>In method com.flipkart.android.fragments.ProductListFragment.share(String)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.flipkart.android.fragments.ProductListFragment.share(String)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-24'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.fragments.ProductPageFragment</b></a></div><div id='WUIR-24' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.flipkart.android.fragments.ProductPageFragment<br>In method com.flipkart.android.fragments.ProductPageFragment.share()<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.flipkart.android.fragments.ProductPageFragment.share()
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-25'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.fragments.ProductPageMultipleSellersFragment</b></a></div><div id='WUIR-25' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.flipkart.android.fragments.ProductPageMultipleSellersFragment<br>In method com.flipkart.android.fragments.ProductPageMultipleSellersFragment.share()<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.flipkart.android.fragments.ProductPageMultipleSellersFragment.share()
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-26'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.fragments.ProductPageReviewFragment</b></a></div><div id='WUIR-26' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.flipkart.android.fragments.ProductPageReviewFragment<br>In method com.flipkart.android.fragments.ProductPageReviewFragment.share()<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.flipkart.android.fragments.ProductPageReviewFragment.share()
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-27'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.fragments.ProductPageSpecificationFragment</b></a></div><div id='WUIR-27' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.flipkart.android.fragments.ProductPageSpecificationFragment<br>In method com.flipkart.android.fragments.ProductPageSpecificationFragment.share()<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.flipkart.android.fragments.ProductPageSpecificationFragment.share()
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-28'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.fragments.ProductPageSummaryFragment</b></a></div><div id='WUIR-28' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.flipkart.android.fragments.ProductPageSummaryFragment<br>In method com.flipkart.android.fragments.ProductPageSummaryFragment.share()<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.flipkart.android.fragments.ProductPageSummaryFragment.share()
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-29'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.fragments.ci</b></a></div><div id='WUIR-29' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.flipkart.android.fragments.ci<br>In method com.flipkart.android.fragments.ci.shouldOverrideUrlLoading(WebView, String)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.flipkart.android.fragments.ci.shouldOverrideUrlLoading(WebView, String)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-30'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.notification.WakefulBroadcastReceiver</b></a></div><div id='WUIR-30' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.flipkart.android.notification.WakefulBroadcastReceiver<br>In method com.flipkart.android.notification.WakefulBroadcastReceiver.startWakefulService(Context, Intent)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.flipkart.android.notification.WakefulBroadcastReceiver.startWakefulService(Context, Intent)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WUIR-list' href='#WUIR-31'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.widget.FlipkartAppWidget</b></a></div><div id='WUIR-31' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Unauthorized Intent Receipt
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.flipkart.android.widget.FlipkartAppWidget<br>In method com.flipkart.android.widget.FlipkartAppWidget.createBannerIntent(Context, String)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of unintended Intent Broadcast in com.flipkart.android.widget.FlipkartAppWidget.createBannerIntent(Context, String)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code constructs a File  use Environment.getExternalStorageDirectory() to store data.
+
+    </div></div></div></div></div></div></div><div class='accordion' id='SECPTI-super'><div class='accordion-group'><div class='accordion-heading'>
+		<a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECPTI-super' href='#SECPTI'><b>Path traversal to read file</b> <span class = 'badge' style='background-color: #FC0B0B; color: white;'>13 Vulnerabilities</span></a></div><div id='SECPTI' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'><div class='accordion' id='SECPTI-list'><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECPTI-list' href='#SECPTI-1'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.adobe.adms.measurement.ADMS_Worker</b></a></div><div id='SECPTI-1' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Potential Path traversal (read file)
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class com.adobe.adms.measurement.ADMS_Worker<br>In method com.adobe.adms.measurement.ADMS_Worker.readFromDisk()<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				An instance of java.io.File is created to read a file.
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>A file is open to read its content. The path given is a <b>dynamic</b> parameter.</p>
+<p>If unfiltered parameter is pass to this file API, content from an arbitrary path could be read.</p>
+<p>This detector identify <b>potential</b> path transversal. In many case, the construct file path is not control
+by the user. If it is the case, this bug instance can be ignored.</p>
+<p>
+<b>References</b><br/>
+<a href="http://projects.webappsec.org/w/page/13246952/Path%20Traversal">WASC : Path Traversal</a><br/>
+<a href="https://www.owasp.org/index.php/Path_Traversal">OWASP : Path Traversal</a><br/>
+<a href="http://capec.mitre.org/data/definitions/126.html">CAPEC-126: Path Traversal</a><br/>
+<a href="http://cwe.mitre.org/data/definitions/99.html">CWE-99: Improper Control of Resource Identifiers ('Resource Injection')</a>
+</p>
+
+        </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECPTI-list' href='#SECPTI-2'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.adobe.adms.measurement.ADMS_Worker</b></a></div><div id='SECPTI-2' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Potential Path traversal (read file)
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class com.adobe.adms.measurement.ADMS_Worker<br>In method com.adobe.adms.measurement.ADMS_Worker.writeToDisk()<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				An instance of java.io.File is created to read a file.
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>A file is open to read its content. The path given is a <b>dynamic</b> parameter.</p>
+<p>If unfiltered parameter is pass to this file API, content from an arbitrary path could be read.</p>
+<p>This detector identify <b>potential</b> path transversal. In many case, the construct file path is not control
+by the user. If it is the case, this bug instance can be ignored.</p>
+<p>
+<b>References</b><br/>
+<a href="http://projects.webappsec.org/w/page/13246952/Path%20Traversal">WASC : Path Traversal</a><br/>
+<a href="https://www.owasp.org/index.php/Path_Traversal">OWASP : Path Traversal</a><br/>
+<a href="http://capec.mitre.org/data/definitions/126.html">CAPEC-126: Path Traversal</a><br/>
+<a href="http://cwe.mitre.org/data/definitions/99.html">CWE-99: Improper Control of Resource Identifiers ('Resource Injection')</a>
+</p>
+
+        </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECPTI-list' href='#SECPTI-3'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.crittercism.app.CrittercismNDK</b></a></div><div id='SECPTI-3' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Potential Path traversal (read file)
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class com.crittercism.app.CrittercismNDK<br>In method com.crittercism.app.CrittercismNDK.installLib(Context)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				An instance of java.io.File is created to read a file.
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>A file is open to read its content. The path given is a <b>dynamic</b> parameter.</p>
+<p>If unfiltered parameter is pass to this file API, content from an arbitrary path could be read.</p>
+<p>This detector identify <b>potential</b> path transversal. In many case, the construct file path is not control
+by the user. If it is the case, this bug instance can be ignored.</p>
+<p>
+<b>References</b><br/>
+<a href="http://projects.webappsec.org/w/page/13246952/Path%20Traversal">WASC : Path Traversal</a><br/>
+<a href="https://www.owasp.org/index.php/Path_Traversal">OWASP : Path Traversal</a><br/>
+<a href="http://capec.mitre.org/data/definitions/126.html">CAPEC-126: Path Traversal</a><br/>
+<a href="http://cwe.mitre.org/data/definitions/99.html">CWE-99: Improper Control of Resource Identifiers ('Resource Injection')</a>
+</p>
+
+        </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECPTI-list' href='#SECPTI-4'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.crittercism.app.CrittercismNDK</b></a></div><div id='SECPTI-4' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Potential Path traversal (read file)
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class com.crittercism.app.CrittercismNDK<br>In method com.crittercism.app.CrittercismNDK.installLib(Context)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				An instance of java.io.File is created to read a file.
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>A file is open to read its content. The path given is a <b>dynamic</b> parameter.</p>
+<p>If unfiltered parameter is pass to this file API, content from an arbitrary path could be read.</p>
+<p>This detector identify <b>potential</b> path transversal. In many case, the construct file path is not control
+by the user. If it is the case, this bug instance can be ignored.</p>
+<p>
+<b>References</b><br/>
+<a href="http://projects.webappsec.org/w/page/13246952/Path%20Traversal">WASC : Path Traversal</a><br/>
+<a href="https://www.owasp.org/index.php/Path_Traversal">OWASP : Path Traversal</a><br/>
+<a href="http://capec.mitre.org/data/definitions/126.html">CAPEC-126: Path Traversal</a><br/>
+<a href="http://cwe.mitre.org/data/definitions/99.html">CWE-99: Improper Control of Resource Identifiers ('Resource Injection')</a>
+</p>
+
+        </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECPTI-list' href='#SECPTI-5'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.crittercism.app.CrittercismNDK</b></a></div><div id='SECPTI-5' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Potential Path traversal (read file)
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class com.crittercism.app.CrittercismNDK<br>In method com.crittercism.app.CrittercismNDK.installNdkLib(Context, String)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				An instance of java.io.File is created to read a file.
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>A file is open to read its content. The path given is a <b>dynamic</b> parameter.</p>
+<p>If unfiltered parameter is pass to this file API, content from an arbitrary path could be read.</p>
+<p>This detector identify <b>potential</b> path transversal. In many case, the construct file path is not control
+by the user. If it is the case, this bug instance can be ignored.</p>
+<p>
+<b>References</b><br/>
+<a href="http://projects.webappsec.org/w/page/13246952/Path%20Traversal">WASC : Path Traversal</a><br/>
+<a href="https://www.owasp.org/index.php/Path_Traversal">OWASP : Path Traversal</a><br/>
+<a href="http://capec.mitre.org/data/definitions/126.html">CAPEC-126: Path Traversal</a><br/>
+<a href="http://cwe.mitre.org/data/definitions/99.html">CWE-99: Improper Control of Resource Identifiers ('Resource Injection')</a>
+</p>
+
+        </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECPTI-list' href='#SECPTI-6'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.crittercism.app.CrittercismNDK</b></a></div><div id='SECPTI-6' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Potential Path traversal (read file)
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class com.crittercism.app.CrittercismNDK<br>In method com.crittercism.app.CrittercismNDK.installNdkLib(Context, String)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				An instance of java.io.File is created to read a file.
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>A file is open to read its content. The path given is a <b>dynamic</b> parameter.</p>
+<p>If unfiltered parameter is pass to this file API, content from an arbitrary path could be read.</p>
+<p>This detector identify <b>potential</b> path transversal. In many case, the construct file path is not control
+by the user. If it is the case, this bug instance can be ignored.</p>
+<p>
+<b>References</b><br/>
+<a href="http://projects.webappsec.org/w/page/13246952/Path%20Traversal">WASC : Path Traversal</a><br/>
+<a href="https://www.owasp.org/index.php/Path_Traversal">OWASP : Path Traversal</a><br/>
+<a href="http://capec.mitre.org/data/definitions/126.html">CAPEC-126: Path Traversal</a><br/>
+<a href="http://cwe.mitre.org/data/definitions/99.html">CWE-99: Improper Control of Resource Identifiers ('Resource Injection')</a>
+</p>
+
+        </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECPTI-list' href='#SECPTI-7'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.j256.ormlite.logger.LocalLog</b></a></div><div id='SECPTI-7' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Potential Path traversal (read file)
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class com.j256.ormlite.logger.LocalLog<br>In method com.j256.ormlite.logger.LocalLog.openLogFile(String)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				An instance of java.io.File is created to read a file.
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>A file is open to read its content. The path given is a <b>dynamic</b> parameter.</p>
+<p>If unfiltered parameter is pass to this file API, content from an arbitrary path could be read.</p>
+<p>This detector identify <b>potential</b> path transversal. In many case, the construct file path is not control
+by the user. If it is the case, this bug instance can be ignored.</p>
+<p>
+<b>References</b><br/>
+<a href="http://projects.webappsec.org/w/page/13246952/Path%20Traversal">WASC : Path Traversal</a><br/>
+<a href="https://www.owasp.org/index.php/Path_Traversal">OWASP : Path Traversal</a><br/>
+<a href="http://capec.mitre.org/data/definitions/126.html">CAPEC-126: Path Traversal</a><br/>
+<a href="http://cwe.mitre.org/data/definitions/99.html">CWE-99: Improper Control of Resource Identifiers ('Resource Injection')</a>
+</p>
+
+        </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECPTI-list' href='#SECPTI-8'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.jakewharton.disklrucache.DiskLruImageCache</b></a></div><div id='SECPTI-8' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Potential Path traversal (read file)
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class com.jakewharton.disklrucache.DiskLruImageCache<br>In method com.jakewharton.disklrucache.DiskLruImageCache.a(Context, String)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				An instance of java.io.File is created to read a file.
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>A file is open to read its content. The path given is a <b>dynamic</b> parameter.</p>
+<p>If unfiltered parameter is pass to this file API, content from an arbitrary path could be read.</p>
+<p>This detector identify <b>potential</b> path transversal. In many case, the construct file path is not control
+by the user. If it is the case, this bug instance can be ignored.</p>
+<p>
+<b>References</b><br/>
+<a href="http://projects.webappsec.org/w/page/13246952/Path%20Traversal">WASC : Path Traversal</a><br/>
+<a href="https://www.owasp.org/index.php/Path_Traversal">OWASP : Path Traversal</a><br/>
+<a href="http://capec.mitre.org/data/definitions/126.html">CAPEC-126: Path Traversal</a><br/>
+<a href="http://cwe.mitre.org/data/definitions/99.html">CWE-99: Improper Control of Resource Identifiers ('Resource Injection')</a>
+</p>
+
+        </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECPTI-list' href='#SECPTI-9'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.jakewharton.disklrucache.Utils</b></a></div><div id='SECPTI-9' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Potential Path traversal (read file)
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class com.jakewharton.disklrucache.Utils<br>In method com.jakewharton.disklrucache.Utils.getExternalCacheDir(Context)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				An instance of java.io.File is created to read a file.
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>A file is open to read its content. The path given is a <b>dynamic</b> parameter.</p>
+<p>If unfiltered parameter is pass to this file API, content from an arbitrary path could be read.</p>
+<p>This detector identify <b>potential</b> path transversal. In many case, the construct file path is not control
+by the user. If it is the case, this bug instance can be ignored.</p>
+<p>
+<b>References</b><br/>
+<a href="http://projects.webappsec.org/w/page/13246952/Path%20Traversal">WASC : Path Traversal</a><br/>
+<a href="https://www.owasp.org/index.php/Path_Traversal">OWASP : Path Traversal</a><br/>
+<a href="http://capec.mitre.org/data/definitions/126.html">CAPEC-126: Path Traversal</a><br/>
+<a href="http://cwe.mitre.org/data/definitions/99.html">CWE-99: Improper Control of Resource Identifiers ('Resource Injection')</a>
+</p>
+
+        </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECPTI-list' href='#SECPTI-10'><b><i class='icon-bug' style='color:#FF8A00;'></i> crittercism.android.c</b></a></div><div id='SECPTI-10' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Potential Path traversal (read file)
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class crittercism.android.c<br>In method crittercism.android.c.a(String, JSONObject, String[], String)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				An instance of java.io.File is created to read a file.
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>A file is open to read its content. The path given is a <b>dynamic</b> parameter.</p>
+<p>If unfiltered parameter is pass to this file API, content from an arbitrary path could be read.</p>
+<p>This detector identify <b>potential</b> path transversal. In many case, the construct file path is not control
+by the user. If it is the case, this bug instance can be ignored.</p>
+<p>
+<b>References</b><br/>
+<a href="http://projects.webappsec.org/w/page/13246952/Path%20Traversal">WASC : Path Traversal</a><br/>
+<a href="https://www.owasp.org/index.php/Path_Traversal">OWASP : Path Traversal</a><br/>
+<a href="http://capec.mitre.org/data/definitions/126.html">CAPEC-126: Path Traversal</a><br/>
+<a href="http://cwe.mitre.org/data/definitions/99.html">CWE-99: Improper Control of Resource Identifiers ('Resource Injection')</a>
+</p>
+
+        </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECPTI-list' href='#SECPTI-11'><b><i class='icon-bug' style='color:#FF8A00;'></i> crittercism.android.l</b></a></div><div id='SECPTI-11' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Potential Path traversal (read file)
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class crittercism.android.l<br>In method crittercism.android.l.b()<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				An instance of java.io.File is created to read a file.
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>A file is open to read its content. The path given is a <b>dynamic</b> parameter.</p>
+<p>If unfiltered parameter is pass to this file API, content from an arbitrary path could be read.</p>
+<p>This detector identify <b>potential</b> path transversal. In many case, the construct file path is not control
+by the user. If it is the case, this bug instance can be ignored.</p>
+<p>
+<b>References</b><br/>
+<a href="http://projects.webappsec.org/w/page/13246952/Path%20Traversal">WASC : Path Traversal</a><br/>
+<a href="https://www.owasp.org/index.php/Path_Traversal">OWASP : Path Traversal</a><br/>
+<a href="http://capec.mitre.org/data/definitions/126.html">CAPEC-126: Path Traversal</a><br/>
+<a href="http://cwe.mitre.org/data/definitions/99.html">CWE-99: Improper Control of Resource Identifiers ('Resource Injection')</a>
+</p>
+
+        </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECPTI-list' href='#SECPTI-12'><b><i class='icon-bug' style='color:#FF8A00;'></i> crittercism.android.l</b></a></div><div id='SECPTI-12' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Potential Path traversal (read file)
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class crittercism.android.l<br>In method crittercism.android.l.c()<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				An instance of java.io.File is created to read a file.
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>A file is open to read its content. The path given is a <b>dynamic</b> parameter.</p>
+<p>If unfiltered parameter is pass to this file API, content from an arbitrary path could be read.</p>
+<p>This detector identify <b>potential</b> path transversal. In many case, the construct file path is not control
+by the user. If it is the case, this bug instance can be ignored.</p>
+<p>
+<b>References</b><br/>
+<a href="http://projects.webappsec.org/w/page/13246952/Path%20Traversal">WASC : Path Traversal</a><br/>
+<a href="https://www.owasp.org/index.php/Path_Traversal">OWASP : Path Traversal</a><br/>
+<a href="http://capec.mitre.org/data/definitions/126.html">CAPEC-126: Path Traversal</a><br/>
+<a href="http://cwe.mitre.org/data/definitions/99.html">CWE-99: Improper Control of Resource Identifiers ('Resource Injection')</a>
+</p>
+
+        </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECPTI-list' href='#SECPTI-13'><b><i class='icon-bug' style='color:#FF8A00;'></i> ru.truba.touchgallery.TouchView.FileTouchImageView$ImageLoadTask</b></a></div><div id='SECPTI-13' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Potential Path traversal (read file)
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class ru.truba.touchgallery.TouchView.FileTouchImageView$ImageLoadTask<br>In method ru.truba.touchgallery.TouchView.FileTouchImageView$ImageLoadTask.doInBackground(String[])<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				An instance of java.io.File is created to read a file.
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>A file is open to read its content. The path given is a <b>dynamic</b> parameter.</p>
+<p>If unfiltered parameter is pass to this file API, content from an arbitrary path could be read.</p>
+<p>This detector identify <b>potential</b> path transversal. In many case, the construct file path is not control
+by the user. If it is the case, this bug instance can be ignored.</p>
+<p>
+<b>References</b><br/>
+<a href="http://projects.webappsec.org/w/page/13246952/Path%20Traversal">WASC : Path Traversal</a><br/>
+<a href="https://www.owasp.org/index.php/Path_Traversal">OWASP : Path Traversal</a><br/>
+<a href="http://capec.mitre.org/data/definitions/126.html">CAPEC-126: Path Traversal</a><br/>
+<a href="http://cwe.mitre.org/data/definitions/99.html">CWE-99: Improper Control of Resource Identifiers ('Resource Injection')</a>
+</p>
+
+        </div></div></div></div></div></div></div><div class='accordion' id='SECWTM-super'><div class='accordion-group'><div class='accordion-heading'>
+		<a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECWTM-super' href='#SECWTM'><b>Identify weak TrustManager implementation</b> <span class = 'badge' style='background-color: #FC0B0B; color: white;'>2 Vulnerabilities</span></a></div><div id='SECWTM' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'><div class='accordion' id='SECWTM-list'><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECWTM-list' href='#SECWTM-1'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.android.volley.toolbox.d</b></a></div><div id='SECWTM-1' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Weak TrustManager implementation
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class com.android.volley.toolbox.d<br>In method com.android.volley.toolbox.d.checkServerTrusted(X509Certificate[], String)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				The implementation of TrustManager is vulnerable to MITM attack.
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>Empty TrustManager implementation are often used to connected easily to a host that is not signed by a root
+<a href="http://en.wikipedia.org/wiki/Certificate_authority">certificate authority</a>. As a consequence, a
+<a href="http://en.wikipedia.org/wiki/Man-in-the-middle_attack">Man-in-the-middle attack</a>
+can occurs since the client will be trusting any given certificate.
+</p>
+
+<p>
+A TrustManager allowing specific certificates (based on a truststore for example) should be built.
+Detail information for a proper implementation :
+<a href="http://stackoverflow.com/a/6378872/89769">[1]</a> <a href="http://stackoverflow.com/a/5493452/89769">[2]</a>
+</p>
+
+<p>
+<b>Reference</b><br/>
+<a href="http://projects.webappsec.org/w/page/13246945/Insufficient%20Transport%20Layer%20Protection">WASC-04: Insufficient Transport Layer Protection</a>
+</p>
+
+        </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECWTM-list' href='#SECWTM-2'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.android.volley.toolbox.d</b></a></div><div id='SECWTM-2' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Weak TrustManager implementation
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class com.android.volley.toolbox.d<br>In method com.android.volley.toolbox.d.getAcceptedIssuers()<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				The implementation of TrustManager is vulnerable to MITM attack.
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>Empty TrustManager implementation are often used to connected easily to a host that is not signed by a root
+<a href="http://en.wikipedia.org/wiki/Certificate_authority">certificate authority</a>. As a consequence, a
+<a href="http://en.wikipedia.org/wiki/Man-in-the-middle_attack">Man-in-the-middle attack</a>
+can occurs since the client will be trusting any given certificate.
+</p>
+
+<p>
+A TrustManager allowing specific certificates (based on a truststore for example) should be built.
+Detail information for a proper implementation :
+<a href="http://stackoverflow.com/a/6378872/89769">[1]</a> <a href="http://stackoverflow.com/a/5493452/89769">[2]</a>
+</p>
+
+<p>
+<b>Reference</b><br/>
+<a href="http://projects.webappsec.org/w/page/13246945/Insufficient%20Transport%20Layer%20Protection">WASC-04: Insufficient Transport Layer Protection</a>
+</p>
+
+        </div></div></div></div></div></div></div><div class='accordion' id='SECRD-super'><div class='accordion-group'><div class='accordion-heading'>
+		<a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECRD-super' href='#SECRD'><b>ReDOS</b> <span class = 'badge' style='background-color: #FC0B0B; color: white;'>1 Vulnerabilities</span></a></div><div id='SECRD' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'><div class='accordion' id='SECRD-list'><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECRD-list' href='#SECRD-1'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.apsalar.sdk.Apsalar</b></a></div><div id='SECRD-1' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			ReDOS
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class com.apsalar.sdk.Apsalar<br>In method com.apsalar.sdk.Apsalar.registerCallback(String, Object)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				The regular expression "[^)]+\\([^]]*\\)" is vulnerable to ReDOS
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+
+<p>
+ReDOS stands for Regular expression Denial of Service. The regular expression (RegEx) identify may take a large amount of time
+when analysing certain strings.
+</a>
+<p>
+For example the following RegEx, the input "<code>aaaaaaaaaaaaaaaaX</code>" will cause the RegEx engine to analyse 65536 different paths.<sup>[1] Example taken from OWASP reference</sup>
+<pre>^(a+)+$</pre>
+Therefore, it is possible that a single request cause a large amount of computation on the server side.
+</p>
+
+<p>
+<b>References</b><br/>
+<a href="http://www.jroller.com/sebastianKuebeck/entry/detecting_and_preventing_redos_vulnerabilities">Sebastian Kubeck's Weblog: Detecting and Preventing ReDoS Vulnerabilities</a><br/>
+<sup>[1]</sup> <a href="https://www.owasp.org/index.php/Regular_expression_Denial_of_Service_-_ReDoS">OWASP : Regular expression Denial of Service</a>
+</p>
+
+        </div></div></div></div></div></div></div><div class='accordion' id='WIS-super'><div class='accordion-group'><div class='accordion-heading'>
+		<a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WIS-super' href='#WIS'><b>Found Insecure data storage.</b> <span class = 'badge' style='background-color: #FC0B0B; color: white;'>3 Vulnerabilities</span></a></div><div id='WIS' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'><div class='accordion' id='WIS-list'><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WIS-list' href='#WIS-1'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.SplashActivity</b></a></div><div id='WIS-1' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Insecure data storage
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.flipkart.android.SplashActivity<br>In method com.flipkart.android.SplashActivity.a(Context)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of Insecure data storage in com.flipkart.android.SplashActivity.a(Context)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code uses external storage to store data. external storage is visible to attackers and can compromise sensitive data. Local files are world-readable and persist.
+ Fix: Use SQLite or internal storage for private data.
+</p>
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WIS-list' href='#WIS-2'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.jakewharton.disklrucache.Utils</b></a></div><div id='WIS-2' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Insecure data storage
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.jakewharton.disklrucache.Utils<br>In method com.jakewharton.disklrucache.Utils.getExternalCacheDir(Context)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of Insecure data storage in com.jakewharton.disklrucache.Utils.getExternalCacheDir(Context)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code uses external storage to store data. external storage is visible to attackers and can compromise sensitive data. Local files are world-readable and persist.
+ Fix: Use SQLite or internal storage for private data.
+</p>
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WIS-list' href='#WIS-3'><b><i class='icon-bug' style='color:#FF8A00;'></i> ru.truba.touchgallery.TouchView.UrlTouchImageView</b></a></div><div id='WIS-3' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Insecure data storage
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class ru.truba.touchgallery.TouchView.UrlTouchImageView<br>In method ru.truba.touchgallery.TouchView.UrlTouchImageView.a(Context)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of Insecure data storage in ru.truba.touchgallery.TouchView.UrlTouchImageView.a(Context)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code uses external storage to store data. external storage is visible to attackers and can compromise sensitive data. Local files are world-readable and persist.
+ Fix: Use SQLite or internal storage for private data.
+</p>
+
+    </div></div></div></div></div></div></div><div class='accordion' id='WMBP-super'><div class='accordion-group'><div class='accordion-heading'>
+		<a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WMBP-super' href='#WMBP'><b>Found missing broadcaster permission.</b> <span class = 'badge' style='background-color: #FC0B0B; color: white;'>3 Vulnerabilities</span></a></div><div id='WMBP' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'><div class='accordion' id='WMBP-list'><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WMBP-list' href='#WMBP-1'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.activity.base.FlipkartBaseFragmentActivity</b></a></div><div id='WMBP-1' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Missing broadcaster permission.
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			5
+			<hr>In class com.flipkart.android.activity.base.FlipkartBaseFragmentActivity<br>In method com.flipkart.android.activity.base.FlipkartBaseFragmentActivity.onCreate(Bundle)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of context.registerReciever without broadcaster permisiion in com.flipkart.android.activity.base.FlipkartBaseFragmentActivity.onCreate(Bundle)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code does not provide broadcaster permission in context.registerReciever(). </p>
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WMBP-list' href='#WMBP-2'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.activity.base.FlipkartBaseSherlockFragmentActivity</b></a></div><div id='WMBP-2' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Missing broadcaster permission.
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			5
+			<hr>In class com.flipkart.android.activity.base.FlipkartBaseSherlockFragmentActivity<br>In method com.flipkart.android.activity.base.FlipkartBaseSherlockFragmentActivity.onCreate(Bundle)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of context.registerReciever without broadcaster permisiion in com.flipkart.android.activity.base.FlipkartBaseSherlockFragmentActivity.onCreate(Bundle)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code does not provide broadcaster permission in context.registerReciever(). </p>
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WMBP-list' href='#WMBP-3'><b><i class='icon-bug' style='color:#FF8A00;'></i> crittercism.android.b</b></a></div><div id='WMBP-3' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Missing broadcaster permission.
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			5
+			<hr>In class crittercism.android.b<br>In method crittercism.android.b.j()<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found instance of context.registerReciever without broadcaster permisiion in crittercism.android.b.j()
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This  code does not provide broadcaster permission in context.registerReciever(). </p>
+
+    </div></div></div></div></div></div></div><div class='accordion' id='SECBHC-super'><div class='accordion-group'><div class='accordion-heading'>
+		<a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECBHC-super' href='#SECBHC'><b>Bad hexadecimal concatenation</b> <span class = 'badge' style='background-color: #FC0B0B; color: white;'>1 Vulnerabilities</span></a></div><div id='SECBHC' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'><div class='accordion' id='SECBHC-list'><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECBHC-list' href='#SECBHC-1'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.utils.HashUtils</b></a></div><div id='SECBHC-1' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Bad hexadecimal concatenation
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class com.flipkart.android.utils.HashUtils<br>In method com.flipkart.android.utils.HashUtils.md5(String)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Identify bad hexadecimal concatenation
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>When converting a byte array to a string, a conversion mistake can be made if the array is read byte by byte.
+The following sample illustrate the use of Integer.toHexString() which will trim the trailling "0".
+<pre>
+MessageDigest md = MessageDigest.getInstance("SHA-1");
+byte[] resultBytes = md.digest(password.getBytes("UTF-8"));
+
+StringBuilder stringBuilder = new StringBuilder();
+for(byte b :resultBytes) {
+    stringBuilder.append( Integer.toHexString( b & 0xFF ) );
+}
+
+return stringBuilder.toString();
+</pre>
+</p>
+
+<p>
+This mistake can weaken the hashing function use since more collisions are introduce.<br/>
+The values "0x0679" "0x6709" would become "679".
+</p>
+
+<p>
+In this situation, the use of toHexString() should be replace by a String.format() as follow.
+<pre>
+stringBuilder.append( String.format( "%02X", b ) );
+</pre>
+</p>
+
+        </div></div></div></div></div></div></div><div class='accordion' id='SECWMD-super'><div class='accordion-group'><div class='accordion-heading'>
+		<a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECWMD-super' href='#SECWMD'><b>Weak MessageDigest</b> <span class = 'badge' style='background-color: #FC0B0B; color: white;'>1 Vulnerabilities</span></a></div><div id='SECWMD' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'><div class='accordion' id='SECWMD-list'><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECWMD-list' href='#SECWMD-1'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.utils.HashUtils</b></a></div><div id='SECWMD-1' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Weak MessageDigest
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class com.flipkart.android.utils.HashUtils<br>In method com.flipkart.android.utils.HashUtils.md5(String)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				MD5 is not a recommended MessageDigest
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>The algorithm used is not a recommended MessageDigest.</p>
+<p>The <a href="http://csrc.nist.gov/groups/ST/toolkit/secure_hashing.html">NIST</a> recommended to use either SHA-1, SHA-224*, SHA-256, SHA-384 or SHA-512.</p>
+<p><small>* SHA-224 algorithm is not provided by <a href="http://docs.oracle.com/javase/6/docs/technotes/guides/security/SunProviders.html#SUNProvider"> SUN provider.</a></small></p>
+<p>
+<b>Reference</b><br/>
+<a href="http://csrc.nist.gov/groups/ST/toolkit/secure_hashing.html">NIST Approved Algorithms</a>
+</p>
+
+        </div></div></div></div></div></div></div><div class='accordion' id='WSQLI-super'><div class='accordion-group'><div class='accordion-heading'>
+		<a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WSQLI-super' href='#WSQLI'><b>Found sql injection vulnerable code.</b> <span class = 'badge' style='background-color: #FC0B0B; color: white;'>7 Vulnerabilities</span></a></div><div id='WSQLI' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'><div class='accordion' id='WSQLI-list'><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WSQLI-list' href='#WSQLI-1'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.j256.ormlite.android.AndroidCompiledStatement</b></a></div><div id='WSQLI-1' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Sqlite injection susceptible
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.j256.ormlite.android.AndroidCompiledStatement<br>In method com.j256.ormlite.android.AndroidCompiledStatement.getCursor()<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found sqlite injection vulnerable code in com.j256.ormlite.android.AndroidCompiledStatement.getCursor()
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This code uses concatenated query in sql statement which is prone to sqlite injection.
+	FIX: use parametrised query instead.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WSQLI-list' href='#WSQLI-2'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.j256.ormlite.android.AndroidDatabaseConnection</b></a></div><div id='WSQLI-2' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Sqlite injection susceptible
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.j256.ormlite.android.AndroidDatabaseConnection<br>In method com.j256.ormlite.android.AndroidDatabaseConnection.insert(String, Object[], FieldType[], GeneratedKeyHolder)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found sqlite injection vulnerable code in com.j256.ormlite.android.AndroidDatabaseConnection.insert(String, Object[], FieldType[], GeneratedKeyHolder)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This code uses concatenated query in sql statement which is prone to sqlite injection.
+	FIX: use parametrised query instead.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WSQLI-list' href='#WSQLI-3'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.j256.ormlite.android.AndroidDatabaseConnection</b></a></div><div id='WSQLI-3' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Sqlite injection susceptible
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.j256.ormlite.android.AndroidDatabaseConnection<br>In method com.j256.ormlite.android.AndroidDatabaseConnection.isTableExists(String)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found sqlite injection vulnerable code in com.j256.ormlite.android.AndroidDatabaseConnection.isTableExists(String)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This code uses concatenated query in sql statement which is prone to sqlite injection.
+	FIX: use parametrised query instead.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WSQLI-list' href='#WSQLI-4'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.j256.ormlite.android.AndroidDatabaseConnection</b></a></div><div id='WSQLI-4' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Sqlite injection susceptible
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.j256.ormlite.android.AndroidDatabaseConnection<br>In method com.j256.ormlite.android.AndroidDatabaseConnection.queryForLong(String)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found sqlite injection vulnerable code in com.j256.ormlite.android.AndroidDatabaseConnection.queryForLong(String)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This code uses concatenated query in sql statement which is prone to sqlite injection.
+	FIX: use parametrised query instead.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WSQLI-list' href='#WSQLI-5'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.j256.ormlite.android.AndroidDatabaseConnection</b></a></div><div id='WSQLI-5' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Sqlite injection susceptible
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.j256.ormlite.android.AndroidDatabaseConnection<br>In method com.j256.ormlite.android.AndroidDatabaseConnection.queryForLong(String, Object[], FieldType[])<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found sqlite injection vulnerable code in com.j256.ormlite.android.AndroidDatabaseConnection.queryForLong(String, Object[], FieldType[])
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This code uses concatenated query in sql statement which is prone to sqlite injection.
+	FIX: use parametrised query instead.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WSQLI-list' href='#WSQLI-6'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.j256.ormlite.android.AndroidDatabaseConnection</b></a></div><div id='WSQLI-6' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Sqlite injection susceptible
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.j256.ormlite.android.AndroidDatabaseConnection<br>In method com.j256.ormlite.android.AndroidDatabaseConnection.queryForOne(String, Object[], FieldType[], GenericRowMapper, ObjectCache)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found sqlite injection vulnerable code in com.j256.ormlite.android.AndroidDatabaseConnection.queryForOne(String, Object[], FieldType[], GenericRowMapper, ObjectCache)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This code uses concatenated query in sql statement which is prone to sqlite injection.
+	FIX: use parametrised query instead.
+
+    </div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WSQLI-list' href='#WSQLI-7'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.j256.ormlite.android.AndroidDatabaseConnection</b></a></div><div id='WSQLI-7' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Sqlite injection susceptible
+			</b><br>
+			<b>Priority: </b>
+			1
+			<br>
+			<b>Rank: </b>
+			10
+			<hr>In class com.j256.ormlite.android.AndroidDatabaseConnection<br>In method com.j256.ormlite.android.AndroidDatabaseConnection.update(String, Object[], FieldType[], String)<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found sqlite injection vulnerable code in com.j256.ormlite.android.AndroidDatabaseConnection.update(String, Object[], FieldType[], String)
+				<br>
+				<hr>
+				<b>Description: </b>
+
+<p> This code uses concatenated query in sql statement which is prone to sqlite injection.
+	FIX: use parametrised query instead.
+
+    </div></div></div></div></div></div></div><div class='accordion' id='SECCI-super'><div class='accordion-group'><div class='accordion-heading'>
+		<a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECCI-super' href='#SECCI'><b>Command Injection</b> <span class = 'badge' style='background-color: #FC0B0B; color: white;'>1 Vulnerabilities</span></a></div><div id='SECCI' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'><div class='accordion' id='SECCI-list'><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#SECCI-list' href='#SECCI-1'><b><i class='icon-bug' style='color:#FF8A00;'></i> crittercism.android.n</b></a></div><div id='SECCI-1' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Command Injection
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			12
+			<hr>In class crittercism.android.n<br>In method crittercism.android.n.d()<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Runtime.exec(...) is used to executed system command.
+				<br>
+				<hr>
+				<b>Description: </b>
+            
+<p>The api highlight is used to executed system command. If unfiltered input is passed to this api, it can lead arbitrary command execution.</p>
+<p>
+<b>Reference</b><br/>
+<a href="https://www.owasp.org/index.php/Command_Injection">OWASP : Command Injection</a>
+</p>
+
+        </div></div></div></div></div></div></div><div class='accordion' id='WISPF-super'><div class='accordion-group'><div class='accordion-heading'>
+		<a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WISPF-super' href='#WISPF'><b>Reciever vulnerable to intent spoofing</b> <span class = 'badge' style='background-color: #FC0B0B; color: white;'>2 Vulnerabilities</span></a></div><div id='WISPF' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'><div class='accordion' id='WISPF-list'><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WISPF-list' href='#WISPF-1'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.flipkart.android.campaignmanager.ReferrerReceiver</b></a></div><div id='WISPF-1' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Intent Spoofing
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			
+			<hr>in reciever com.flipkart.android.campaignmanager.ReferrerReceiver<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found a vulnerabilty of Intent Spoofing in receiver com.flipkart.android.campaignmanager.ReferrerReceiver
+				<br>
+				<hr>
+				<b>Description: </b><p>The receiver is public but is not protected by any permission.<br>A malicious application can possibly call this receiver and access your app.<br>Add a permission if the reciever is used by some external broadcast/intent or simply turn the "android:exported = off" in case this reciever is used by only internal components only.</p></div></div></div><div class='accordion-group'><div class='accordion-heading'><a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#WISPF-list' href='#WISPF-2'><b><i class='icon-bug' style='color:#FF8A00;'></i> com.AdX.tag.AdXAppTracker</b></a></div><div id='WISPF-2' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
+			<b>
+			Intent Spoofing
+			</b><br>
+			<b>Priority: </b>
+			2
+			<br>
+			<b>Rank: </b>
+			
+			<hr>in reciever com.AdX.tag.AdXAppTracker<br>
+				<hr>
+				<hr><b>Exact Problem: </b>
+				Found a vulnerabilty of Intent Spoofing in receiver com.AdX.tag.AdXAppTracker
+				<br>
+				<hr>
+				<b>Description: </b><p>The receiver is public but is not protected by any permission.<br>A malicious application can possibly call this receiver and access your app.<br>Add a permission if the reciever is used by some external broadcast/intent or simply turn the "android:exported = off" in case this reciever is used by only internal components only.</p></div></div></div></div></div></div></div></section><script type='text/javascript'>
+      google.load('visualization', '1', {packages:['corechart']});
+	  google.setOnLoadCallback(BugsByPriorityChart);
+	  function BugsByPriorityChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 9625],
+          ['Priority 2 Bugs', 3049],
+          ['Priority 3 Bugs', 0]
+			]);
+        var options = {
+          title: 'Bugs by Priority',
+          chartArea:{left:0,top:50,width:'100%',height:'100%'}
+        }; 
+		document.getElementById('piechart2').setAttribute('style','width: 100%');
+		document.getElementById('piechart2').setAttribute('style','height: 500px');
+        var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+        chart.draw(data, options);
+      }
+	  </script><script type='text/javascript'>
+      google.load('visualization', '1', {packages:['corechart']});
+	  google.setOnLoadCallback(BugsByCategoriesChart);
+	  function BugsByCategoriesChart() {
+        var data = google.visualization.arrayToDataTable([['Bug Category', 'Bug Count'],['Bad hexadecimal concatenation', 51],['Command Injection', 94],['Custom MessageDigest', 43],['Predictable Pseudo Random Generator (PRG)', 411],['Potential Path traversal (read file)', 1652],['Potential Path traversal (write file)', 215],['ReDOS', 137],['Unencrypted socket', 86],['Weak MessageDigest', 137],['Weak TrustManager implementation', 102],['Insecure data storage', 154],['Intent Spoofing', 145],['Missing broadcaster permission.', 239],['Sticky Broadcast', 129],['Sqlite injection susceptible', 1002],['Unauthorized Intent Receipt', 8145]]);
+        var options = {
+          title: 'Bugs by Type',
+          chartArea:{right:25,top:50,width:'100%',height:'100%'}
+        };
+		document.getElementById('piechart1').setAttribute('style','width: 100%');
+		document.getElementById('piechart1').setAttribute('style','height: 500px');
+        var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+        chart.draw(data, options);
+      }
+	  </script>
+<!-- begin PSD Files -->
+<section id="about-us">
+
+    <h2>About Us</h2>
+<br><p><img src = "images/logo.png" style="float: left; padding: 25px;">Wegilant, an IIT Bombay incubated company is at the heart of Web based IT Security. Led by IITian, Mr. Toshendra Sharma [<a href = "https://twitter.com/toshendrasharma" target = "_blank">Twitter</a>, <a href = "http://in.linkedin.com/in/toshendra/" target = "_blank">LinkedIn</a>], our team of IT security specialists offers SaaS based IT security products, consulting and implementation to small, mid and large sizes businesses as well as individuals. <br><br>Our products have been built on a private Android security cloud, which ensures highest level of data & information security over the web.</p>
+<br>
+<p>
+<b><a href = "https://www.appvigil.co" target = "_blank">Appvigil</a></b>: Cloud based Android security audit & penetration testing tool.
+<br></p>
+
+<p>To know more about us visit <a href = "http://www.wegilant.com" target = "_blank">www.wegilant.com</a>.</p>
+
+<p>To learn about IT security visit <a href = "http://www.wegversity.com" target = "_blank">www.wegversity.com</a>.</p>
+
+<p>If you need help with patching security loopholes discovered by Appvigil, contact us at +91 8879390101 or mail us at <a href = 'mailto:info@wegilant.com'>info@wegilant.com</a></p>
+</section>
+<!-- end PSD Files -->
+</section>
+
+<!-- begin footer -->
+<footer id="footer">
+&copy; 2014 Wegilant
+</footer>
+<!-- end footer -->
+</div>
+
+</body></html>
+
+Warning: fclose(): 14 is not a valid stream resource in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\includes\KLogger.php on line 81
+
+Call Stack:
+    0.6745     686424   1. KLogger->__destruct() C:\Users\Kausthub\workspace\wegilant-workspace\repgen\includes\KLogger.php:0
+    0.6745     686528   2. fclose() C:\Users\Kausthub\workspace\wegilant-workspace\repgen\includes\KLogger.php:81
+
