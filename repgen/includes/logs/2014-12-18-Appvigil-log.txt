@@ -4532,3 +4532,177 @@
 18 Dec 2014 12:24:06 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:122] In getBugsByCategoriesChartData() - getBugsCountByCategories() function returns {"Bad hexadecimal concatenation":"51","Command Injection":"94","Custom MessageDigest":"43","Predictable Pseudo Random Generator (PRG)":"411","Potential Path traversal (read file)":"1652","Potential Path traversal (write file)":"215","ReDOS":"137","Unencrypted socket":"86","Weak MessageDigest":"137","Weak TrustManager implementation":"102","Insecure data storage":"154","Intent Spoofing":"145","Missing broadcaster permission.":"239","Sticky Broadcast":"129","Sqlite injection susceptible":"1002","Unauthorized Intent Receipt":"8145"} 
 18 Dec 2014 12:24:06 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:129] In getBugsByCategoriesChartData() - Generated data for audit id 1 is [['Bug Category', 'Bug Count'],['Bad hexadecimal concatenation', 51],['Command Injection', 94],['Custom MessageDigest', 43],['Predictable Pseudo Random Generator (PRG)', 411],['Potential Path traversal (read file)', 1652],['Potential Path traversal (write file)', 215],['ReDOS', 137],['Unencrypted socket', 86],['Weak MessageDigest', 137],['Weak TrustManager implementation', 102],['Insecure data storage', 154],['Intent Spoofing', 145],['Missing broadcaster permission.', 239],['Sticky Broadcast', 129],['Sqlite injection susceptible', 1002],['Unauthorized Intent Receipt', 8145]] 
 18 Dec 2014 12:24:06 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-report-parser.php:507] toshendra@wegilant.com Audit 1 - End of file reached 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-report-parser.php:83] toshendra@wegilant.com Audit 1 - Report parser called with variable xml_report=flipkart.xml; audit_id=1; is_limited=0 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-report-parser.php:85] toshendra@wegilant.com Audit 1 - XML flipkart.xml loaded 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-report-parser.php:86] toshendra@wegilant.com Audit 1 - User's timestamp calculated as Mon, 21 Jul 2014 5:22:54 PM 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-report-parser.php:134] toshendra@wegilant.com Audit 1 - user ID fetched as 17 & Name Toshendra Sharmaaa 
+18 Dec 2014 12:59:00 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-report-parser.php:146] toshendra@wegilant.com Audit 1 - Audit Table printed 
+18 Dec 2014 12:59:00 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-report-parser.php:156] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+18 Dec 2014 12:59:00 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-report-parser.php:321] toshendra@wegilant.com Audit 1 - Package Bug Table Printed 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201002 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201003 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201004 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201005 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201006 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201007 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201008 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201009 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201010 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201011 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201012 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201013 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201014 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201015 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201016 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201017 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201018 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201019 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201020 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201021 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201022 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201023 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201024 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201025 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201026 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201027 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201028 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201029 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201030 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201031 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201032 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201033 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201034 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201035 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201036 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201037 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201038 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201039 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201040 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201041 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201042 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201043 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201044 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201045 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201046 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201047 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201048 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201049 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201050 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201051 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201052 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201053 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201054 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201055 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201056 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201057 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201058 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201059 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201060 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201061 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201062 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201063 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201064 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201065 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201066 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201067 inserted successfully for audit 1 
+18 Dec 2014 12:59:00 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201068 inserted successfully for audit 1 
+18 Dec 2014 12:59:01 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201069 inserted successfully for audit 1 
+18 Dec 2014 12:59:01 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-report-parser.php:437] toshendra@wegilant.com Audit 1 - All bug instances Printed 
+18 Dec 2014 12:59:01 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 9669],
+          ['Priority 2 Bugs', 3073],
+          ['Priority 3 Bugs', 0]
+			] 
+18 Dec 2014 12:59:01 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:116] In getBugsByCategoriesChartData() 
+18 Dec 2014 12:59:01 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:97] In getBugsCountByCategories() 
+18 Dec 2014 12:59:01 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:122] In getBugsByCategoriesChartData() - getBugsCountByCategories() function returns {"Bad hexadecimal concatenation":"52","Command Injection":"95","Custom MessageDigest":"43","Predictable Pseudo Random Generator (PRG)":"414","Potential Path traversal (read file)":"1665","Potential Path traversal (write file)":"215","ReDOS":"138","Unencrypted socket":"86","Weak MessageDigest":"138","Weak TrustManager implementation":"104","Insecure data storage":"157","Intent Spoofing":"147","Missing broadcaster permission.":"242","Sticky Broadcast":"129","Sqlite injection susceptible":"1009","Unauthorized Intent Receipt":"8176"} 
+18 Dec 2014 12:59:01 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:129] In getBugsByCategoriesChartData() - Generated data for audit id 1 is [['Bug Category', 'Bug Count'],['Bad hexadecimal concatenation', 52],['Command Injection', 95],['Custom MessageDigest', 43],['Predictable Pseudo Random Generator (PRG)', 414],['Potential Path traversal (read file)', 1665],['Potential Path traversal (write file)', 215],['ReDOS', 138],['Unencrypted socket', 86],['Weak MessageDigest', 138],['Weak TrustManager implementation', 104],['Insecure data storage', 157],['Intent Spoofing', 147],['Missing broadcaster permission.', 242],['Sticky Broadcast', 129],['Sqlite injection susceptible', 1009],['Unauthorized Intent Receipt', 8176]] 
+18 Dec 2014 12:59:01 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-report-parser.php:507] toshendra@wegilant.com Audit 1 - End of file reached 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-report-parser.php:83] toshendra@wegilant.com Audit 1 - Report parser called with variable xml_report=flipkart.xml; audit_id=1; is_limited=0 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-report-parser.php:85] toshendra@wegilant.com Audit 1 - XML flipkart.xml loaded 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-report-parser.php:86] toshendra@wegilant.com Audit 1 - User's timestamp calculated as Mon, 21 Jul 2014 5:22:54 PM 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-report-parser.php:134] toshendra@wegilant.com Audit 1 - user ID fetched as 17 & Name Toshendra Sharmaaa 
+18 Dec 2014 1:00:23 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-report-parser.php:146] toshendra@wegilant.com Audit 1 - Audit Table printed 
+18 Dec 2014 1:00:23 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-report-parser.php:156] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+18 Dec 2014 1:00:23 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-report-parser.php:321] toshendra@wegilant.com Audit 1 - Package Bug Table Printed 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201070 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201071 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201072 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201073 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201074 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201075 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201076 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201077 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201078 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201079 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201080 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201081 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201082 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201083 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201084 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201085 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201086 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201087 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201088 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201089 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201090 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201091 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201092 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201093 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201094 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201095 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201096 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201097 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201098 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201099 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201100 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201101 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201102 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201103 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201104 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201105 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201106 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201107 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201108 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201109 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201110 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201111 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201112 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201113 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201114 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201115 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201116 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201117 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201118 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201119 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201120 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201121 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201122 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201123 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201124 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201125 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201126 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201127 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201128 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201129 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201130 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201131 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201132 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201133 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201134 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201135 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201136 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:57] In addBug(), Bug 201137 inserted successfully for audit 1 
+18 Dec 2014 1:00:23 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-report-parser.php:437] toshendra@wegilant.com Audit 1 - All bug instances Printed 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 9713],
+          ['Priority 2 Bugs', 3097],
+          ['Priority 3 Bugs', 0]
+			] 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:116] In getBugsByCategoriesChartData() 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:97] In getBugsCountByCategories() 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:122] In getBugsByCategoriesChartData() - getBugsCountByCategories() function returns {"Bad hexadecimal concatenation":"53","Command Injection":"96","Custom MessageDigest":"43","Predictable Pseudo Random Generator (PRG)":"417","Potential Path traversal (read file)":"1678","Potential Path traversal (write file)":"215","ReDOS":"139","Unencrypted socket":"86","Weak MessageDigest":"139","Weak TrustManager implementation":"106","Insecure data storage":"160","Intent Spoofing":"149","Missing broadcaster permission.":"245","Sticky Broadcast":"129","Sqlite injection susceptible":"1016","Unauthorized Intent Receipt":"8207"} 
+18 Dec 2014 1:00:23 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:129] In getBugsByCategoriesChartData() - Generated data for audit id 1 is [['Bug Category', 'Bug Count'],['Bad hexadecimal concatenation', 53],['Command Injection', 96],['Custom MessageDigest', 43],['Predictable Pseudo Random Generator (PRG)', 417],['Potential Path traversal (read file)', 1678],['Potential Path traversal (write file)', 215],['ReDOS', 139],['Unencrypted socket', 86],['Weak MessageDigest', 139],['Weak TrustManager implementation', 106],['Insecure data storage', 160],['Intent Spoofing', 149],['Missing broadcaster permission.', 245],['Sticky Broadcast', 129],['Sqlite injection susceptible', 1016],['Unauthorized Intent Receipt', 8207]] 
+18 Dec 2014 1:00:23 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-report-parser.php:507] toshendra@wegilant.com Audit 1 - End of file reached 

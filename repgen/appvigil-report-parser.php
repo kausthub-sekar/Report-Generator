@@ -112,7 +112,9 @@ $report_generator_log->LogDebug("$user_email Audit $audit_id - User's timestamp 
 <!-- end navigation -->
 <!-- begin content -->
 <section id="content">
-<!-- default report view is assumed to be developer view -->
+<!-- default report view is assumed to be developer view.
+The button should slideToggle to hide the sections and menu items irrelevant to the Executive view
+-->
 <button id="#switchButton">Switch Report View</button> 
 <!-- begin welcome -->
 <section id="welcome">
