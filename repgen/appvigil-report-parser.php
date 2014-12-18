@@ -88,6 +88,7 @@ $report_generator_log->LogDebug("$user_email Audit $audit_id - User's timestamp 
 <body id="top" data-spy="scroll" data-target="#nav-wrap" data-offset="10">
 
 <div id="container">
+<button id="#switchButton">Switch Report View</button><br><br>
 <!-- begin header -->
 <header id="header">
 	<h1>Android Security Audit Report by Appvigil</h1>
@@ -114,8 +115,7 @@ $report_generator_log->LogDebug("$user_email Audit $audit_id - User's timestamp 
 <section id="content">
 <!-- default report view is assumed to be developer view.
 The button should slideToggle to hide the sections and menu items irrelevant to the Executive view
--->
-<button id="#switchButton">Switch Report View</button> 
+--> 
 <!-- begin welcome -->
 <section id="welcome">
 	<h2>Welcome</h2>

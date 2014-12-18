@@ -46,6 +46,7 @@
 <body id="top" data-spy="scroll" data-target="#nav-wrap" data-offset="10">
 
 <div id="container">
+<button id="#switchButton">Switch Report View</button><br><br>
 <!-- begin header -->
 <header id="header">
 	<h1>Android Security Audit Report by Appvigil</h1>
@@ -70,8 +71,9 @@
 <!-- end navigation -->
 <!-- begin content -->
 <section id="content">
-<!-- default report view is assumed to be developer view -->
-<button id="#switchButton">Switch Report View</button> 
+<!-- default report view is assumed to be developer view.
+The button should slideToggle to hide the sections and menu items irrelevant to the Executive view
+--> 
 <!-- begin welcome -->
 <section id="welcome">
 	<h2>Welcome</h2>
@@ -113,7 +115,7 @@
 				<img src="../images/p1_bug.png" 
 				width='304' 
 				style="height:20px">
-			75.8 %
+			75.7 %
 			</td>
 		 </tr>
 		 <tr>
@@ -122,7 +124,7 @@
 				<img src="../images/p2_bug.png" 
 				width='96' 
 				style="height:20px">
-			24.2 %
+			24.3 %
 			</td>
 		 </tr>
 		 <tr>
@@ -1943,8 +1945,8 @@ stringBuilder.append( String.format( "%02X", b ) );
 	  function BugsByPriorityChart() {
         var data = google.visualization.arrayToDataTable([
           ['Priority', 'Bug Count'],
-          ['Priority 1 Bugs', 9713],
-          ['Priority 2 Bugs', 3097],
+          ['Priority 1 Bugs', 9801],
+          ['Priority 2 Bugs', 3145],
           ['Priority 3 Bugs', 0]
 			]);
         var options = {
@@ -1960,7 +1962,7 @@ stringBuilder.append( String.format( "%02X", b ) );
       google.load('visualization', '1', {packages:['corechart']});
 	  google.setOnLoadCallback(BugsByCategoriesChart);
 	  function BugsByCategoriesChart() {
-        var data = google.visualization.arrayToDataTable([['Bug Category', 'Bug Count'],['Bad hexadecimal concatenation', 53],['Command Injection', 96],['Custom MessageDigest', 43],['Predictable Pseudo Random Generator (PRG)', 417],['Potential Path traversal (read file)', 1678],['Potential Path traversal (write file)', 215],['ReDOS', 139],['Unencrypted socket', 86],['Weak MessageDigest', 139],['Weak TrustManager implementation', 106],['Insecure data storage', 160],['Intent Spoofing', 149],['Missing broadcaster permission.', 245],['Sticky Broadcast', 129],['Sqlite injection susceptible', 1016],['Unauthorized Intent Receipt', 8207]]);
+        var data = google.visualization.arrayToDataTable([['Bug Category', 'Bug Count'],['Bad hexadecimal concatenation', 55],['Command Injection', 98],['Custom MessageDigest', 43],['Predictable Pseudo Random Generator (PRG)', 423],['Potential Path traversal (read file)', 1704],['Potential Path traversal (write file)', 215],['ReDOS', 141],['Unencrypted socket', 86],['Weak MessageDigest', 141],['Weak TrustManager implementation', 110],['Insecure data storage', 166],['Intent Spoofing', 153],['Missing broadcaster permission.', 251],['Sticky Broadcast', 129],['Sqlite injection susceptible', 1030],['Unauthorized Intent Receipt', 8269]]);
         var options = {
           title: 'Bugs by Type',
           chartArea:{right:25,top:50,width:'100%',height:'100%'}
@@ -2002,6 +2004,6 @@ stringBuilder.append( String.format( "%02X", b ) );
 Warning: fclose(): 14 is not a valid stream resource in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\includes\KLogger.php on line 81
 
 Call Stack:
-    0.5811     686416   1. KLogger->__destruct() C:\Users\Kausthub\workspace\wegilant-workspace\repgen\includes\KLogger.php:0
-    0.5811     686520   2. fclose() C:\Users\Kausthub\workspace\wegilant-workspace\repgen\includes\KLogger.php:81
+    0.5530     686432   1. KLogger->__destruct() C:\Users\Kausthub\workspace\wegilant-workspace\repgen\includes\KLogger.php:0
+    0.5530     686536   2. fclose() C:\Users\Kausthub\workspace\wegilant-workspace\repgen\includes\KLogger.php:81
 
