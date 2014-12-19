@@ -105,7 +105,7 @@ $report_generator_log->LogDebug("$user_email Audit $audit_id - User's timestamp 
 	<ul class="nav nav-list bs-docs-sidenav">
 		<li class="active"><a href="#welcome"><i class="icon-chevron-right"></i> Welcome</a></li>
 		<li><a href="#AuditDetails"><i class="icon-chevron-right"></i> Audit Details</a></li>
-		<li id="hideSummary"><a href="#AuditSummary"><i class="icon-chevron-right"></i> Audit Summary</a></li>
+		<li><a href="#AuditSummary"><i class="icon-chevron-right"></i> Audit Summary</a></li>
 		<li id="hideMCode"><a href="#MCode"><i class="icon-chevron-right"></i> Malicious Code</a></li>
 		<li><a href="#about-us"><i class="icon-chevron-right"></i> About Us</a></li>
 	</ul>
@@ -195,7 +195,7 @@ else
 			<td>High:</td>
 			<td>
 				<img src="../images/p1_bug.png" 
-				width='<?php echo(100*round($audit->getP1Count()/($audit->getTotalBugsCount()),2))*4; ?>' 
+				width='<?php echo (100*round($audit->getP1Count()/($audit->getTotalBugsCount()),2))*4; ?>' 
 				style="height:20px">
 			<?php echo(100*round($audit->getP1Count()/($audit->getTotalBugsCount()),3)); ?> %
 			</td>
