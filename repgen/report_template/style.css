@@ -47,37 +47,41 @@ h2 {
 /* Text & Content Blocks
 /* ---------------------------------------------------------------------- */
 #header, #nav-wrap, section, #footer {
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 }
 
 /* ---------------------------------------------------------------------- */
 /* Containers
 /* ---------------------------------------------------------------------- */
 #container {
-	padding-top: 40px;	
+	padding-top: 10px;	
 }
 
 #nav-wrap {
+	/*
 	width: 220px;
 	max-width: 25%;
 	margin-left: 2%;
+	*/
 }
 
 #header, #content, #footer {
-	width: 940px;
-	margin-left: 29%; /* nav width + nav margin + margin left */
-	max-width: 69%;
-	margin-right: 2%;
+	width: 1010px;
+	margin-left: 5%; /* nav width + nav margin + margin left */
+	max-width: 90%;
+	margin-right: 5%;
 }
 
 /* ---------------------------------------------------------------------- */
 /* Navigation
 /* ---------------------------------------------------------------------- */
 #nav-wrap {
+	/*
 	position: fixed;
 	top: 40px;
 	left: 0;
 	z-index: 10;
+	*/
 }
 
 #nav-wrap ul {
@@ -135,11 +139,11 @@ h2 {
 	filter:alpha(opacity=100);
 }
 
-button {
-	background-color: #0088CC;
-	color: #fff;
+#View {
+	position: absolute;
+	top: 5px;
+	right: 20px;
 	padding: 15px;
-	border-radius: 4px;
 	align:right;
 	float:right;
 }
@@ -147,13 +151,116 @@ button {
 /* Header
 /* ---------------------------------------------------------------------- */
 #header h1, #header .meta {
-	text-align: center;		
+	text-align: center;
+	position: relative;
+	top: 5px;		
 }
 
 /* ---------------------------------------------------------------------- */
 /* Content
 /* ---------------------------------------------------------------------- */
 
+/* threat level circles */
+#lowThreat {
+	background-color: #00FF00;
+	height: 100px;
+ 	width: 100px;
+  	display: table-cell;
+  	text-align: center;
+  	font-size: 2em;
+  	vertical-align: middle;
+  	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	color: white;
+}
+#medThreat {
+	background-color: yellow;
+	height: 100px;
+ 	width: 100px;
+  	display: table-cell;
+  	text-align: center;
+  	font-size: 2em;
+  	vertical-align: middle;
+  	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+#highThreat {
+	background-color: #FF0000;
+	height: 100px;
+ 	width: 100px;
+  	display: table-cell;
+  	text-align: center;
+  	font-size: 2em;
+  	vertical-align: middle;
+  	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	color: white;
+}
+/* threat count values */
+#lowNum {
+	display: table-cell;
+  	text-align: center;
+  	vertical-align: middle;
+  	font-weight: bolder;
+  	font-size: 2em;
+  	padding:10px 50px;
+}
+#medNum {
+	display: table-cell;
+  	text-align: center;
+  	vertical-align: middle;
+  	font-weight: bolder;
+  	font-size: 2em;
+  	padding:10px 30px;
+}
+#highNum {
+	display: table-cell;
+  	text-align: center;
+  	vertical-align: middle;
+  	font-weight: bolder;
+  	font-size: 2em;
+  	padding:10px 30px;
+}
+/* threat count rectangles */
+#lowCount {
+	background-color: #00FF00;
+	height: 30px;
+ 	width: 80px;
+ 	border:medium 2px;
+ 	border-color:black;
+  	display: table-cell;
+  	text-align: center;
+  	vertical-align: middle;
+  	padding:10px 5px;
+  	color: white;
+  	
+}
+#medCount {
+	background-color: yellow;
+	height: 30px;
+ 	width: 80px;
+ 	border:medium 2px;
+ 	border-color:black;
+  	display: table-cell;
+  	text-align: center;
+  	vertical-align: middle;
+  	padding:10px 5px;
+}
+#highCount {
+	background-color: #FF0000;
+	height: 30px;
+ 	width: 80px;
+ 	border:medium 2px;
+ 	border-color:black;
+  	display: table-cell;
+  	text-align: center;
+  	vertical-align: middle;
+  	padding:10px 5px;
+  	color: white;
+}
 .table thead tr.success th {
     background-color: #DFF0D8;
 }
@@ -168,6 +275,9 @@ button {
 
 .table thead tr.info th {
     background-color: #D9EDF7;
+}
+td {
+	text-align: center;
 }
 
 .example-box:after {
