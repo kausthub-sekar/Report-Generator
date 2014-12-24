@@ -28,10 +28,30 @@ j(document).ready(function() {
 				j('#bugTypeDetails').hide();
 				j('#bugSeverityList').hide();
 				j('#bugsBySeverity').click(function(){
-					j('#bugSeverityPieChart').show();
+					if(j(input[type="radio"]).attr("value")=="dev")
+					{	
+					j('#bugSeverityDetails').hide();
+					j('#bugTypeDetails').hide();
+					j('#bugSeverityList').hide();
+					j('#bugSeverityPieChart').hide();
+					}
+					else
+					{
+					 j('#bugSeverityPieChart').show();
+					}
 				});
 				j('#bugsByType').click(function(){
-					j('#bugSeverityBarGraph').show();
+					if(j(input[type="radio"]).attr("value")=="dev")
+					{	
+					j('#bugSeverityDetails').hide();
+					j('#bugTypeDetails').hide();
+					j('#bugSeverityList').hide();
+					j('#bugSeverityBarGraph').hide();
+					}
+					else
+					{
+					 j('#bugSeverityBarGraph').show();
+					}
 				});
 				}
 		});

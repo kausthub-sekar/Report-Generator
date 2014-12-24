@@ -198,10 +198,10 @@ $report_generator_log->LogInfo("$user_email Audit $audit_id - Audit Table printe
 </ul>
 <div id="tabContent" class="tab-content">
 	<div id="bugsBySeverity" class="tab-pane fade in active">
-		<!-- <h3>Bugs should be displayed by severity here</h3>
+		<h3>Bugs should be displayed by severity here</h3>
 		<p>There will be a vertical nav bar/tab menu for low, mid and high severity. - Dev</p>
 		<p>Interactive pie chart which should open corresponding section in Dev - Exec</p>
-		 -->
+		
 		 <div id="bugSeverityList">
 		  <ul class="nav nav-tabs nav-stacked" style="width: 14%">
    			<li class="active"><a href="#lowBugs" data-toggle="tab">Low Severity</a></li>
@@ -225,9 +225,11 @@ $report_generator_log->LogInfo("$user_email Audit $audit_id - Audit Table printe
    		</div>
 	</div>
 	<div id="bugsByType" class="tab-pane fade in">
+	
 		<h3>Bugs will all be listed by type as a checklist</h3>
-		<p>Bugs found will be checked and others will not be checked. Should not be editable.</p>
+		<p>Bugs found will be checked and others will not be checked.</p>
 		<p>Interactive bar graph, X-axis:Bug Type, Y-axis:# of bugs - Exec</p>
+	
 	</div>
 	<div id="bugsSummary" class="tab-pane fade in">
 	<table class="table table-bordered">
@@ -313,7 +315,7 @@ $report_generator_log->LogInfo("$user_email Audit $audit_id - Audit Table printe
 		 ?>
 	</div>
 </div>
-<div id="bugSeverityPieChart" style="width:100%; height:100%">
+	<div id="bugSeverityPieChart" style="width:100%; height:100%">
    			<?php 
    			$abbrev_categories = array_unique($xml->xpath('//BugInstance/@abbrev'));
    			$abbrev_count = count($abbrev_categories);
@@ -339,7 +341,6 @@ $report_generator_log->LogInfo("$user_email Audit $audit_id - Audit Table printe
    				title: 'Bugs by Priority',
    				chartArea:{left:0,top:50,width:'100%',height:'100%'},
    				enableInteractivity: true,
-   				is3D: true
    			};
    			document.getElementById('piechart2').setAttribute('style','width: 100%');
    			document.getElementById('piechart2').setAttribute('style','height: 100%');
@@ -357,7 +358,6 @@ $report_generator_log->LogInfo("$user_email Audit $audit_id - Audit Table printe
    			title: 'Bugs by Type',
    			chartArea:{right:25,top:50,width:'100%',height:'100%'},
    			enableInteractivity: true,
-   			is3D: true
    			};
    			document.getElementById('piechart1').setAttribute('style','width: 100%');
    			document.getElementById('piechart1').setAttribute('style','height: 100%');
@@ -368,8 +368,42 @@ $report_generator_log->LogInfo("$user_email Audit $audit_id - Audit Table printe
    			 
    			}
    			?>
-   		</div>
-
+	</div>
+	<div id="bugSeverityBarGraph" style="width:100%; height:100%">
+	<?php
+	$abbrev_categories = array_unique($xml->xpath('//BugInstance/@abbrev'));
+	$abbrev_count = count($abbrev_categories);
+	
+	//print pie chart even if there are zero bug instances
+	//print chart divs even if Vulnerable package count is 0
+	$auto_height = $vulnerable_package_count*70;
+		echo "<table>
+					<tr>
+						<td><div id='bargraph'></div></td>
+					</tr>
+				</table>";
+		echo "<script type='text/javascript'>
+   			google.load('visualization', '1', {packages:['corechart']});
+   			google.setOnLoadCallback(BugsByPriorityGraph);
+   			function BugsByPriorityGraph() {
+   			var data = google.visualization.arrayToDataTable({$audit->getBugsByPriorityChartData()});
+   			var options = {
+   				 title: 'Bugs by Type',
+       			 width: 600,
+        		 height: 400,
+        		 legend: { position: 'top', textStyle: {color: 'blue', fontSize: 16}, maxLines: 3},
+        		 bar: { groupWidth: '61.8%' }, //golden ratio
+        		 colors: ['red','yellow','green'],
+        		 enableInteractivity: true 
+      			};	
+   			document.getElementById('bargraph').setAttribute('style','width: 100%');
+   			document.getElementById('bargraph').setAttribute('style','height: 100%');
+   			var chart = new google.visualization.ColumnChart(document.getElementById('bargraph'));
+   			chart.draw(data, options);
+   			}
+   			</script>";
+	?>
+	</div>
 </section>
 
 <!-- footer will stay the same -->

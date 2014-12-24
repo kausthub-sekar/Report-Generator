@@ -1404,3 +1404,261 @@
 24 Dec 2014 11:38:41 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:97] In getBugsCountByCategories() 
 24 Dec 2014 11:38:41 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:122] In getBugsByCategoriesChartData() - getBugsCountByCategories() function returns {"Bad hexadecimal concatenation":"107","Command Injection":"150","Custom MessageDigest":"43","Predictable Pseudo Random Generator (PRG)":"579","Potential Path traversal (read file)":"2380","Potential Path traversal (write file)":"215","ReDOS":"193","Unencrypted socket":"86","Weak MessageDigest":"193","Weak TrustManager implementation":"214","Insecure data storage":"323","Intent Spoofing":"257","Missing broadcaster permission.":"407","Sticky Broadcast":"129","Sqlite injection susceptible":"1394","Unauthorized Intent Receipt":"9952"} 
 24 Dec 2014 11:38:41 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:129] In getBugsByCategoriesChartData() - Generated data for audit id 1 is [['Bug Category', 'Bug Count'],['Bad hexadecimal concatenation', 107],['Command Injection', 150],['Custom MessageDigest', 43],['Predictable Pseudo Random Generator (PRG)', 579],['Potential Path traversal (read file)', 2380],['Potential Path traversal (write file)', 215],['ReDOS', 193],['Unencrypted socket', 86],['Weak MessageDigest', 193],['Weak TrustManager implementation', 214],['Insecure data storage', 323],['Intent Spoofing', 257],['Missing broadcaster permission.', 407],['Sticky Broadcast', 129],['Sqlite injection susceptible', 1394],['Unauthorized Intent Receipt', 9952]] 
+24 Dec 2014 11:52:48 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:83] toshendra@wegilant.com Audit 1 - Report parser called with variable xml_report=flipkart.xml; audit_id=1; is_limited=0 
+24 Dec 2014 11:52:48 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:85] toshendra@wegilant.com Audit 1 - XML flipkart.xml loaded 
+24 Dec 2014 11:52:48 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:86] toshendra@wegilant.com Audit 1 - User's timestamp calculated as Mon, 21 Jul 2014 5:22:54 PM 
+24 Dec 2014 11:52:48 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:121] toshendra@wegilant.com Audit 1 - user ID fetched as 17 & Name Toshendra Sharmaaa 
+24 Dec 2014 11:52:48 AM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:124] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 11:52:48 AM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:186] toshendra@wegilant.com Audit 1 - All bug instances Printed 
+24 Dec 2014 11:52:48 AM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:191] toshendra@wegilant.com Audit 1 - Audit Table printed 
+24 Dec 2014 11:52:48 AM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:240] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 11:52:48 AM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:311] toshendra@wegilant.com Audit 1 - Package Bug Table Printed 
+24 Dec 2014 11:52:48 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 12205],
+          ['Priority 2 Bugs', 4417],
+          ['Priority 3 Bugs', 0]
+			] 
+24 Dec 2014 11:52:48 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:116] In getBugsByCategoriesChartData() 
+24 Dec 2014 11:52:48 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:97] In getBugsCountByCategories() 
+24 Dec 2014 11:52:48 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:122] In getBugsByCategoriesChartData() - getBugsCountByCategories() function returns {"Bad hexadecimal concatenation":"107","Command Injection":"150","Custom MessageDigest":"43","Predictable Pseudo Random Generator (PRG)":"579","Potential Path traversal (read file)":"2380","Potential Path traversal (write file)":"215","ReDOS":"193","Unencrypted socket":"86","Weak MessageDigest":"193","Weak TrustManager implementation":"214","Insecure data storage":"323","Intent Spoofing":"257","Missing broadcaster permission.":"407","Sticky Broadcast":"129","Sqlite injection susceptible":"1394","Unauthorized Intent Receipt":"9952"} 
+24 Dec 2014 11:52:48 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:129] In getBugsByCategoriesChartData() - Generated data for audit id 1 is [['Bug Category', 'Bug Count'],['Bad hexadecimal concatenation', 107],['Command Injection', 150],['Custom MessageDigest', 43],['Predictable Pseudo Random Generator (PRG)', 579],['Potential Path traversal (read file)', 2380],['Potential Path traversal (write file)', 215],['ReDOS', 193],['Unencrypted socket', 86],['Weak MessageDigest', 193],['Weak TrustManager implementation', 214],['Insecure data storage', 323],['Intent Spoofing', 257],['Missing broadcaster permission.', 407],['Sticky Broadcast', 129],['Sqlite injection susceptible', 1394],['Unauthorized Intent Receipt', 9952]] 
+24 Dec 2014 11:59:30 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:83] toshendra@wegilant.com Audit 1 - Report parser called with variable xml_report=flipkart.xml; audit_id=1; is_limited=0 
+24 Dec 2014 11:59:30 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:85] toshendra@wegilant.com Audit 1 - XML flipkart.xml loaded 
+24 Dec 2014 11:59:30 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:86] toshendra@wegilant.com Audit 1 - User's timestamp calculated as Mon, 21 Jul 2014 5:22:54 PM 
+24 Dec 2014 11:59:30 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:121] toshendra@wegilant.com Audit 1 - user ID fetched as 17 & Name Toshendra Sharmaaa 
+24 Dec 2014 11:59:30 AM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:124] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 11:59:30 AM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:186] toshendra@wegilant.com Audit 1 - All bug instances Printed 
+24 Dec 2014 11:59:30 AM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:191] toshendra@wegilant.com Audit 1 - Audit Table printed 
+24 Dec 2014 11:59:30 AM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:240] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 11:59:30 AM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:311] toshendra@wegilant.com Audit 1 - Package Bug Table Printed 
+24 Dec 2014 11:59:30 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 12205],
+          ['Priority 2 Bugs', 4417],
+          ['Priority 3 Bugs', 0]
+			] 
+24 Dec 2014 11:59:30 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:116] In getBugsByCategoriesChartData() 
+24 Dec 2014 11:59:30 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:97] In getBugsCountByCategories() 
+24 Dec 2014 11:59:30 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:122] In getBugsByCategoriesChartData() - getBugsCountByCategories() function returns {"Bad hexadecimal concatenation":"107","Command Injection":"150","Custom MessageDigest":"43","Predictable Pseudo Random Generator (PRG)":"579","Potential Path traversal (read file)":"2380","Potential Path traversal (write file)":"215","ReDOS":"193","Unencrypted socket":"86","Weak MessageDigest":"193","Weak TrustManager implementation":"214","Insecure data storage":"323","Intent Spoofing":"257","Missing broadcaster permission.":"407","Sticky Broadcast":"129","Sqlite injection susceptible":"1394","Unauthorized Intent Receipt":"9952"} 
+24 Dec 2014 11:59:30 AM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:129] In getBugsByCategoriesChartData() - Generated data for audit id 1 is [['Bug Category', 'Bug Count'],['Bad hexadecimal concatenation', 107],['Command Injection', 150],['Custom MessageDigest', 43],['Predictable Pseudo Random Generator (PRG)', 579],['Potential Path traversal (read file)', 2380],['Potential Path traversal (write file)', 215],['ReDOS', 193],['Unencrypted socket', 86],['Weak MessageDigest', 193],['Weak TrustManager implementation', 214],['Insecure data storage', 323],['Intent Spoofing', 257],['Missing broadcaster permission.', 407],['Sticky Broadcast', 129],['Sqlite injection susceptible', 1394],['Unauthorized Intent Receipt', 9952]] 
+24 Dec 2014 12:25:10 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:83] toshendra@wegilant.com Audit 1 - Report parser called with variable xml_report=flipkart.xml; audit_id=1; is_limited=0 
+24 Dec 2014 12:25:10 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:85] toshendra@wegilant.com Audit 1 - XML flipkart.xml loaded 
+24 Dec 2014 12:25:10 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:86] toshendra@wegilant.com Audit 1 - User's timestamp calculated as Mon, 21 Jul 2014 5:22:54 PM 
+24 Dec 2014 12:25:10 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:121] toshendra@wegilant.com Audit 1 - user ID fetched as 17 & Name Toshendra Sharmaaa 
+24 Dec 2014 12:25:10 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:124] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 12:25:10 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:186] toshendra@wegilant.com Audit 1 - All bug instances Printed 
+24 Dec 2014 12:25:10 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:191] toshendra@wegilant.com Audit 1 - Audit Table printed 
+24 Dec 2014 12:25:10 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:242] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 12:25:10 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:313] toshendra@wegilant.com Audit 1 - Package Bug Table Printed 
+24 Dec 2014 12:25:10 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 12205],
+          ['Priority 2 Bugs', 4417],
+          ['Priority 3 Bugs', 0]
+			] 
+24 Dec 2014 12:25:10 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:116] In getBugsByCategoriesChartData() 
+24 Dec 2014 12:25:10 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:97] In getBugsCountByCategories() 
+24 Dec 2014 12:25:10 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:122] In getBugsByCategoriesChartData() - getBugsCountByCategories() function returns {"Bad hexadecimal concatenation":"107","Command Injection":"150","Custom MessageDigest":"43","Predictable Pseudo Random Generator (PRG)":"579","Potential Path traversal (read file)":"2380","Potential Path traversal (write file)":"215","ReDOS":"193","Unencrypted socket":"86","Weak MessageDigest":"193","Weak TrustManager implementation":"214","Insecure data storage":"323","Intent Spoofing":"257","Missing broadcaster permission.":"407","Sticky Broadcast":"129","Sqlite injection susceptible":"1394","Unauthorized Intent Receipt":"9952"} 
+24 Dec 2014 12:25:10 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:129] In getBugsByCategoriesChartData() - Generated data for audit id 1 is [['Bug Category', 'Bug Count'],['Bad hexadecimal concatenation', 107],['Command Injection', 150],['Custom MessageDigest', 43],['Predictable Pseudo Random Generator (PRG)', 579],['Potential Path traversal (read file)', 2380],['Potential Path traversal (write file)', 215],['ReDOS', 193],['Unencrypted socket', 86],['Weak MessageDigest', 193],['Weak TrustManager implementation', 214],['Insecure data storage', 323],['Intent Spoofing', 257],['Missing broadcaster permission.', 407],['Sticky Broadcast', 129],['Sqlite injection susceptible', 1394],['Unauthorized Intent Receipt', 9952]] 
+24 Dec 2014 12:25:10 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:116] In getBugsByCategoriesChartData() 
+24 Dec 2014 12:40:12 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:83] toshendra@wegilant.com Audit 1 - Report parser called with variable xml_report=flipkart.xml; audit_id=1; is_limited=0 
+24 Dec 2014 12:40:12 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:85] toshendra@wegilant.com Audit 1 - XML flipkart.xml loaded 
+24 Dec 2014 12:40:12 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:86] toshendra@wegilant.com Audit 1 - User's timestamp calculated as Mon, 21 Jul 2014 5:22:54 PM 
+24 Dec 2014 12:40:12 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:121] toshendra@wegilant.com Audit 1 - user ID fetched as 17 & Name Toshendra Sharmaaa 
+24 Dec 2014 12:40:12 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:124] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 12:40:12 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:186] toshendra@wegilant.com Audit 1 - All bug instances Printed 
+24 Dec 2014 12:40:12 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:191] toshendra@wegilant.com Audit 1 - Audit Table printed 
+24 Dec 2014 12:40:12 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:242] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 12:40:12 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:313] toshendra@wegilant.com Audit 1 - Package Bug Table Printed 
+24 Dec 2014 12:40:12 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 12205],
+          ['Priority 2 Bugs', 4417],
+          ['Priority 3 Bugs', 0]
+			] 
+24 Dec 2014 12:40:12 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:116] In getBugsByCategoriesChartData() 
+24 Dec 2014 12:40:12 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:97] In getBugsCountByCategories() 
+24 Dec 2014 12:40:12 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:122] In getBugsByCategoriesChartData() - getBugsCountByCategories() function returns {"Bad hexadecimal concatenation":"107","Command Injection":"150","Custom MessageDigest":"43","Predictable Pseudo Random Generator (PRG)":"579","Potential Path traversal (read file)":"2380","Potential Path traversal (write file)":"215","ReDOS":"193","Unencrypted socket":"86","Weak MessageDigest":"193","Weak TrustManager implementation":"214","Insecure data storage":"323","Intent Spoofing":"257","Missing broadcaster permission.":"407","Sticky Broadcast":"129","Sqlite injection susceptible":"1394","Unauthorized Intent Receipt":"9952"} 
+24 Dec 2014 12:40:12 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:129] In getBugsByCategoriesChartData() - Generated data for audit id 1 is [['Bug Category', 'Bug Count'],['Bad hexadecimal concatenation', 107],['Command Injection', 150],['Custom MessageDigest', 43],['Predictable Pseudo Random Generator (PRG)', 579],['Potential Path traversal (read file)', 2380],['Potential Path traversal (write file)', 215],['ReDOS', 193],['Unencrypted socket', 86],['Weak MessageDigest', 193],['Weak TrustManager implementation', 214],['Insecure data storage', 323],['Intent Spoofing', 257],['Missing broadcaster permission.', 407],['Sticky Broadcast', 129],['Sqlite injection susceptible', 1394],['Unauthorized Intent Receipt', 9952]] 
+24 Dec 2014 12:40:12 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 12205],
+          ['Priority 2 Bugs', 4417],
+          ['Priority 3 Bugs', 0]
+			] 
+24 Dec 2014 1:09:31 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:83] toshendra@wegilant.com Audit 1 - Report parser called with variable xml_report=flipkart.xml; audit_id=1; is_limited=0 
+24 Dec 2014 1:09:31 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:85] toshendra@wegilant.com Audit 1 - XML flipkart.xml loaded 
+24 Dec 2014 1:09:31 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:86] toshendra@wegilant.com Audit 1 - User's timestamp calculated as Mon, 21 Jul 2014 5:22:54 PM 
+24 Dec 2014 1:09:31 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:121] toshendra@wegilant.com Audit 1 - user ID fetched as 17 & Name Toshendra Sharmaaa 
+24 Dec 2014 1:09:31 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:124] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 1:09:31 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:186] toshendra@wegilant.com Audit 1 - All bug instances Printed 
+24 Dec 2014 1:09:31 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:191] toshendra@wegilant.com Audit 1 - Audit Table printed 
+24 Dec 2014 1:09:31 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:242] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 1:09:31 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:313] toshendra@wegilant.com Audit 1 - Package Bug Table Printed 
+24 Dec 2014 1:09:31 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 12205],
+          ['Priority 2 Bugs', 4417],
+          ['Priority 3 Bugs', 0]
+			] 
+24 Dec 2014 1:09:31 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:116] In getBugsByCategoriesChartData() 
+24 Dec 2014 1:09:31 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:97] In getBugsCountByCategories() 
+24 Dec 2014 1:09:31 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:122] In getBugsByCategoriesChartData() - getBugsCountByCategories() function returns {"Bad hexadecimal concatenation":"107","Command Injection":"150","Custom MessageDigest":"43","Predictable Pseudo Random Generator (PRG)":"579","Potential Path traversal (read file)":"2380","Potential Path traversal (write file)":"215","ReDOS":"193","Unencrypted socket":"86","Weak MessageDigest":"193","Weak TrustManager implementation":"214","Insecure data storage":"323","Intent Spoofing":"257","Missing broadcaster permission.":"407","Sticky Broadcast":"129","Sqlite injection susceptible":"1394","Unauthorized Intent Receipt":"9952"} 
+24 Dec 2014 1:09:31 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:129] In getBugsByCategoriesChartData() - Generated data for audit id 1 is [['Bug Category', 'Bug Count'],['Bad hexadecimal concatenation', 107],['Command Injection', 150],['Custom MessageDigest', 43],['Predictable Pseudo Random Generator (PRG)', 579],['Potential Path traversal (read file)', 2380],['Potential Path traversal (write file)', 215],['ReDOS', 193],['Unencrypted socket', 86],['Weak MessageDigest', 193],['Weak TrustManager implementation', 214],['Insecure data storage', 323],['Intent Spoofing', 257],['Missing broadcaster permission.', 407],['Sticky Broadcast', 129],['Sqlite injection susceptible', 1394],['Unauthorized Intent Receipt', 9952]] 
+24 Dec 2014 1:09:31 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 12205],
+          ['Priority 2 Bugs', 4417],
+          ['Priority 3 Bugs', 0]
+			] 
+24 Dec 2014 1:46:39 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:83] toshendra@wegilant.com Audit 1 - Report parser called with variable xml_report=flipkart.xml; audit_id=1; is_limited=0 
+24 Dec 2014 1:46:39 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:85] toshendra@wegilant.com Audit 1 - XML flipkart.xml loaded 
+24 Dec 2014 1:46:39 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:86] toshendra@wegilant.com Audit 1 - User's timestamp calculated as Mon, 21 Jul 2014 5:22:54 PM 
+24 Dec 2014 1:46:39 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:121] toshendra@wegilant.com Audit 1 - user ID fetched as 17 & Name Toshendra Sharmaaa 
+24 Dec 2014 1:46:39 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:124] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 1:46:39 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:186] toshendra@wegilant.com Audit 1 - All bug instances Printed 
+24 Dec 2014 1:46:39 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:191] toshendra@wegilant.com Audit 1 - Audit Table printed 
+24 Dec 2014 1:46:40 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:242] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 1:46:40 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:313] toshendra@wegilant.com Audit 1 - Package Bug Table Printed 
+24 Dec 2014 1:46:40 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 12205],
+          ['Priority 2 Bugs', 4417],
+          ['Priority 3 Bugs', 0]
+			] 
+24 Dec 2014 1:46:40 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:116] In getBugsByCategoriesChartData() 
+24 Dec 2014 1:46:40 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:97] In getBugsCountByCategories() 
+24 Dec 2014 1:46:40 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:122] In getBugsByCategoriesChartData() - getBugsCountByCategories() function returns {"Bad hexadecimal concatenation":"107","Command Injection":"150","Custom MessageDigest":"43","Predictable Pseudo Random Generator (PRG)":"579","Potential Path traversal (read file)":"2380","Potential Path traversal (write file)":"215","ReDOS":"193","Unencrypted socket":"86","Weak MessageDigest":"193","Weak TrustManager implementation":"214","Insecure data storage":"323","Intent Spoofing":"257","Missing broadcaster permission.":"407","Sticky Broadcast":"129","Sqlite injection susceptible":"1394","Unauthorized Intent Receipt":"9952"} 
+24 Dec 2014 1:46:40 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:129] In getBugsByCategoriesChartData() - Generated data for audit id 1 is [['Bug Category', 'Bug Count'],['Bad hexadecimal concatenation', 107],['Command Injection', 150],['Custom MessageDigest', 43],['Predictable Pseudo Random Generator (PRG)', 579],['Potential Path traversal (read file)', 2380],['Potential Path traversal (write file)', 215],['ReDOS', 193],['Unencrypted socket', 86],['Weak MessageDigest', 193],['Weak TrustManager implementation', 214],['Insecure data storage', 323],['Intent Spoofing', 257],['Missing broadcaster permission.', 407],['Sticky Broadcast', 129],['Sqlite injection susceptible', 1394],['Unauthorized Intent Receipt', 9952]] 
+24 Dec 2014 1:46:40 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 12205],
+          ['Priority 2 Bugs', 4417],
+          ['Priority 3 Bugs', 0]
+			] 
+24 Dec 2014 1:48:25 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:83] toshendra@wegilant.com Audit 1 - Report parser called with variable xml_report=flipkart.xml; audit_id=1; is_limited=0 
+24 Dec 2014 1:48:25 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:85] toshendra@wegilant.com Audit 1 - XML flipkart.xml loaded 
+24 Dec 2014 1:48:25 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:86] toshendra@wegilant.com Audit 1 - User's timestamp calculated as Mon, 21 Jul 2014 5:22:54 PM 
+24 Dec 2014 1:48:25 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:121] toshendra@wegilant.com Audit 1 - user ID fetched as 17 & Name Toshendra Sharmaaa 
+24 Dec 2014 1:48:25 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:124] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 1:48:25 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:186] toshendra@wegilant.com Audit 1 - All bug instances Printed 
+24 Dec 2014 1:48:25 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:191] toshendra@wegilant.com Audit 1 - Audit Table printed 
+24 Dec 2014 1:48:25 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:242] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 1:48:25 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:313] toshendra@wegilant.com Audit 1 - Package Bug Table Printed 
+24 Dec 2014 1:48:25 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 12205],
+          ['Priority 2 Bugs', 4417],
+          ['Priority 3 Bugs', 0]
+			] 
+24 Dec 2014 1:48:25 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:116] In getBugsByCategoriesChartData() 
+24 Dec 2014 1:48:25 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:97] In getBugsCountByCategories() 
+24 Dec 2014 1:48:25 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:122] In getBugsByCategoriesChartData() - getBugsCountByCategories() function returns {"Bad hexadecimal concatenation":"107","Command Injection":"150","Custom MessageDigest":"43","Predictable Pseudo Random Generator (PRG)":"579","Potential Path traversal (read file)":"2380","Potential Path traversal (write file)":"215","ReDOS":"193","Unencrypted socket":"86","Weak MessageDigest":"193","Weak TrustManager implementation":"214","Insecure data storage":"323","Intent Spoofing":"257","Missing broadcaster permission.":"407","Sticky Broadcast":"129","Sqlite injection susceptible":"1394","Unauthorized Intent Receipt":"9952"} 
+24 Dec 2014 1:48:25 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:129] In getBugsByCategoriesChartData() - Generated data for audit id 1 is [['Bug Category', 'Bug Count'],['Bad hexadecimal concatenation', 107],['Command Injection', 150],['Custom MessageDigest', 43],['Predictable Pseudo Random Generator (PRG)', 579],['Potential Path traversal (read file)', 2380],['Potential Path traversal (write file)', 215],['ReDOS', 193],['Unencrypted socket', 86],['Weak MessageDigest', 193],['Weak TrustManager implementation', 214],['Insecure data storage', 323],['Intent Spoofing', 257],['Missing broadcaster permission.', 407],['Sticky Broadcast', 129],['Sqlite injection susceptible', 1394],['Unauthorized Intent Receipt', 9952]] 
+24 Dec 2014 1:48:25 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 12205],
+          ['Priority 2 Bugs', 4417],
+          ['Priority 3 Bugs', 0]
+			] 
+24 Dec 2014 1:48:57 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:83] toshendra@wegilant.com Audit 1 - Report parser called with variable xml_report=flipkart.xml; audit_id=1; is_limited=0 
+24 Dec 2014 1:48:57 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:85] toshendra@wegilant.com Audit 1 - XML flipkart.xml loaded 
+24 Dec 2014 1:48:57 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:86] toshendra@wegilant.com Audit 1 - User's timestamp calculated as Mon, 21 Jul 2014 5:22:54 PM 
+24 Dec 2014 1:48:57 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:121] toshendra@wegilant.com Audit 1 - user ID fetched as 17 & Name Toshendra Sharmaaa 
+24 Dec 2014 1:48:57 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:124] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 1:48:57 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:186] toshendra@wegilant.com Audit 1 - All bug instances Printed 
+24 Dec 2014 1:48:57 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:191] toshendra@wegilant.com Audit 1 - Audit Table printed 
+24 Dec 2014 1:48:57 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:242] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 1:48:57 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:313] toshendra@wegilant.com Audit 1 - Package Bug Table Printed 
+24 Dec 2014 1:48:57 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 12205],
+          ['Priority 2 Bugs', 4417],
+          ['Priority 3 Bugs', 0]
+			] 
+24 Dec 2014 1:48:57 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:116] In getBugsByCategoriesChartData() 
+24 Dec 2014 1:48:57 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:97] In getBugsCountByCategories() 
+24 Dec 2014 1:48:57 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:122] In getBugsByCategoriesChartData() - getBugsCountByCategories() function returns {"Bad hexadecimal concatenation":"107","Command Injection":"150","Custom MessageDigest":"43","Predictable Pseudo Random Generator (PRG)":"579","Potential Path traversal (read file)":"2380","Potential Path traversal (write file)":"215","ReDOS":"193","Unencrypted socket":"86","Weak MessageDigest":"193","Weak TrustManager implementation":"214","Insecure data storage":"323","Intent Spoofing":"257","Missing broadcaster permission.":"407","Sticky Broadcast":"129","Sqlite injection susceptible":"1394","Unauthorized Intent Receipt":"9952"} 
+24 Dec 2014 1:48:57 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:129] In getBugsByCategoriesChartData() - Generated data for audit id 1 is [['Bug Category', 'Bug Count'],['Bad hexadecimal concatenation', 107],['Command Injection', 150],['Custom MessageDigest', 43],['Predictable Pseudo Random Generator (PRG)', 579],['Potential Path traversal (read file)', 2380],['Potential Path traversal (write file)', 215],['ReDOS', 193],['Unencrypted socket', 86],['Weak MessageDigest', 193],['Weak TrustManager implementation', 214],['Insecure data storage', 323],['Intent Spoofing', 257],['Missing broadcaster permission.', 407],['Sticky Broadcast', 129],['Sqlite injection susceptible', 1394],['Unauthorized Intent Receipt', 9952]] 
+24 Dec 2014 1:48:57 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 12205],
+          ['Priority 2 Bugs', 4417],
+          ['Priority 3 Bugs', 0]
+			] 
+24 Dec 2014 1:50:58 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:83] toshendra@wegilant.com Audit 1 - Report parser called with variable xml_report=flipkart.xml; audit_id=1; is_limited=0 
+24 Dec 2014 1:50:58 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:85] toshendra@wegilant.com Audit 1 - XML flipkart.xml loaded 
+24 Dec 2014 1:50:58 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:86] toshendra@wegilant.com Audit 1 - User's timestamp calculated as Mon, 21 Jul 2014 5:22:54 PM 
+24 Dec 2014 1:50:58 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:121] toshendra@wegilant.com Audit 1 - user ID fetched as 17 & Name Toshendra Sharmaaa 
+24 Dec 2014 1:50:58 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:124] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 1:50:58 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:186] toshendra@wegilant.com Audit 1 - All bug instances Printed 
+24 Dec 2014 1:50:58 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:191] toshendra@wegilant.com Audit 1 - Audit Table printed 
+24 Dec 2014 1:50:58 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:242] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 1:50:58 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:313] toshendra@wegilant.com Audit 1 - Package Bug Table Printed 
+24 Dec 2014 1:50:58 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 12205],
+          ['Priority 2 Bugs', 4417],
+          ['Priority 3 Bugs', 0]
+			] 
+24 Dec 2014 1:50:58 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:116] In getBugsByCategoriesChartData() 
+24 Dec 2014 1:50:58 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:97] In getBugsCountByCategories() 
+24 Dec 2014 1:50:58 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:122] In getBugsByCategoriesChartData() - getBugsCountByCategories() function returns {"Bad hexadecimal concatenation":"107","Command Injection":"150","Custom MessageDigest":"43","Predictable Pseudo Random Generator (PRG)":"579","Potential Path traversal (read file)":"2380","Potential Path traversal (write file)":"215","ReDOS":"193","Unencrypted socket":"86","Weak MessageDigest":"193","Weak TrustManager implementation":"214","Insecure data storage":"323","Intent Spoofing":"257","Missing broadcaster permission.":"407","Sticky Broadcast":"129","Sqlite injection susceptible":"1394","Unauthorized Intent Receipt":"9952"} 
+24 Dec 2014 1:50:58 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:129] In getBugsByCategoriesChartData() - Generated data for audit id 1 is [['Bug Category', 'Bug Count'],['Bad hexadecimal concatenation', 107],['Command Injection', 150],['Custom MessageDigest', 43],['Predictable Pseudo Random Generator (PRG)', 579],['Potential Path traversal (read file)', 2380],['Potential Path traversal (write file)', 215],['ReDOS', 193],['Unencrypted socket', 86],['Weak MessageDigest', 193],['Weak TrustManager implementation', 214],['Insecure data storage', 323],['Intent Spoofing', 257],['Missing broadcaster permission.', 407],['Sticky Broadcast', 129],['Sqlite injection susceptible', 1394],['Unauthorized Intent Receipt', 9952]] 
+24 Dec 2014 1:50:58 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 12205],
+          ['Priority 2 Bugs', 4417],
+          ['Priority 3 Bugs', 0]
+			] 
+24 Dec 2014 2:03:28 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:83] toshendra@wegilant.com Audit 1 - Report parser called with variable xml_report=flipkart.xml; audit_id=1; is_limited=0 
+24 Dec 2014 2:03:28 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:85] toshendra@wegilant.com Audit 1 - XML flipkart.xml loaded 
+24 Dec 2014 2:03:28 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:86] toshendra@wegilant.com Audit 1 - User's timestamp calculated as Mon, 21 Jul 2014 5:22:54 PM 
+24 Dec 2014 2:03:28 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:121] toshendra@wegilant.com Audit 1 - user ID fetched as 17 & Name Toshendra Sharmaaa 
+24 Dec 2014 2:03:28 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:124] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 2:03:28 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:186] toshendra@wegilant.com Audit 1 - All bug instances Printed 
+24 Dec 2014 2:03:28 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:191] toshendra@wegilant.com Audit 1 - Audit Table printed 
+24 Dec 2014 2:03:28 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:242] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 2:03:28 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:313] toshendra@wegilant.com Audit 1 - Package Bug Table Printed 
+24 Dec 2014 2:03:28 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 12205],
+          ['Priority 2 Bugs', 4417],
+          ['Priority 3 Bugs', 0]
+			] 
+24 Dec 2014 2:03:28 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:116] In getBugsByCategoriesChartData() 
+24 Dec 2014 2:03:28 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:97] In getBugsCountByCategories() 
+24 Dec 2014 2:03:28 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:122] In getBugsByCategoriesChartData() - getBugsCountByCategories() function returns {"Bad hexadecimal concatenation":"107","Command Injection":"150","Custom MessageDigest":"43","Predictable Pseudo Random Generator (PRG)":"579","Potential Path traversal (read file)":"2380","Potential Path traversal (write file)":"215","ReDOS":"193","Unencrypted socket":"86","Weak MessageDigest":"193","Weak TrustManager implementation":"214","Insecure data storage":"323","Intent Spoofing":"257","Missing broadcaster permission.":"407","Sticky Broadcast":"129","Sqlite injection susceptible":"1394","Unauthorized Intent Receipt":"9952"} 
+24 Dec 2014 2:03:28 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:129] In getBugsByCategoriesChartData() - Generated data for audit id 1 is [['Bug Category', 'Bug Count'],['Bad hexadecimal concatenation', 107],['Command Injection', 150],['Custom MessageDigest', 43],['Predictable Pseudo Random Generator (PRG)', 579],['Potential Path traversal (read file)', 2380],['Potential Path traversal (write file)', 215],['ReDOS', 193],['Unencrypted socket', 86],['Weak MessageDigest', 193],['Weak TrustManager implementation', 214],['Insecure data storage', 323],['Intent Spoofing', 257],['Missing broadcaster permission.', 407],['Sticky Broadcast', 129],['Sqlite injection susceptible', 1394],['Unauthorized Intent Receipt', 9952]] 
+24 Dec 2014 2:03:28 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 12205],
+          ['Priority 2 Bugs', 4417],
+          ['Priority 3 Bugs', 0]
+			] 
+24 Dec 2014 2:17:34 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:83] toshendra@wegilant.com Audit 1 - Report parser called with variable xml_report=flipkart.xml; audit_id=1; is_limited=0 
+24 Dec 2014 2:17:34 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:85] toshendra@wegilant.com Audit 1 - XML flipkart.xml loaded 
+24 Dec 2014 2:17:34 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:86] toshendra@wegilant.com Audit 1 - User's timestamp calculated as Mon, 21 Jul 2014 5:22:54 PM 
+24 Dec 2014 2:17:34 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:121] toshendra@wegilant.com Audit 1 - user ID fetched as 17 & Name Toshendra Sharmaaa 
+24 Dec 2014 2:17:34 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:124] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 2:17:34 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:186] toshendra@wegilant.com Audit 1 - All bug instances Printed 
+24 Dec 2014 2:17:34 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:191] toshendra@wegilant.com Audit 1 - Audit Table printed 
+24 Dec 2014 2:17:34 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:242] toshendra@wegilant.com Audit 1 - Vulnerable package count is 17 
+24 Dec 2014 2:17:34 PM UTC - INFO  --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:313] toshendra@wegilant.com Audit 1 - Package Bug Table Printed 
+24 Dec 2014 2:17:34 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 12205],
+          ['Priority 2 Bugs', 4417],
+          ['Priority 3 Bugs', 0]
+			] 
+24 Dec 2014 2:17:34 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:116] In getBugsByCategoriesChartData() 
+24 Dec 2014 2:17:34 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:97] In getBugsCountByCategories() 
+24 Dec 2014 2:17:34 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:122] In getBugsByCategoriesChartData() - getBugsCountByCategories() function returns {"Bad hexadecimal concatenation":"107","Command Injection":"150","Custom MessageDigest":"43","Predictable Pseudo Random Generator (PRG)":"579","Potential Path traversal (read file)":"2380","Potential Path traversal (write file)":"215","ReDOS":"193","Unencrypted socket":"86","Weak MessageDigest":"193","Weak TrustManager implementation":"214","Insecure data storage":"323","Intent Spoofing":"257","Missing broadcaster permission.":"407","Sticky Broadcast":"129","Sqlite injection susceptible":"1394","Unauthorized Intent Receipt":"9952"} 
+24 Dec 2014 2:17:34 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:129] In getBugsByCategoriesChartData() - Generated data for audit id 1 is [['Bug Category', 'Bug Count'],['Bad hexadecimal concatenation', 107],['Command Injection', 150],['Custom MessageDigest', 43],['Predictable Pseudo Random Generator (PRG)', 579],['Potential Path traversal (read file)', 2380],['Potential Path traversal (write file)', 215],['ReDOS', 193],['Unencrypted socket', 86],['Weak MessageDigest', 193],['Weak TrustManager implementation', 214],['Insecure data storage', 323],['Intent Spoofing', 257],['Missing broadcaster permission.', 407],['Sticky Broadcast', 129],['Sqlite injection susceptible', 1394],['Unauthorized Intent Receipt', 9952]] 
+24 Dec 2014 2:17:34 PM UTC - DEBUG --> [Unknown in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\classes\Audit.php:153] In getBugsByPriorityChartData() - Generated data  for audit id 1 is [
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 12205],
+          ['Priority 2 Bugs', 4417],
+          ['Priority 3 Bugs', 0]
+			] 
