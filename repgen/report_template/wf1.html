@@ -81,14 +81,14 @@ that are irrelevant to the Executive view and only display the pie charts and ba
 <tr>
 	<td># Classes Audited: 4229</td>
 	<td rowspan='2' align="center">
-	<div id='highThreat'>17</div>	
+	<div id='medThreat'>17</div>	
 	</td>
 	<td>
 	<div id='lowNum'>0&nbsp;&nbsp;&nbsp;&nbsp;</div>	</td>
 	<td>
-	<div id='medNum'>4&nbsp;&nbsp;&nbsp;&nbsp;</div>	</td>
+	<div id='medNum'>5&nbsp;&nbsp;&nbsp;&nbsp;</div>	</td>
 	<td>
-	<div id='highNum'>13&nbsp;&nbsp;&nbsp;&nbsp;</div>	</td>
+	<div id='highNum'>12&nbsp;&nbsp;&nbsp;&nbsp;</div>	</td>
 </tr>
 <tr>
 	<td># Packages Audited: 253</td>
@@ -100,230 +100,294 @@ that are irrelevant to the Executive view and only display the pie charts and ba
 		<div id='highCount'>High&nbsp;&nbsp;&nbsp;&nbsp;</div>	</td>
 	</tr>
 </table>
-</section>
-<!-- Malicious Code -->
-<section id='AuditSummary'>
-<h2>Executive Summary</h2>
-<br>
-	
+<!-- tabs with bug by severity, bugs by type and summary -->
+<ul class="nav nav-tabs">
+	<li><a href="#bugsBySeverity" data-toggle="tab">Bugs by Severity</a></li>
+	<li><a href="#bugsByType" data-toggle="tab">Bugs by Type</a></li>
+	<li><a href="#bugsSummary" data-toggle="tab">Scan Summary</a></li>
+</ul>
+<div id="tabContent" class="tab-content">
+	<div id="bugsBySeverity" class="tab-pane fade in active">
+		<!-- <h3>Bugs should be displayed by severity here</h3>
+		<p>There will be a vertical nav bar/tab menu for low, mid and high severity. - Dev</p>
+		<p>Interactive pie chart which should open corresponding section in Dev - Exec</p>
+		 -->
+		 <div id="bugSeverityList">
+		  <ul class="nav nav-tabs nav-stacked" style="width: 14%">
+   			<li class="active"><a href="#lowBugs" data-toggle="tab">Low Severity</a></li>
+   			<li><a href="#medBugs" data-toggle="tab">Mid Severity</a></li>	
+   			<li><a href="#highBugs" data-toggle="tab">High Severity</a></li>
+   		 </ul>
+   		 </div>
+   		 <div id="bugSeverityDetails" class="tab-content">
+   		 	<div id="lowBugs" class="tab-pane fade in active">
+   				 <p>Display low severity bug details in accordion style with two columns
+   				 Problem Description | Recommended Solution</p>
+   			</div>
+   			<div id="medBugs" class="tab-pane fade in">
+   				 <p>Display mid severity bug details in accordion style with two columns
+   				 Problem Description | Recommended Solution</p>
+   			</div>
+   			<div id="highBugs" class="tab-pane fade in">
+   				 <p>Display high severity bug details in accordion style with two columns
+   				 Problem Description | Recommended Solution</p>
+   			</div>
+   		</div>
+	</div>
+	<div id="bugsByType" class="tab-pane fade in">
+		<h3>Bugs will all be listed by type as a checklist</h3>
+		<p>Bugs found will be checked and others will not be checked. Should not be editable.</p>
+		<p>Interactive bar graph, X-axis:Bug Type, Y-axis:# of bugs - Exec</p>
+	</div>
+	<div id="bugsSummary" class="tab-pane fade in">
 	<table class="table table-bordered">
 		<tr>
-			<h2>Audit Summary</h2>
+			<h2>Scan Summary</h2>
 		</tr>
-		<tr class="up">
-			<td> Package </td>
-			<td> Code Size (Bytes) </td>
-			<td> Bugs </td>
-			<td> Bugs P1 </td>
-			<td> Bugs P2</td>
-			<td> Bugs P3</td>
-		</tr>
-	
-	
-		<tr>
-		<td class='bugx'>com.AdX.tag</td>
-		<td class='bugx'>1220</td>
-		<td class='bugx'>1</td>
-		<td class='p1'>0
-		</td>
-		<td class='p2'>1
-		</td>
-		<td class='p3'>0
-		</td>
-		</tr>
-		<tr>
-		<td class='bugx'>com.actionbarsherlock.internal.view.menu</td>
-		<td class='bugx'>2539</td>
-		<td class='bugx'>2</td>
-		<td class='p1'>2
-		</td>
-		<td class='p2'>0
-		</td>
-		<td class='p3'>0
-		</td>
-		</tr>
-		<tr>
-		<td class='bugx'>com.actionbarsherlock.widget</td>
-		<td class='bugx'>1845</td>
-		<td class='bugx'>7</td>
-		<td class='p1'>7
-		</td>
-		<td class='p2'>0
-		</td>
-		<td class='p3'>0
-		</td>
-		</tr>
-		<tr>
-		<td class='bugx'>com.adobe.adms.measurement</td>
-		<td class='bugx'>1779</td>
-		<td class='bugx'>2</td>
-		<td class='p1'>0
-		</td>
-		<td class='p2'>2
-		</td>
-		<td class='p3'>0
-		</td>
-		</tr>
-		<tr>
-		<td class='bugx'>com.android.volley.toolbox</td>
-		<td class='bugx'>1146</td>
-		<td class='bugx'>2</td>
-		<td class='p1'>0
-		</td>
-		<td class='p2'>2
-		</td>
-		<td class='p3'>0
-		</td>
-		</tr>
-		<tr>
-		<td class='bugx'>com.apsalar.sdk</td>
-		<td class='bugx'>1286</td>
-		<td class='bugx'>4</td>
-		<td class='p1'>2
-		</td>
-		<td class='p2'>2
-		</td>
-		<td class='p3'>0
-		</td>
-		</tr>
-		<tr>
-		<td class='bugx'>com.crittercism.app</td>
-		<td class='bugx'>926</td>
-		<td class='bugx'>5</td>
-		<td class='p1'>1
-		</td>
-		<td class='p2'>4
-		</td>
-		<td class='p3'>0
-		</td>
-		</tr>
-		<tr>
-		<td class='bugx'>com.flipkart.android</td>
-		<td class='bugx'>2189</td>
-		<td class='bugx'>2</td>
-		<td class='p1'>2
-		</td>
-		<td class='p2'>0
-		</td>
-		<td class='p3'>0
-		</td>
-		</tr>
-		<tr>
-		<td class='bugx'>com.flipkart.android.activity</td>
-		<td class='bugx'>1587</td>
-		<td class='bugx'>6</td>
-		<td class='p1'>6
-		</td>
-		<td class='p2'>0
-		</td>
-		<td class='p3'>0
-		</td>
-		</tr>
-		<tr>
-		<td class='bugx'>com.flipkart.android.activity.base</td>
-		<td class='bugx'>54</td>
-		<td class='bugx'>2</td>
-		<td class='p1'>2
-		</td>
-		<td class='p2'>0
-		</td>
-		<td class='p3'>0
-		</td>
-		</tr>
-		<tr>
-		<td class='bugx'>com.flipkart.android.config</td>
-		<td class='bugx'>709</td>
-		<td class='bugx'>1</td>
-		<td class='p1'>1
-		</td>
-		<td class='p2'>0
-		</td>
-		<td class='p3'>0
-		</td>
-		</tr>
-		<tr>
-		<td class='bugx'>com.flipkart.android.fragments</td>
-		<td class='bugx'>5248</td>
-		<td class='bugx'>7</td>
-		<td class='p1'>7
-		</td>
-		<td class='p2'>0
-		</td>
-		<td class='p3'>0
-		</td>
-		</tr>
-		<tr>
-		<td class='bugx'>com.flipkart.android.notification</td>
-		<td class='bugx'>218</td>
-		<td class='bugx'>1</td>
-		<td class='p1'>1
-		</td>
-		<td class='p2'>0
-		</td>
-		<td class='p3'>0
-		</td>
-		</tr>
-		<tr>
-		<td class='bugx'>com.flipkart.android.utils</td>
-		<td class='bugx'>3265</td>
-		<td class='bugx'>2</td>
-		<td class='p1'>0
-		</td>
-		<td class='p2'>2
-		</td>
-		<td class='p3'>0
-		</td>
-		</tr>
-		<tr>
-		<td class='bugx'>com.flipkart.android.widget</td>
-		<td class='bugx'>205</td>
-		<td class='bugx'>1</td>
-		<td class='p1'>1
-		</td>
-		<td class='p2'>0
-		</td>
-		<td class='p3'>0
-		</td>
-		</tr>
-		<tr>
-		<td class='bugx'>com.jakewharton.disklrucache</td>
-		<td class='bugx'>695</td>
-		<td class='bugx'>3</td>
-		<td class='p1'>1
-		</td>
-		<td class='p2'>2
-		</td>
-		<td class='p3'>0
-		</td>
-		</tr>
-		<tr>
-		<td class='bugx'>crittercism.android</td>
-		<td class='bugx'>1406</td>
-		<td class='bugx'>6</td>
-		<td class='p1'>1
-		</td>
-		<td class='p2'>5
-		</td>
-		<td class='p3'>0
-		</td>
-		</tr></table>
-<table><tr><td><div id='piechart1'></div></td>
-<td><div id='piechart2'></div></td></tr></table>
-</section><!-- Malicious Code Section-->
-<section id='MCode'>
-<h2>Malicious Code</h2>
-<br>
+				 	<tr class="up">
+		 	<td> Package </td>
+		 	<td> Code Size (Bytes) </td>
+		 	<td> Bugs </td>
+		 	<td> Bugs P1 </td>
+		 	<td> Bugs P2</td>
+		 	<td> Bugs P3</td>
+		 	</tr>
+		 	
+		 	
+		 		<tr>
+		 		<td class='bugx'>com.AdX.tag</td>
+		 		<td class='bugx'>1220</td>
+		 		<td class='bugx'>1</td>
+		 		<td class='p1'>0
+		 		</td>
+		 		<td class='p2'>1
+		 		</td>
+		 		<td class='p3'>0
+		 	</td>
+		 		</tr>
+		 		<tr>
+		 		<td class='bugx'>com.actionbarsherlock.internal.view.menu</td>
+		 		<td class='bugx'>2539</td>
+		 		<td class='bugx'>2</td>
+		 		<td class='p1'>2
+		 		</td>
+		 		<td class='p2'>0
+		 		</td>
+		 		<td class='p3'>0
+		 	</td>
+		 		</tr>
+		 		<tr>
+		 		<td class='bugx'>com.actionbarsherlock.widget</td>
+		 		<td class='bugx'>1845</td>
+		 		<td class='bugx'>7</td>
+		 		<td class='p1'>7
+		 		</td>
+		 		<td class='p2'>0
+		 		</td>
+		 		<td class='p3'>0
+		 	</td>
+		 		</tr>
+		 		<tr>
+		 		<td class='bugx'>com.adobe.adms.measurement</td>
+		 		<td class='bugx'>1779</td>
+		 		<td class='bugx'>2</td>
+		 		<td class='p1'>0
+		 		</td>
+		 		<td class='p2'>2
+		 		</td>
+		 		<td class='p3'>0
+		 	</td>
+		 		</tr>
+		 		<tr>
+		 		<td class='bugx'>com.android.volley.toolbox</td>
+		 		<td class='bugx'>1146</td>
+		 		<td class='bugx'>2</td>
+		 		<td class='p1'>0
+		 		</td>
+		 		<td class='p2'>2
+		 		</td>
+		 		<td class='p3'>0
+		 	</td>
+		 		</tr>
+		 		<tr>
+		 		<td class='bugx'>com.apsalar.sdk</td>
+		 		<td class='bugx'>1286</td>
+		 		<td class='bugx'>4</td>
+		 		<td class='p1'>2
+		 		</td>
+		 		<td class='p2'>2
+		 		</td>
+		 		<td class='p3'>0
+		 	</td>
+		 		</tr>
+		 		<tr>
+		 		<td class='bugx'>com.crittercism.app</td>
+		 		<td class='bugx'>926</td>
+		 		<td class='bugx'>5</td>
+		 		<td class='p1'>1
+		 		</td>
+		 		<td class='p2'>4
+		 		</td>
+		 		<td class='p3'>0
+		 	</td>
+		 		</tr>
+		 		<tr>
+		 		<td class='bugx'>com.flipkart.android</td>
+		 		<td class='bugx'>2189</td>
+		 		<td class='bugx'>2</td>
+		 		<td class='p1'>2
+		 		</td>
+		 		<td class='p2'>0
+		 		</td>
+		 		<td class='p3'>0
+		 	</td>
+		 		</tr>
+		 		<tr>
+		 		<td class='bugx'>com.flipkart.android.activity</td>
+		 		<td class='bugx'>1587</td>
+		 		<td class='bugx'>6</td>
+		 		<td class='p1'>6
+		 		</td>
+		 		<td class='p2'>0
+		 		</td>
+		 		<td class='p3'>0
+		 	</td>
+		 		</tr>
+		 		<tr>
+		 		<td class='bugx'>com.flipkart.android.activity.base</td>
+		 		<td class='bugx'>54</td>
+		 		<td class='bugx'>2</td>
+		 		<td class='p1'>2
+		 		</td>
+		 		<td class='p2'>0
+		 		</td>
+		 		<td class='p3'>0
+		 	</td>
+		 		</tr>
+		 		<tr>
+		 		<td class='bugx'>com.flipkart.android.config</td>
+		 		<td class='bugx'>709</td>
+		 		<td class='bugx'>1</td>
+		 		<td class='p1'>1
+		 		</td>
+		 		<td class='p2'>0
+		 		</td>
+		 		<td class='p3'>0
+		 	</td>
+		 		</tr>
+		 		<tr>
+		 		<td class='bugx'>com.flipkart.android.fragments</td>
+		 		<td class='bugx'>5248</td>
+		 		<td class='bugx'>7</td>
+		 		<td class='p1'>7
+		 		</td>
+		 		<td class='p2'>0
+		 		</td>
+		 		<td class='p3'>0
+		 	</td>
+		 		</tr>
+		 		<tr>
+		 		<td class='bugx'>com.flipkart.android.notification</td>
+		 		<td class='bugx'>218</td>
+		 		<td class='bugx'>1</td>
+		 		<td class='p1'>1
+		 		</td>
+		 		<td class='p2'>0
+		 		</td>
+		 		<td class='p3'>0
+		 	</td>
+		 		</tr>
+		 		<tr>
+		 		<td class='bugx'>com.flipkart.android.utils</td>
+		 		<td class='bugx'>3265</td>
+		 		<td class='bugx'>2</td>
+		 		<td class='p1'>0
+		 		</td>
+		 		<td class='p2'>2
+		 		</td>
+		 		<td class='p3'>0
+		 	</td>
+		 		</tr>
+		 		<tr>
+		 		<td class='bugx'>com.flipkart.android.widget</td>
+		 		<td class='bugx'>205</td>
+		 		<td class='bugx'>1</td>
+		 		<td class='p1'>1
+		 		</td>
+		 		<td class='p2'>0
+		 		</td>
+		 		<td class='p3'>0
+		 	</td>
+		 		</tr>
+		 		<tr>
+		 		<td class='bugx'>com.jakewharton.disklrucache</td>
+		 		<td class='bugx'>695</td>
+		 		<td class='bugx'>3</td>
+		 		<td class='p1'>1
+		 		</td>
+		 		<td class='p2'>2
+		 		</td>
+		 		<td class='p3'>0
+		 	</td>
+		 		</tr>
+		 		<tr>
+		 		<td class='bugx'>crittercism.android</td>
+		 		<td class='bugx'>1406</td>
+		 		<td class='bugx'>6</td>
+		 		<td class='p1'>1
+		 		</td>
+		 		<td class='p2'>5
+		 		</td>
+		 		<td class='p3'>0
+		 	</td>
+		 		</tr></table>	</div>
+</div>
+<div id="bugSeverityPieChart" style="width:100%; height:100%">
+   			<table>
+					<tr>
+						<td><div id='piechart1'></div></td>
+   						<td><div id='piechart2'></div></td>
+					</tr>
+				</table><script type='text/javascript'>
+   				google.load('visualization', '1', {packages:['corechart']});
+   				google.setOnLoadCallback(BugsByPriorityChart);
+   				function BugsByPriorityChart() {
+   				var data = google.visualization.arrayToDataTable([
+          ['Priority', 'Bug Count'],
+          ['Priority 1 Bugs', 12205],
+          ['Priority 2 Bugs', 4417],
+          ['Priority 3 Bugs', 0]
+			]);
+   				var options = {
+   				title: 'Bugs by Priority',
+   				chartArea:{left:0,top:50,width:'100%',height:'100%'},
+   				enableInteractivity: true,
+   				is3D: true
+   			};
+   			document.getElementById('piechart2').setAttribute('style','width: 100%');
+   			document.getElementById('piechart2').setAttribute('style','height: 100%');
+   			var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+   			chart.draw(data, options);
+   			}
+   			</script><script type='text/javascript'>
+   			google.load('visualization', '1', {packages:['corechart']});
+   			google.setOnLoadCallback(BugsByCategoriesChart);
+   			function BugsByCategoriesChart() {
+   			var data = google.visualization.arrayToDataTable([['Bug Category', 'Bug Count'],['Bad hexadecimal concatenation', 107],['Command Injection', 150],['Custom MessageDigest', 43],['Predictable Pseudo Random Generator (PRG)', 579],['Potential Path traversal (read file)', 2380],['Potential Path traversal (write file)', 215],['ReDOS', 193],['Unencrypted socket', 86],['Weak MessageDigest', 193],['Weak TrustManager implementation', 214],['Insecure data storage', 323],['Intent Spoofing', 257],['Missing broadcaster permission.', 407],['Sticky Broadcast', 129],['Sqlite injection susceptible', 1394],['Unauthorized Intent Receipt', 9952]]);
+   			var options = {
+   			title: 'Bugs by Type',
+   			chartArea:{right:25,top:50,width:'100%',height:'100%'},
+   			enableInteractivity: true,
+   			is3D: true
+   			};
+   			document.getElementById('piechart1').setAttribute('style','width: 100%');
+   			document.getElementById('piechart1').setAttribute('style','height: 100%');
+   			var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+   			chart.draw(data, options);
+   			}
+   			</script>   		</div>
 
-Notice: Undefined variable: abbrev_count in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php on line 294
-
-Call Stack:
-    0.0029     314528   1. {main}() C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:0
-
-<h4>Wow!!! No bug has been found in your app. Seems you are doing a pretty good job.</h4></section>
-Notice: Undefined variable: abbrev_count in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php on line 393
-
-Call Stack:
-    0.0029     314528   1. {main}() C:\Users\Kausthub\workspace\wegilant-workspace\repgen\appvigil-wireframe-reporter.php:0
+</section>
 
 <!-- footer will stay the same -->
 <!-- begin PSD Files -->
@@ -351,12 +415,5 @@ Call Stack:
 </footer>
 <!-- end footer -->
 </div>
-
-</body></html>
-
-Warning: fclose(): 14 is not a valid stream resource in C:\Users\Kausthub\workspace\wegilant-workspace\repgen\includes\KLogger.php on line 81
-
-Call Stack:
-    0.2396     670248   1. KLogger->__destruct() C:\Users\Kausthub\workspace\wegilant-workspace\repgen\includes\KLogger.php:0
-    0.2396     670352   2. fclose() C:\Users\Kausthub\workspace\wegilant-workspace\repgen\includes\KLogger.php:81
-
+</body>
+</html>

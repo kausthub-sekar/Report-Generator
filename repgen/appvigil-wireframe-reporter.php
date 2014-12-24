@@ -23,7 +23,6 @@
 	<script src="js/tinynav.min.js" type="text/javascript"></script>
 	<script src="js/custom.js" type="text/javascript"></script>
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-	<script type="text/javascript" src="js/foundation.min.js"></script>
 	<script type="text/javascript" src="js/switchReport.js"></script>
 	<!-- end JS -->
 	<style>
@@ -136,11 +135,11 @@ $report_generator_log->LogInfo("$user_email Audit $audit_id - Vulnerable package
 	<td># Classes Audited: <?php echo $scan_summary[0]->attributes()->total_classes;?></td>
 	<td rowspan='2' align="center">
 	<?php 
-				if($audit->getTotalBugsCount()<15)
+				if($vulnerable_package_count<15)
 				{
 					echo "<div id='lowThreat'>".$vulnerable_package_count."</div>";
 				}
-				else if($audit->getTotalBugsCount()<25)
+				else if($vulnerable_package_count<25)
 				{
 					echo "<div id='medThreat'>".$vulnerable_package_count."</div>";
 				}
@@ -191,274 +190,188 @@ $report_generator_log->LogInfo("$user_email Audit $audit_id - Vulnerable package
 <?php
 $report_generator_log->LogInfo("$user_email Audit $audit_id - Audit Table printed",__FILE__,__LINE__);
 ?>
-</section>
-<!-- Malicious Code -->
-<section id='AuditSummary'>
-<?php
-//echo "Vulnerable Packages: $vulnerable_package_count";
-if($vulnerable_package_count == 0)
-{
-	echo "<h4> No Buggy package found in your app</h4>";
-}
-else
-{
-	?>
-		<dl class="tabs" data-tab>
-  			<dd class="active"><a href="#panel1">Bugs by Severity</a></dd>
-  			<dd><a href="#panel2">Bugs by Type</a></dd>
-  			<dd><a href="#panel3">Summary</a></dd>
-		</dl>
-		<div class="tabs-content">
- 		 <div class="content active" id="subPanel1">
-   		  <p>
-   		  This is the first panel which will contain Bugs by Severity.
-   		  	<dl class="tabs vertical" data-tab>
-  				<dd class="active"><a href="#subPanel1">Low Severity</a></dd>
-  				<dd><a href="#subPanel2">Mid Severity</a></dd>
-  				<dd><a href="#subPanel3">High Severity</a></dd>
-			</dl>
-			
-			<div class="tabs-content vertical">
-  			  <div class="content active" id="subPanel1">
-    			<p>This is the first panel of the basic tab example. This is the first panel of the basic tab example.</p>
-  			  </div>
-  			  <div class="content" id="subPanel2">
-    			<p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
-  			  </div>
-  			<div class="content" id="subPanel3">
-    			<p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
-  			</div> 
-  		 </div>
-  		 
-  		 <div class="content" id="panel2">
-    	  <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
-  		 </div>
-  		 <div class="content" id="panel3">
-    	  <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
-  		 </div>
-  		</div>
+<!-- tabs with bug by severity, bugs by type and summary -->
+<ul class="nav nav-tabs">
+	<li><a href="#bugsBySeverity" data-toggle="tab">Bugs by Severity</a></li>
+	<li><a href="#bugsByType" data-toggle="tab">Bugs by Type</a></li>
+	<li><a href="#bugsSummary" data-toggle="tab">Scan Summary</a></li>
+</ul>
+<div id="tabContent" class="tab-content">
+	<div id="bugsBySeverity" class="tab-pane fade in active">
+		<!-- <h3>Bugs should be displayed by severity here</h3>
+		<p>There will be a vertical nav bar/tab menu for low, mid and high severity. - Dev</p>
+		<p>Interactive pie chart which should open corresponding section in Dev - Exec</p>
+		 -->
+		 <div id="bugSeverityList">
+		  <ul class="nav nav-tabs nav-stacked" style="width: 14%">
+   			<li class="active"><a href="#lowBugs" data-toggle="tab">Low Severity</a></li>
+   			<li><a href="#medBugs" data-toggle="tab">Mid Severity</a></li>	
+   			<li><a href="#highBugs" data-toggle="tab">High Severity</a></li>
+   		 </ul>
+   		 </div>
+   		 <div id="bugSeverityDetails" class="tab-content">
+   		 	<div id="lowBugs" class="tab-pane fade in active">
+   				 <p>Display low severity bug details in accordion style with two columns
+   				 Problem Description | Recommended Solution</p>
+   			</div>
+   			<div id="medBugs" class="tab-pane fade in">
+   				 <p>Display mid severity bug details in accordion style with two columns
+   				 Problem Description | Recommended Solution</p>
+   			</div>
+   			<div id="highBugs" class="tab-pane fade in">
+   				 <p>Display high severity bug details in accordion style with two columns
+   				 Problem Description | Recommended Solution</p>
+   			</div>
+   		</div>
+	</div>
+	<div id="bugsByType" class="tab-pane fade in">
+		<h3>Bugs will all be listed by type as a checklist</h3>
+		<p>Bugs found will be checked and others will not be checked. Should not be editable.</p>
+		<p>Interactive bar graph, X-axis:Bug Type, Y-axis:# of bugs - Exec</p>
+	</div>
+	<div id="bugsSummary" class="tab-pane fade in">
 	<table class="table table-bordered">
 		<tr>
-			<h2>Audit Summary</h2>
+			<h2>Scan Summary</h2>
 		</tr>
-		<tr class="up">
-			<td> Package </td>
-			<td> Code Size (Bytes) </td>
-			<td> Bugs </td>
-			<td> Bugs P1 </td>
-			<td> Bugs P2</td>
-			<td> Bugs P3</td>
-		</tr>
-	
-	<?php
-	foreach ($package_summary as $package_info)
-	{
-		echo "
-		<tr>
-		<td class='bugx'>{$package_info->attributes()->package}</td>
-		<td class='bugx'>{$package_info->attributes()->total_size}</td>
-		<td class='bugx'>{$package_info->attributes()->total_bugs}</td>
-		<td class='p1'>";
-
-		if(isset($package_info->attributes()->priority_1))
-		{
-			echo $package_info->attributes()->priority_1;
-			$p1_count = $package_info->attributes()->priority_1;
-		}
-		else
-		{
-			echo "0";
-			$p1_count = 0;
-		}
-		echo "
-		</td>
-		<td class='p2'>";
+		<?php
+		$package_summary = array_unique($xml->xpath('//PackageStats[@total_bugs!=0]'));
+		$vulnerable_package_count = count($package_summary);
+		$report_generator_log->LogInfo("$user_email Audit $audit_id - Vulnerable package count is $vulnerable_package_count",__FILE__,__LINE__);
+		 if($vulnerable_package_count == 0)
+		 {
+			echo "<h4> No Buggy package found in your app</h4>";
+		 }
+		 else
+		 {
+		 ?>
+		 	<tr class="up">
+		 	<td> Package </td>
+		 	<td> Code Size (Bytes) </td>
+		 	<td> Bugs </td>
+		 	<td> Bugs P1 </td>
+		 	<td> Bugs P2</td>
+		 	<td> Bugs P3</td>
+		 	</tr>
+		 	
+		 	<?php
+		 	foreach ($package_summary as $package_info)
+		 	{
+		 		echo "
+		 		<tr>
+		 		<td class='bugx'>{$package_info->attributes()->package}</td>
+		 		<td class='bugx'>{$package_info->attributes()->total_size}</td>
+		 		<td class='bugx'>{$package_info->attributes()->total_bugs}</td>
+		 		<td class='p1'>";
+		 	
+		 		if(isset($package_info->attributes()->priority_1))
+		 		{
+		 		echo $package_info->attributes()->priority_1;
+		 		$p1_count = $package_info->attributes()->priority_1;
+		 		}
+		 		else
+		 		{
+		 		echo "0";
+		 		$p1_count = 0;
+		 		}
+		 		echo "
+		 		</td>
+		 		<td class='p2'>";
 		if(isset($package_info->attributes()->priority_2))
-		{
-			echo $package_info->attributes()->priority_2;
-			$p2_count = $package_info->attributes()->priority_2;
-		}
-		else
-		{
-			echo "0";
-			$p2_count = 0;
-		}
-		echo "
-		</td>
-		<td class='p3'>";
-		if(isset($package_info->attributes()->priority_3))
-		{
-			echo $package_info->attributes()->priority_3;
-			$p3_count = $package_info->attributes()->priority_3;
-		}
-		else
-		{
-			echo "0";
-			$p3_count = 0;
-		}
-		echo "
-		</td>
-		</tr>";
-		$audit->addKeyInfo($package_info->attributes()->package, $package_info->attributes()->total_size, $p1_count, $p2_count, $p3_count);
-	}
-	
-	echo "</table>";
-	
-$report_generator_log->LogInfo("$user_email Audit $audit_id - Package Bug Table Printed",__FILE__,__LINE__);
+		 			{
+		 			echo $package_info->attributes()->priority_2;
+		 			$p2_count = $package_info->attributes()->priority_2;
+		 		}
+		 		else
+		 		{
+		 		echo "0";
+		 		$p2_count = 0;
+		 		}
+		 		echo "
+		 		</td>
+		 		<td class='p3'>";
+		 		if(isset($package_info->attributes()->priority_3))
+		 		{
+		 		echo $package_info->attributes()->priority_3;
+		 		$p3_count = $package_info->attributes()->priority_3;
+		 		}
+		 		else
+		 		{
+		 		echo "0";
+		 		$p3_count = 0;
+		 	}
+		 	echo "
+		 	</td>
+		 		</tr>";
+		 		$audit->addKeyInfo($package_info->attributes()->package, $package_info->attributes()->total_size, $p1_count, $p2_count, $p3_count);
+		 	}
+		 	
+		 	echo "</table>";
+		 	
+		 	$report_generator_log->LogInfo("$user_email Audit $audit_id - Package Bug Table Printed",__FILE__,__LINE__);
+		 }
+		 ?>
+	</div>
+</div>
+<div id="bugSeverityPieChart" style="width:100%; height:100%">
+   			<?php 
+   			$abbrev_categories = array_unique($xml->xpath('//BugInstance/@abbrev'));
+   			$abbrev_count = count($abbrev_categories);
+   			
+   			//print pie chart even if there are zero bug instances
+   			//print chart divs even if Vulnerable package count is 0
+   			$auto_height = $vulnerable_package_count*70;
+   			echo "<table>
+					<tr>
+						<td><div id='piechart1'></div></td>
+   						<td><div id='piechart2'></div></td>
+					</tr>
+				</table>";
+   			
+   			if($abbrev_count !=0)
+   			{
+   				echo "<script type='text/javascript'>
+   				google.load('visualization', '1', {packages:['corechart']});
+   				google.setOnLoadCallback(BugsByPriorityChart);
+   				function BugsByPriorityChart() {
+   				var data = google.visualization.arrayToDataTable({$audit->getBugsByPriorityChartData()});
+   				var options = {
+   				title: 'Bugs by Priority',
+   				chartArea:{left:0,top:50,width:'100%',height:'100%'},
+   				enableInteractivity: true,
+   				is3D: true
+   			};
+   			document.getElementById('piechart2').setAttribute('style','width: 100%');
+   			document.getElementById('piechart2').setAttribute('style','height: 100%');
+   			var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+   			chart.draw(data, options);
+   			}
+   			</script>";
+   			
+   			echo "<script type='text/javascript'>
+   			google.load('visualization', '1', {packages:['corechart']});
+   			google.setOnLoadCallback(BugsByCategoriesChart);
+   			function BugsByCategoriesChart() {
+   			var data = google.visualization.arrayToDataTable({$audit->getBugsByCategoriesChartData()});
+   			var options = {
+   			title: 'Bugs by Type',
+   			chartArea:{right:25,top:50,width:'100%',height:'100%'},
+   			enableInteractivity: true,
+   			is3D: true
+   			};
+   			document.getElementById('piechart1').setAttribute('style','width: 100%');
+   			document.getElementById('piechart1').setAttribute('style','height: 100%');
+   			var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+   			chart.draw(data, options);
+   			}
+   			</script>";
+   			 
+   			}
+   			?>
+   		</div>
 
-?>
+</section>
 
-<?php
-}//else closed for printing Audit Summary Section
-
-//print chart divs even if Vulnerable package count is 0
-$auto_height = $vulnerable_package_count*70;
-echo "<table><tr><td><div id='piechart1'></div></td>
-<td><div id='piechart2'></div></td></tr></table>
-</section>";
-
-?>
-<!-- Malicious Code Section-->
-<section id='MCode'>
-<h2>Malicious Code</h2>
-<br>
-<?php
-if($abbrev_count==0)
-{
-	echo "<h4>Wow!!! No bug has been found in your app. Seems you are doing a pretty good job.</h4>";
-}
-else
-{
-	$i=1;
-	foreach($abbrev_categories as $abbrev_category)
-		{
-		//echo "**************Category $i Category Started*****************<br><br>";
-		$i++;
-		$abbrev = $abbrev_category->abbrev;
-		$bug_types = $xml->xpath("//BugInstance[@abbrev='$abbrev']");
-		$BugCode = $xml->xpath("//BugCode[@abbrev='$abbrev']");
-		$abbrev_meaning = $BugCode[0]->Description;
-		//echo "<br>Abbrev: $abbrev";
-		echo "<div class='accordion' id='$abbrev-super'><div class='accordion-group'>";
-		echo "<div class='accordion-heading'>
-		<a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#$abbrev-super' href='#$abbrev'><b>$abbrev_meaning</b> <span class = 'badge' style='background-color: #FC0B0B; color: white;'>".count($bug_types)." Vulnerabilities</span></a></div>";
-		echo "<div id='$abbrev' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>";
-		echo "<div class='accordion' id='$abbrev-list'>";
-
-
-
-		//break;
-		$bug_id = 0;
-		foreach($bug_types as $bug_type)
-		{
-		$bug_id++;
-		$full_desc_bug_predicate = ($is_limited!=1 or $bug_id==1 or $bug_id<=count($bug_types)*$limited_percentage);
-		$bug_type_code = $bug_type->attributes()->type;
-		echo "<div class='accordion-group'>";
-		echo "<div class='accordion-heading'>";
-
-		if(!$full_desc_bug_predicate)
-		{
-			echo "<a class='accordion-toggle collapsed' style='color:gray;' data-toggle='collapse' data-parent='#$abbrev-list' href='#$abbrev-$bug_id'>";
-			echo "<b><i class='icon-bug' style='color:gray;'></i> {$bug_type->Class->attributes()->classname} [LIMITED]</b></a>";
-			}
-			else
-			{
-			echo "<a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#$abbrev-list' href='#$abbrev-$bug_id'>";
-			echo "<b><i class='icon-bug' style='color:#FF8A00;'></i> {$bug_type->Class->attributes()->classname}</b></a>";
-			}
-
-			echo "</div>";
-			echo "<div id='$abbrev-$bug_id' class='accordion-body collapse' style='height: 0px;'> <div class='accordion-inner'>
-			<b>
-			{$bug_type->ShortMessage}
-			</b><br>
-			<b>Priority: </b>
-			{$bug_type->attributes()->priority}
-			<br>
-			<b>Rank: </b>
-			{$bug_type->attributes()->rank}
-			<hr>";
-			if($full_desc_bug_predicate)
-			{
-				if (array_key_exists("Class" , $bug_type))
-				{
-					echo "{$bug_type->Class->Message}<br>";
-				}
-				if (array_key_exists("Method" , $bug_type))
-				{
-					echo "{$bug_type->Method->Message}<br>";
-				}
-				if (array_key_exists("Field" , $bug_type))
-				{
-					echo "{$bug_type->Field->Message}<br>";
-				}
-
-				if(strlen($bug_type->SourceLine->Message) > 12)
-					echo $bug_type->SourceLine->Message;
-				echo "
-				<hr>
-				<hr><b>Exact Problem: </b>
-				{$bug_type->LongMessage}
-				<br>
-				<hr>";
-
-				$bug_pattern = $xml->xpath("//BugPattern[@type = '$bug_type_code']");
-				echo "
-				<b>Description: </b>";
-				echo (string) $bug_pattern[0]->Details;
-			}
-			else 
-				echo "<i>*Detailed description is available for paid users only.</i>";
-			echo "</div></div></div>";
-			//insert bug info into database
-			$bug = $audit->addBug($abbrev, $bug_type_code, $bug_type->attributes()->priority, $bug_type->attributes()->rank, $bug_type->Class->Message,$bug_type->Method->Message,$bug_type->Field->Message,$bug_type->ShortMessage, $bug_type->LongMessage,$bug_type);
-		}
-		echo "</div></div></div></div>";
-	}
-}
-
-
-echo "</section>";
-
-//print priority wise split chart
-if($abbrev_count !=0)
-{
-	echo "<script type='text/javascript'>
-	google.load('visualization', '1', {packages:['corechart']});
-	google.setOnLoadCallback(BugsByPriorityChart);
-	function BugsByPriorityChart() {
-	var data = google.visualization.arrayToDataTable({$audit->getBugsByPriorityChartData()});
-	var options = {
-	title: 'Bugs by Priority',
-	chartArea:{left:0,top:50,width:'100%',height:'100%'}
-	};
-	document.getElementById('piechart2').setAttribute('style','width: 100%');
-	document.getElementById('piechart2').setAttribute('style','height: 500px');
-	var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
-	chart.draw(data, options);
-	}
-	</script>";
-	
-	echo "<script type='text/javascript'>
-      google.load('visualization', '1', {packages:['corechart']});
-	  google.setOnLoadCallback(BugsByCategoriesChart);
-	  function BugsByCategoriesChart() {
-        var data = google.visualization.arrayToDataTable({$audit->getBugsByCategoriesChartData()});
-        var options = {
-          title: 'Bugs by Type',
-          chartArea:{right:25,top:50,width:'100%',height:'100%'}
-        };
-		document.getElementById('piechart1').setAttribute('style','width: 100%');
-		document.getElementById('piechart1').setAttribute('style','height: 500px');
-        var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
-        chart.draw(data, options);
-      }
-	  </script>";	  
-	  
-}
-
-?>
 <!-- footer will stay the same -->
 <!-- begin PSD Files -->
 <section id="about-us">
@@ -485,9 +398,5 @@ if($abbrev_count !=0)
 </footer>
 <!-- end footer -->
 </div>
-
-</body></html>
-<?php
-$report_generator_log->LogInfo("$user_email Audit $audit_id - End of file reached",__FILE__,__LINE__);
-$report_generator_log->logClose();
-?>
+</body>
+</html>

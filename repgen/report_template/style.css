@@ -66,7 +66,7 @@ h2 {
 }
 
 #header, #content, #footer {
-	width: 1010px;
+	width: 1024px;
 	margin-left: 5%; /* nav width + nav margin + margin left */
 	max-width: 90%;
 	margin-right: 5%;
