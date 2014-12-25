@@ -98,3 +98,98 @@ var highCount="<?php echo \"<div id='highCount'>High&nbsp;&nbsp;&nbsp;&nbsp;</di
 		j("#bugTypeProb").show("fast");
 		j("#bugTypeSoln").show("fast");
 	});	
+---
+scan summary also not working suddenly so I removed everything
+//when document loads hide all the details initially  
+	//developer report is considered the default view
+	/*
+	j("#bugSeverityDetails").hide("fast");
+	j("#bugTypeProb").hide("fast");
+	j("#bugTypeSoln").hide("fast");
+	j("#bugTypeList").hide("fast");
+	j("#bugTypeDesc").hide("fast");
+	*/
+	//j("#bugSeverityList").hide("fast");
+	j("#bugSeverityPieChart").hide("fast");
+	j("#bugSeverityBarGraph").hide("fast");
+	
+	//function to find the currently active bootstrap tab
+	function getActiveTab(){
+	      j('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+	      // Get the name of active tab
+	      var activeTab = j(e.target).text();
+	      //alert(activeTab);
+	      return activeTab;
+	      });
+	}
+	
+	//radio button based report switching not yet working...
+	//there's a problem in the active tab and radio button value co-ordination
+	//debugged and verified that both values of radio button and active tab are correct
+	//but the div elements still remain hidden or exposed in the wrong case
+	//for now show the appropriate div elements based on radio button checked
+	j('input[type="radio"]').click(function () {
+		//alert("Radio: "+j(this).attr("value"));	
+		if(j(this).attr("value")=="dev")
+		{
+			//if(getActiveTab()=="Bugs by Severity")
+			//{
+				j("#bugSeverityPieChart").hide("fast");
+				j("#bugSeverityBarGraph").hide("fast");	
+			//}
+			//else 
+			if(getActiveTab()=="Bugs by Type")
+			{
+				j("#bugSeverityDetails").hide("fast");
+				j("#bugSeverityList").hide("fast");
+				j("#bugTypeProb").hide("fast");
+				j("#bugTypeSoln").hide("fast");
+				j("#bugSeverityPieChart").hide("fast");
+				j("#bugSeverityBarGraph").hide("fast");
+				j("#bugTypeList").show("fast");
+				j("#bugTypeDesc").show("fast");
+			}
+			/*
+			else
+			{
+				j("#bugSeverityDetails").hide("fast");
+				j("#bugSeverityList").hide("fast");
+				j("#bugTypeProb").hide("fast");
+				j("#bugTypeSoln").hide("fast");
+				j("#bugTypeList").hide("fast");
+				j("#bugTypeDesc").hide("fast");
+				j("#bugSeverityPieChart").hide("fast");
+				j("#bugSeverityBarGraph").hide("fast");
+			}*/
+		}
+		//can't get rid of the pie chart and display only bar graph until user switches back to dev
+		if(j(this).attr("value")=="exec")
+		{
+			//if(getActiveTab()=="Bugs by Severity")
+			//{
+				j("#bugSeverityDetails").hide("fast");
+				j("#bugSeverityList").hide("fast");
+				j("#bugTypeProb").hide("fast");
+				j("#bugTypeSoln").hide("fast");
+				j("#bugSeverityPieChart").show("fast");
+				j("#bugSeverityBarGraph").hide("fast");
+			//}
+			//else 
+			if(getActiveTab()=="Bugs by Type")
+			{
+				j("#bugSeverityDetails").hide("fast");
+				j("#bugSeverityList").hide("fast");
+				j("#bugTypeProb").hide("fast");
+				j("#bugTypeSoln").hide("fast");
+				j("#bugTypeList").hide("fast");
+				j("#bugTypeDesc").hide("fast");
+				j("#bugSeverityPieChart").hide("fast");
+				j("#bugSeverityBarGraph").show("fast");
+			}
+			/*
+			if(getActiveTab()=="Scan Summary")
+			{
+				j("#bugSeverityPieChart").hide("fast");
+				j("#bugSeverityBarGraph").hide("fast");
+			}*/
+		}	
