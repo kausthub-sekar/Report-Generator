@@ -1,0 +1,100 @@
+---
+25th morning
+---
+jQuery
+
+	/*
+	j("#bugSeverityDetails").hide("fast");
+	j("#bugSeverityList").hide("fast");
+	j("#bugTypeProb").hide("fast");
+	j("#bugTypeSoln").hide("fast");
+	j("#bugTypeList").hide("fast");
+	j("#bugTypeDesc").hide("fast");
+	*/
+	j("#bugSeverityPieChart").hide("fast");
+	j("#bugSeverityBarGraph").hide("fast");
+j('#bugSeverityPieChart').hide();
+	j('#bugSeverityBarGraph').hide();
+	j('#View').show();
+	
+		j('#devView').change(function() {
+				//hide the charts and show the details
+				j('#bugSeverityDetails').show("fast");
+				j('#bugTypeDetails').show("fast");
+				j('#bugSeverityList').show("fast");
+				j('#bugSeverityPieChart').hide("fast");
+				j('#bugSeverityBarGraph').hide("fast");
+		});
+		j('#execView').change(function(){
+			//hide all the detailed sections using the hide function
+			j('#bugSeverityDetails').hide("fast");
+			j('#bugTypeDetails').hide("fast");
+			j('#bugSeverityList').hide("fast");
+			j('#bugsBySeverity').focus(function(){
+				if(j('input[type="radio"]').attr("value")=="dev")
+				{	
+				j('#bugSeverityDetails').hide("fast");
+				j('#bugTypeDetails').hide("fast");
+				j('#bugSeverityList').hide("fast");
+				j('#bugSeverityPieChart').hide("fast");
+				else
+				{
+					j('#bugSeverityPieChart').show("fast");
+				}
+			});
+			j('#bugsByType').focus(function(){
+				if(j('input[type="radio"]').attr("value")=="dev")
+				{	
+				j('#bugSeverityDetails').hide("fast");
+				j('#bugTypeDetails').hide("fast");
+				j('#bugSeverityList').hide("fast");
+				j('#bugSeverityBarGraph').hide("fast");
+				}
+				else
+				{
+				 j('#bugSeverityBarGraph').show("fast");
+				}
+			});
+		});	
+
+--
+25th Dec evening
+--
+jQuery
+
+//creating variables to find the amount of low, mid and high severity bugs and dynamically
+//insert it into the code when the developer type user interacts with the bugSeverityList element
+//attempting to resolve this issue of dynamic value fetching
+//but creating a dependency between jQuery and PHP code
+var lowNum="<?php echo \"<div id='lowNum'>\".round($vulnerable_package_count*(round($audit->getP3Count()/($audit->getTotalBugsCount()),2))).\"&nbsp;&nbsp;&nbsp;&nbsp;</div>\";?>";
+var lowCount="<?php echo \"<div id='lowCount'>Low&nbsp;&nbsp;&nbsp;&nbsp;</div> Severity Bugs reported by AppVigil\";?>";
+var medNum="<?php echo \"<div id='medNum'>\".round($vulnerable_package_count*(round($audit->getP2Count()/($audit->getTotalBugsCount()),2))).\"&nbsp;&nbsp;&nbsp;&nbsp;</div>\";?>";
+var medCount="<?php echo \"<div id='medCount'>Mid&nbsp;&nbsp;&nbsp;&nbsp;</div> Severity Bugs reported by AppVigil\";?>";	
+var highNum="<?php echo \"<div id='highNum'>\".round($vulnerable_package_count*(round($audit->getP1Count()/($audit->getTotalBugsCount()),2))).\"&nbsp;&nbsp;&nbsp;&nbsp;</div>\";?>"; 
+var highCount="<?php echo \"<div id='highCount'>High&nbsp;&nbsp;&nbsp;&nbsp;</div> Severity Bugs reported by AppVigil\";?>";
+
+//check which kind of bug severity is requested and display the appropriate div
+	//low severity bugs
+	j("#lowBugs").click(function(){
+		j("#lowBugs").empty();
+		j("#lowBugs").prepend(lowNum);
+		j("#lowBugs").prepend(lowCount);
+		j("#bugTypeProb").show("fast");
+		j("#bugTypeSoln").show("fast");
+	});
+	//medium severity bugs
+	j("#medBugs").click(function(){
+		j("#medBugs").empty();
+		j("#medBugs").prepend(lowNum);
+		j("#medBugs").prepend(lowCount);
+		j("#bugTypeProb").show("fast");
+		j("#bugTypeSoln").show("fast");
+	});
+	//high severity bugs
+	j("#highBugs").click(function(){
+		j("#lowBugs").empty();
+		j("#highBugs").prepend(lowNum);
+		j("#highBugs").prepend(lowCount);
+		j("#bugTypeProb").show("fast");
+		j("#bugTypeSoln").show("fast");
+	});	

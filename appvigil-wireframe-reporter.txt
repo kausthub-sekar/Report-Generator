@@ -1,0 +1,164 @@
+---
+25th evening
+---
+<?php 
+		 $abbrev_categories = array_unique($xml->xpath('//BugInstance/@abbrev'));
+		 $abbrev_count = count($abbrev_categories);
+		 if($abbrev_count==0)
+		 {
+		 echo "<h4>Wow!!! No bug has been found in your app. Seems you are doing a pretty good job.</h4>";
+		 }
+		 else
+		 {
+			$i=1;
+			foreach($abbrev_categories as $abbrev_category)
+			{
+			//echo "**************Category $i Category Started*****************<br><br>";
+			$i++;
+			$abbrev = $abbrev_category->abbrev;
+			$bug_types = $xml->xpath("//BugInstance[@abbrev='$abbrev']");
+			$BugCode = $xml->xpath("//BugCode[@abbrev='$abbrev']");
+			$abbrev_meaning = $BugCode[0]->Description;
+			
+			//echo "<div class='accordion' id='$abbrev-super'><div class='accordion-group'>";
+			//echo "<div class='accordion-heading' style='background-color: #ADD8E6; color: black;'>
+			//<a class='accordion-toggle collapsed' style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#$abbrev-super' href='#$abbrev'><b>$abbrev_meaning</b>";
+			echo "<span class = 'badge' style='background-color: #ADD8E6; color: black;'>".count($bug_types)." Vulnerabilities</span>";
+			$bug_id = 0;
+   				 foreach($bug_types as $bug_type)
+			   				 {
+		?>
+		
+inside lowBugs
+<?php 
+   				 	if($bug_type->attributes()->priority==3)
+   				 	{//start low bug	
+   				 	$bug_id++;
+   				 	$full_desc_bug_predicate = ($is_limited!=1 or $bug_id==1 or $bug_id<=count($bug_types)*$limited_percentage);
+   				 	$bug_type_code = $bug_type->attributes()->type;
+   				 	echo "<div>";
+   				 	echo "<div>";
+   				 		if(!$full_desc_bug_predicate)
+   				 		{
+   				 		echo "<a style='color:gray;' data-toggle='collapse' data-parent='#$abbrev-list' href='#$abbrev-$bug_id'>";
+   				 		echo "<b><i class='icon-bug' style='color:gray;'></i> {$bug_type->Class->attributes()->classname} [LIMITED]</b></a>";
+   				 		}
+   				 		else
+   				 		{
+   				 		echo "<a style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#$abbrev-list' href='#$abbrev-$bug_id'>";
+   				 		echo "<b><i class='icon-bug' style='color:#FF8A00;'></i> {$bug_type->Class->attributes()->classname}</b></a>";
+   				 		}
+   				 		
+   				 		echo "</div>";
+   				 		echo "<div id='$abbrev-$bug_id' style='height: 0px;'> <div>";
+   				 		//continue this in the problem description part
+   				 ?>
+
+inside medBugs
+<?php 
+   				 if($bug_type->attributes()->priority==2)
+   				 {//start low bug
+   				 $bug_id++;
+   				 $full_desc_bug_predicate = ($is_limited!=1 or $bug_id==1 or $bug_id<=count($bug_types)*$limited_percentage);
+   				 $bug_type_code = $bug_type->attributes()->type;
+   				 echo "<div>";
+   				 echo "<div>";
+   				 if(!$full_desc_bug_predicate)
+   				 {
+   				 	echo "<a style='color:gray;' data-toggle='collapse' data-parent='#$abbrev-list' href='#$abbrev-$bug_id'>";
+   				 	echo "<b><i class='icon-bug' style='color:gray;'></i> {$bug_type->Class->attributes()->classname} [LIMITED]</b></a>";
+   				 }
+   				 else
+   				 {
+   				 echo "<a style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#$abbrev-list' href='#$abbrev-$bug_id'>";
+   				 		echo "<b><i class='icon-bug' style='color:#FF8A00;'></i> {$bug_type->Class->attributes()->classname}</b></a>";
+   				 	}
+   				 
+   				 	echo "</div>";
+   				 	echo "<div id='$abbrev-$bug_id' style='height: 0px;'> <div>";
+   				 	//continue this in the problem description part
+   				 ?>
+inside highBugs
+<?php 
+   				 if($bug_type->attributes()->priority==1)
+   				 	{//start low bug	
+   				 	$bug_id++;
+   				 	$full_desc_bug_predicate = ($is_limited!=1 or $bug_id==1 or $bug_id<=count($bug_types)*$limited_percentage);
+   				 	$bug_type_code = $bug_type->attributes()->type;
+   				 	echo "<div>";
+   				 	echo "<div>";
+   				 		if(!$full_desc_bug_predicate)
+   				 		{
+   				 		echo "<a style='color:gray;' data-toggle='collapse' data-parent='#$abbrev-list' href='#$abbrev-$bug_id'>";
+   				 		echo "<b><i class='icon-bug' style='color:gray;'></i> {$bug_type->Class->attributes()->classname} [LIMITED]</b></a>";
+   				 		}
+   				 		else
+   				 		{
+   				 		echo "<a style='color: rgb(0, 85, 128);' data-toggle='collapse' data-parent='#$abbrev-list' href='#$abbrev-$bug_id'>";
+   				 		echo "<b><i class='icon-bug' style='color:#FF8A00;'></i> {$bug_type->Class->attributes()->classname}</b></a>";
+   				 		}
+   				 		
+   				 		echo "</div>";
+   				 		echo "<div id='$abbrev-$bug_id' style='height: 0px;'> <div>";
+   				 		//continue this in the problem description part
+   				 	?>
+inside bugTypeProb
+<h4>Problem Description</h4>
+				<?php
+				echo " 
+				<b>
+				{$bug_type->ShortMessage}
+				</b><br>
+				<b>Priority: </b>
+				{$bug_type->attributes()->priority}
+				<br>
+				<b>Rank: </b>
+				{$bug_type->attributes()->rank}
+				<hr>";
+				if($full_desc_bug_predicate)
+				{
+				if (array_key_exists("Class" , $bug_type))
+				{
+				echo "{$bug_type->Class->Message}<br>";
+				}
+				if (array_key_exists("Method" , $bug_type))
+				{
+				echo "{$bug_type->Method->Message}<br>";
+				}
+				if (array_key_exists("Field" , $bug_type))
+				{
+					echo "{$bug_type->Field->Message}<br>";
+				}
+				
+				if(strlen($bug_type->SourceLine->Message) > 12)
+				echo $bug_type->SourceLine->Message;
+				echo "
+				<hr>
+				<hr><b>Exact Problem: </b>
+				{$bug_type->LongMessage}
+				<br>
+				<hr>";
+				$bug_pattern = $xml->xpath("//BugPattern[@type = '$bug_type_code']");
+				echo "
+				<b>Description: </b>";
+				?>
+inside bugTypeSoln
+<h4>Recommended Solution</h4>
+				<?php 
+				echo (string) $bug_pattern[0]->Details;
+				}//close problem description and solution
+				else
+					echo "<i>*Detailed description is available for paid users only.</i>";
+				echo "</div></div></div>";
+				//insert bug info into database
+				$bug = $audit->addBug($abbrev, $bug_type_code, $bug_type->attributes()->priority, $bug_type->attributes()->rank, $bug_type->Class->Message,$bug_type->Method->Message,$bug_type->Field->Message,$bug_type->ShortMessage, $bug_type->LongMessage,$bug_type);
+				}//close inner foreach
+				echo "</div></div></div></div>"; //close all buginfo divs
+			}//close the lowBugs if block
+			}//close the medBugs if block
+			}//close the highBugs if block
+		  }//close the external foreach
+		}//close else part - bugs found
+				
+				$report_generator_log->LogInfo("$user_email Audit $audit_id - All bug instances Printed",__FILE__,__LINE__);
+				?>				
