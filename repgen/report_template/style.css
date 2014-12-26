@@ -37,8 +37,14 @@ body {
 /* ---------------------------------------------------------------------- */
 /* Headings
 /* ---------------------------------------------------------------------- */
-h2 {
+h2, h4 {
 	background-color: #0088CC;
+	color: #fff;
+	padding: 15px;
+	border-radius: 4px;
+}
+#bugTypeSoln h4 {
+	background-color: #00FF00;
 	color: #fff;
 	padding: 15px;
 	border-radius: 4px;
@@ -143,7 +149,7 @@ h2 {
 	position: absolute;
 	top: 5px;
 	right: 20px;
-	padding: 15px;
+	padding: 5px;
 	align:right;
 	float:right;
 }
@@ -151,15 +157,18 @@ h2 {
 /* Header
 /* ---------------------------------------------------------------------- */
 #header h1, #header .meta {
-	text-align: center;
+	text-align: left;
 	position: relative;
-	top: 5px;		
+	left: 170px;
+	top: -60px;		
 }
 
 /* ---------------------------------------------------------------------- */
 /* Content
 /* ---------------------------------------------------------------------- */
-
+.appSummary {
+	color: #0088CC;	
+}
 /* threat level circles */
 #lowThreat {
 	background-color: #00FF00;

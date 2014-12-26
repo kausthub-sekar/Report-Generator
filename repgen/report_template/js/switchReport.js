@@ -1,6 +1,15 @@
 //prevents conflicts between any different versions of jQuery
 //and other library included called easing.js
 var j=$.noConflict(true);
+//function to find the currently active bootstrap tab
+function getActiveTab(){
+      j('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+      // Get the name of active tab
+      var activeTab = j(e.target).text();
+      //alert(activeTab);
+      return activeTab;
+      });
+}
 /**
  * switches HTML Report view back and forth between Developer and Executive report
  */
@@ -15,11 +24,24 @@ j(document).ready(function() {
 			if(j(this).attr("value")=="dev")
 				{
 				//hide the charts and show the details
+					if(getActiveTab()=="Bugs by Severity")
+					{
+						j('#bugSeverityPieChart').hide();
+						j('#bugSeverityDetails').show();
+						j('#bugSeverityList').show();
+					}
+					else if(getActiveTab()=="Bugs by Type")
+					{
+						j('#bugSeverityBarGraph').hide();
+						j('#bugTypeDetails').show();
+					}
+				/*
 				j('#bugSeverityDetails').show();
 				j('#bugTypeDetails').show();
 				j('#bugSeverityList').show();
 				j('#bugSeverityPieChart').hide();
 				j('#bugSeverityBarGraph').hide();
+				*/
 				}
 			if(j(this).attr("value")=="exec")
 				{
@@ -27,9 +49,18 @@ j(document).ready(function() {
 				j('#bugSeverityDetails').hide();
 				j('#bugTypeDetails').hide();
 				j('#bugSeverityList').hide();
-				j('#bugsBySeverity').click(function(){
-					if(j(input[type="radio"]).attr("value")=="dev")
-					{	
+					if(getActiveTab()=="Bugs by Severity")
+					{
+						j('#bugSeverityDetails').hide();
+						j('#bugSeverityList').hide();
+						j('#bugSeverityPieChart').show();
+					}
+					else if(getActiveTab()=="Bugs by Type")
+					{
+						j('#bugTypeDetails').hide();
+						j('#bugSeverityBarGraph').show();
+					}
+					/*
 					j('#bugSeverityDetails').hide();
 					j('#bugTypeDetails').hide();
 					j('#bugSeverityList').hide();
@@ -39,9 +70,11 @@ j(document).ready(function() {
 					{
 					 j('#bugSeverityPieChart').show();
 					}
+					
 				});
+				/*
 				j('#bugsByType').click(function(){
-					if(j(input[type="radio"]).attr("value")=="dev")
+					if(j('input[type="radio"]').attr("value")=="dev")
 					{	
 					j('#bugSeverityDetails').hide();
 					j('#bugTypeDetails').hide();
@@ -54,14 +87,7 @@ j(document).ready(function() {
 					}
 				});
 				}
+				*/
+				}
 		});
-		/*doesn't seem to work
-		//function to identify the currently active tab in order to hide irrelevant elements
-		j(function getActiveTab(){
-		      j('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-		      // Get the name of active tab
-		      var activeTab = j(e.target).text();
-		      return activeTab;
-		      }
-		 */     
 });

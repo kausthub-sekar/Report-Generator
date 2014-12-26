@@ -411,7 +411,7 @@ $report_generator_log->LogInfo("$user_email Audit $audit_id - Audit Table printe
 <section id="about-us">
 
     <h2>About Us</h2>
-<br><p><img src = "images/logo.png" style="float: left; padding: 25px;">Wegilant, an IIT Bombay incubated company is at the heart of Web based IT Security. Led by IITian, Mr. Toshendra Sharma [<a href = "https://twitter.com/toshendrasharma" target = "_blank">Twitter</a>, <a href = "http://in.linkedin.com/in/toshendra/" target = "_blank">LinkedIn</a>], our team of IT security specialists offers SaaS based IT security products, consulting and implementation to small, mid and large sizes businesses as well as individuals. <br><br>Our products have been built on a private Android security cloud, which ensures highest level of data & information security over the web.</p>
+<br><p><img src = "images/logo.png" style="float: left; padding: 25px;">Wegilant, an IIT Bombay incubated company is at the heart of Web based IT Security. Led by IITian, Mr. Toshendra Sharma [<a href = "https://twitter.com/toshendrasharma" target = "_blank">Twitter</a>, <a href = "http://in.linkedin.com/in/toshendra/" target = "_blank">LinkedIn</a>], our team of IT security specialists offers SaaS based IT security products, consulting and implementation to small, mid and large sized businesses as well as individuals. <br><br>Our products have been built on a private Android security cloud, which ensures highest level of data & information security over the web.</p>
 <br>
 <p>
 <b><a href = "https://www.appvigil.co" target = "_blank">Appvigil</a></b>: Cloud based Android security audit & penetration testing tool.
