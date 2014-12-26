@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" tests="39" assertions="65" failures="0" errors="0" time="1.162379">
+    <testcase name="testgetUserById" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="15" assertions="3" time="0.045669"/>
+    <testcase name="testaddCredits" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="50" assertions="6" time="0.101897"/>
+    <testcase name="testaddInfo" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="85" assertions="0" time="0.000282"/>
+    <testcase name="testaddPartnerById" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="97" assertions="0" time="0.000244"/>
+    <testcase name="testdeleteSubuser" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="116" assertions="2" time="0.112556"/>
+    <testcase name="testfetchInfo" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="138" assertions="1" time="0.015527"/>
+    <testcase name="testgetAllAudits" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="152" assertions="1" time="0.013298"/>
+    <testcase name="testgetAllUniqueAppsCount" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="171" assertions="1" time="0.010221"/>
+    <testcase name="testgetTotalPackagesScannedByUser" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="186" assertions="1" time="0.011578"/>
+    <testcase name="testgetTotalBugsFoundByUser" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="201" assertions="1" time="0.104208"/>
+    <testcase name="testgetBoughtHistory" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="216" assertions="1" time="0.018488"/>
+    <testcase name="testgetCurrentPlan" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="233" assertions="1" time="0.015153"/>
+    <testcase name="testgetCurrentPlanId" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="253" assertions="1" time="0.010520"/>
+    <testcase name="testgetCurrentPlanName" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="268" assertions="1" time="0.010465"/>
+    <testcase name="testgetEarnedHistory" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="283" assertions="1" time="0.015950"/>
+    <testcase name="testgetField" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="302" assertions="4" time="0.009552"/>
+    <testcase name="testgetId" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="323" assertions="1" time="0.008764"/>
+    <testcase name="testgetInfo" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="336" assertions="1" time="0.013149"/>
+    <testcase name="testgetLastAudit" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="352" assertions="1" time="0.016325"/>
+    <testcase name="testgetLastFinishedAudit" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="372" assertions="1" time="0.013468"/>
+    <testcase name="testgetPlanExpiryDate" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="397" assertions="0" time="0.000261"/>
+    <testcase name="testgetRecentAudits" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="400" assertions="1" time="0.013854"/>
+    <testcase name="testgetSubusers" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="420" assertions="1" time="0.031419"/>
+    <testcase name="testgetTotalBoughtCredits" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="443" assertions="1" time="0.011408"/>
+    <testcase name="testgetTotalEarnedCredits" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="475" assertions="1" time="0.011538"/>
+    <testcase name="testincrementAuditsAllowed" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="499" assertions="1" time="0.033686"/>
+    <testcase name="testisEligibleForSubuser" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="525" assertions="3" time="0.051324"/>
+    <testcase name="testisEligibleForScan" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="556" assertions="3" time="0.064217"/>
+    <testcase name="testisSubuser" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="585" assertions="3" time="0.028619"/>
+    <testcase name="testisActiveSubuser" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="608" assertions="3" time="0.023937"/>
+    <testcase name="testmapAuditId" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="619" assertions="1" time="0.026610"/>
+    <testcase name="testsendForgotPasswordMail" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="634" assertions="0" time="0.000272"/>
+    <testcase name="testsendReferralMail" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="658" assertions="0" time="0.000242"/>
+    <testcase name="testsendSubuserConfirmationMail" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="662" assertions="0" time="0.000247"/>
+    <testcase name="testsetPassword" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="666" assertions="1" time="0.020867"/>
+    <testcase name="testsetField" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="685" assertions="4" time="0.121821"/>
+    <testcase name="testsetPreference" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="710" assertions="4" time="0.105435"/>
+    <testcase name="testgetPreference" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="735" assertions="8" time="0.023903"/>
+    <testcase name="testtoggleSuspendSubuser" class="UserTest" file="/var/www/my-account/classes/classTest/UserTest.php" line="757" assertions="1" time="0.045407"/>
+  </testsuite>
+</testsuites>

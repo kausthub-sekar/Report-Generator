@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugReport>
+
+
+	<AppSummary applicationName="com.whatsapp.apk"
+		total_activities="349" activities_covered="214" total_bugs="72"
+		version="0.0.1" sequence="0" startTimestamp="Fri, 11 Jul 2014 15:42:05 +0530"
+		stopTimestamp="Fri, 11 Jul 2014 15:42:05 +0530">
+
+		<ActivityStats name="com.freecharge.ui.SplashActivity"
+			bugs="4" warmings="2" status="safe/unsafe" />
+
+		<ActivityStats name="com.freecharge.ui.LoginActivity"
+			bugs="2" warmings="2" status="safe/unsafe" isLaunchable="Yes/No" />
+
+
+		<ReceiverStats
+			name="com.whatsapp.ExternalMediaManager$ExternalMediaStateReceiver"
+			bugs="4" warmings="2" status="safe/unsafe" />
+
+		<ServiceStats name="com.whatsapp.appwidget.WidgetService"
+			bugs="2" warmings="2" status="safe/unsafe" isLaunchable="Yes/No" />
+
+		<UsesPermissions>
+
+			<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+			<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+			<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+			<uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+			<uses-permission android:name="android.permission.CAMERA" />
+			<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+			<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+			<uses-permission android:name="android.permission.GET_TASKS" />
+			<uses-permission android:name="android.permission.INSTALL_SHORTCUT" />
+			<uses-permission android:name="android.permission.INTERNET" />
+			<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+			<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+			<uses-permission android:name="android.permission.READ_CONTACTS" />
+			<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+			<uses-permission android:name="android.permission.READ_PROFILE" />
+			<uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+			<uses-permission android:name="android.permission.READ_SYNC_STATS" />
+			<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+			<uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+
+		</UsesPermissions>
+
+		<AppPermissions>
+
+			<AppPermission android:name="com.whatsapp.permission.C2D_MESSAGE"
+				android:protectionLevel="signature" />
+			<AppPermission android:name="com.whatsapp.permission.MAPS_RECEIVE"
+				android:protectionLevel="signature" />
+			<AppPermission android:name="com.whatsapp.permission.VOIP_CALL"
+				android:protectionLevel="signature" />
+
+		</AppPermissions>
+		<ApkMap>
+			<Activities>
+				<Activity activityName="org.telegram.ui.PopupNotificationActivity">
+					<Elements>
+						<ActivityElement name="" text=""
+							className="android.widget.FrameLayout" isPassword="false"
+							isEmail="false" isClickable="false" isCheckable="false"
+							isChecked="false" isEnabled="true" isSelected="false"
+							isfocusable="false" isfocused="false" isScrolable="false"
+							islongClickable="false" />
+						<ActivityElement name="" text="" className="android.view.View"
+							isPassword="false" isEmail="false" isClickable="false"
+							isCheckable="false" isChecked="false" isEnabled="true"
+							isSelected="false" isfocusable="false" isfocused="false"
+							isScrolable="false" islongClickable="false" />
+						<ActivityElement name="Home screen 3" text=""
+							className="android.view.View" isPassword="false" isEmail="false"
+							isClickable="false" isCheckable="false" isChecked="false"
+							isEnabled="true" isSelected="false" isfocusable="false"
+							isfocused="false" isScrolable="false" islongClickable="false" />
+						<ActivityElement name="Analog clock" text=""
+							className="android.appwidget.AppWidgetHostView" isPassword="false"
+							isEmail="false" isClickable="false" isCheckable="false"
+							isChecked="false" isEnabled="true" isSelected="false"
+							isfocusable="false" isfocused="false" isScrolable="false"
+							islongClickable="false" />
+						<ActivityElement name="05:07" text=""
+							className="android.view.View" isPassword="false" isEmail="false"
+							isClickable="false" isCheckable="false" isChecked="false"
+							isEnabled="true" isSelected="false" isfocusable="false"
+							isfocused="false" isScrolable="false" islongClickable="false" />
+						<ActivityElement name="Search" text=""
+							className="android.widget.LinearLayout" isPassword="false"
+							isEmail="false" isClickable="false" isCheckable="false"
+							isChecked="false" isEnabled="true" isSelected="false"
+							isfocusable="false" isfocused="false" isScrolable="false"
+							islongClickable="false" />
+						<ActivityElement name="" text=""
+							className="android.widget.FrameLayout" isPassword="false"
+							isEmail="false" isClickable="false" isCheckable="false"
+							isChecked="false" isEnabled="true" isSelected="false"
+							isfocusable="false" isfocused="false" isScrolable="false"
+							islongClickable="false" />
+						<ActivityElement name="Phone" text="Phone"
+							className="android.widget.TextView" isPassword="false" isEmail="false"
+							isClickable="false" isCheckable="false" isChecked="false"
+							isEnabled="true" isSelected="false" isfocusable="false"
+							isfocused="false" isScrolable="false" islongClickable="false" />
+						<ActivityElement name="People" text="People"
+							className="android.widget.TextView" isPassword="false" isEmail="false"
+							isClickable="false" isCheckable="false" isChecked="false"
+							isEnabled="true" isSelected="false" isfocusable="false"
+							isfocused="false" isScrolable="false" islongClickable="false" />
+						<ActivityElement name="Apps" text=""
+							className="android.widget.TextView" isPassword="false" isEmail="false"
+							isClickable="false" isCheckable="false" isChecked="false"
+							isEnabled="true" isSelected="false" isfocusable="false"
+							isfocused="false" isScrolable="false" islongClickable="false" />
+						<ActivityElement name="Messaging" text="Messaging"
+							className="android.widget.TextView" isPassword="false" isEmail="false"
+							isClickable="false" isCheckable="false" isChecked="false"
+							isEnabled="true" isSelected="false" isfocusable="false"
+							isfocused="false" isScrolable="false" islongClickable="false" />
+						<ActivityElement name="Browser" text="Browser"
+							className="android.widget.TextView" isPassword="false" isEmail="false"
+							isClickable="false" isCheckable="false" isChecked="false"
+							isEnabled="true" isSelected="false" isfocusable="false"
+							isfocused="false" isScrolable="false" islongClickable="false" />
+					</Elements>
+					<Screenshot>../src/test/resources/org.telegram.ui.PopupNotificationActivity.png
+					</Screenshot>
+				</Activity>
+				<Activity activityName="org.telegram.ui.LaunchActivity">
+					<Elements />
+					<Screenshot>../src/test/resources/org.telegram.ui.LaunchActivity.png
+					</Screenshot>
+				</Activity>
+				<Activity activityName="net.hockeyapp.android.UpdateActivity">
+					<Elements />
+					<Screenshot>../../src/test/resources/net.hockeyapp.android.UpdateActivity.png
+					</Screenshot>
+				</Activity>
+				<Activity activityName="org.telegram.ui.IntroActivity">
+					<Elements>
+						<ActivityElement name="" text=""
+							className="android.widget.FrameLayout" isPassword="false"
+							isEmail="false" isClickable="false" isCheckable="false"
+							isChecked="false" isEnabled="true" isSelected="false"
+							isfocusable="false" isfocused="false" isScrolable="false"
+							islongClickable="false" />
+						<ActivityElement name="Telegram" text="Telegram"
+							className="android.widget.TextView" isPassword="false" isEmail="false"
+							isClickable="false" isCheckable="false" isChecked="false"
+							isEnabled="true" isSelected="false" isfocusable="false"
+							isfocused="false" isScrolable="false" islongClickable="false" />
+						<ActivityElement
+							name="The world's fastest messaging app.&#xA;It is free and secure."
+							text="The world's fastest messaging app.&#xA;It is free and secure."
+							className="android.widget.TextView" isPassword="false" isEmail="false"
+							isClickable="false" isCheckable="false" isChecked="false"
+							isEnabled="true" isSelected="false" isfocusable="false"
+							isfocused="false" isScrolable="false" islongClickable="false" />
+						<ActivityElement name="Start Messaging" text="Start Messaging"
+							className="android.widget.TextView" isPassword="false" isEmail="false"
+							isClickable="false" isCheckable="false" isChecked="false"
+							isEnabled="true" isSelected="false" isfocusable="false"
+							isfocused="false" isScrolable="false" islongClickable="false" />
+					</Elements>
+					<Screenshot>../src/test/resources/org.telegram.ui.IntroActivity.png
+					</Screenshot>
+				</Activity>
+			</Activities>
+			<Edges>
+				<Edge>
+					<DestinationActivity>net.hockeyapp.android.UpdateActivity0
+					</DestinationActivity>
+					<SourceToDestinationLink name="Cancel"
+						text="Cancel" className="android.widget.Button" isPassword="false"
+						isEmail="false" isClickable="false" isCheckable="false" isChecked="false"
+						isEnabled="true" isSelected="false" isfocusable="false" isfocused="false"
+						isScrolable="false" islongClickable="false" />
+				</Edge>
+			</Edges>
+
+		</ApkMap>
+
+	</AppSummary>
+
+	<BugCollection>
+
+		<BugInstances>
+			<BugInstance bugCode="WME" bugAbbrev="WME_Bug1"
+				bugImpact="User" bugType="Privacy" confidenceLevel="90%" severity="High"
+				rank="1" status="Safe/Unsafe" instanceHash="134qr1234qerf134142424">
+
+				<ShortDescription>
+					Missing encryption while storing data.
+				</ShortDescription>
+				<LongDescription>
+					this is a sample long bug description.
+				</LongDescription>
+
+				<References>
+					<Reference>
+						http://www.google.com
+					</Reference>
+
+				</References>
+
+				<Actiivities>
+					<Activity activityName="com.freecharge.ui.SplashActivity"
+						isExported="false">
+
+						<Screenshot>../screens/com.freecharge.ui.SplashActivity.png
+						</Screenshot>
+					</Activity>
+					<Activity activityName="com.facebook.LoginActivity"
+						isExported="false">
+						<Screenshot>../screens/com.freecharge.ui.SplashActivity.png
+						</Screenshot>
+
+					</Activity>
+				</Actiivities>
+
+			</BugInstance>
+
+
+			<BugInstance bugCode="WXI" bugAbbrev="WXI_Bug1"
+				bugImpact="Organization" bugType="Data" confidenceLevel="80%"
+				severity="High" rank="2" status="Safe/Unsafe" instanceHash="134qr1234qerf134142424">
+				<Description>
+
+					<ShortDescription>
+						XML Injection.
+					</ShortDescription>
+					<LongDescription>
+						this is a sample long bug description.
+					</LongDescription>
+				</Description>
+				<References>
+					http://www.google.com
+				</References>
+
+				<Activities>
+					<Activity activityName="com.freecharge.ui.SplashActivity"
+						isExported="false">
+
+						<Screenshot>../screens/com.freecharge.ui.SplashActivity.png
+						</Screenshot>
+					</Activity>
+					<Activity activityName="com.facebook.LoginActivity"
+						isExported="false">
+						<Screenshot>../screens/com.freecharge.ui.SplashActivity.png
+						</Screenshot>
+
+					</Activity>
+				</Activities>
+
+			</BugInstance>
+
+
+		</BugInstances>
+
+	</BugCollection>
+
+	<BugCode></BugCode>
+
+</BugReport>
+
+	
